@@ -1,0 +1,4119 @@
+{
+"commit": "0428f0c8052cfd70adba1ed27a746e96d9b876a6",
+"files": {
+".gitignore": {
+"sha256": "4aecdfeed340a8d0db28c6868bd828ddf149c42793f76505e20af1539f0e5354",
+"size": 607
+},
+"LICENSE.txt": {
+"sha256": "8486a10c4393cee1c25392769ddd3b2d6c242d6ec7928e1414efff7dfb2f07ef",
+"size": 34523
+},
+"README.md": {
+"sha256": "5c10f0da1d17960ec3bb0b27b288e3af5d850f84e6b91e55e34c872d56fb886d",
+"size": 10502
+},
+"assets/char_heads/Aalto.png": {
+"sha256": "a5d73c43e85d522968672b823ce4c5916f4897c29708ee98351d33c1f442117a",
+"size": 37799
+},
+"assets/char_heads/Aemeath.png": {
+"sha256": "985913b128136b2a86b78cfe358172bb98a21525ee7b7ca96273bd980599c5a9",
+"size": 44248
+},
+"assets/char_heads/Augusta.png": {
+"sha256": "9c88ce749e39f6b2905c43c7384a74e2c7f38d58193cb653c1d1323484eb0442",
+"size": 38804
+},
+"assets/char_heads/Baizhi.png": {
+"sha256": "0ef2670167b494298d5f4b748062829ee74283472d67d787c67d1b5bc83104ea",
+"size": 37736
+},
+"assets/char_heads/Brant.png": {
+"sha256": "d18a8a071a32b0ebe1cab2627ebf5f5f04d3c8b1b28aed99475fe09deae6ed14",
+"size": 42735
+},
+"assets/char_heads/Calcharo.png": {
+"sha256": "467b10aa1bfa641060a1a5139e77aeb88e94ea38f657174dee9af118d11c062b",
+"size": 37182
+},
+"assets/char_heads/Camellya.png": {
+"sha256": "b789edbbdca75bb29ab32be2f6b203261eb298e092d72985facbe595ea29de4b",
+"size": 42806
+},
+"assets/char_heads/Cantarella.png": {
+"sha256": "1c014797dac7d3889ba3178963b67f906bc4ab8198647815f9cdc98931810588",
+"size": 41772
+},
+"assets/char_heads/Carlotta.png": {
+"sha256": "f1b8c5da1c50245374f2d09d939d775053e50fcb0fe4f43a5a3ab0a34fdbd3dd",
+"size": 42901
+},
+"assets/char_heads/Cartethyia.png": {
+"sha256": "b32ff6e40beaee5c48b20fc4128762cc29e674b03b003117358a6f091f2910e9",
+"size": 41623
+},
+"assets/char_heads/Changli.png": {
+"sha256": "2313b66547a79534e4dfc6b5a25e1d08c13cfe03986128d50ee20d0d29195cfd",
+"size": 38534
+},
+"assets/char_heads/Chisa.png": {
+"sha256": "b6b472651401b1ac984944842249f9a22c082357df5f0fc1dad78123ab7d3bc6",
+"size": 40644
+},
+"assets/char_heads/Chixia.png": {
+"sha256": "108d2836a8eaced86e19415acb5a01f064dcda1e273f07a5f803e0ffc13b55f0",
+"size": 38467
+},
+"assets/char_heads/Ciaccona.png": {
+"sha256": "2b6461c8f0b027e31965e428b3c0e4855ac3e1a04d155c287bbee8da02be1306",
+"size": 45778
+},
+"assets/char_heads/Danjin.png": {
+"sha256": "4feb318019d98847aa825ec0c14354810d9deeaadc932f3b6da5fcad63084013",
+"size": 35288
+},
+"assets/char_heads/Denia.png": {
+"sha256": "82166d2ccc2f03a799e2c02fdd5b6ed30b511f1815406f225582ba4d21a31277",
+"size": 40440
+},
+"assets/char_heads/Douling.png": {
+"sha256": "84bfc458912fc0a1d01113714a7f8ca5c8ea18017e905a6cb863198503403da4",
+"size": 41921
+},
+"assets/char_heads/Encore.png": {
+"sha256": "ec724b1c3da9ebe259677389c440fd9a584c5401389d0be8bb34c6fd5eaacac5",
+"size": 35457
+},
+"assets/char_heads/Galbrena.png": {
+"sha256": "451f86a03fb580e84486a714daa02e76f80f06956bf853003b4ee94865602905",
+"size": 44863
+},
+"assets/char_heads/Hiyuki.png": {
+"sha256": "7b8dab1ea00a2cdf66dd09968c1b87852fe17eac29a8609d07c45423ee0b1dc7",
+"size": 41853
+},
+"assets/char_heads/Hsin.png": {
+"sha256": "127e78ca5b2231b19e51366bb67d9021a004355e6a25f6b1c1856869886296a3",
+"size": 44545
+},
+"assets/char_heads/Iuno.png": {
+"sha256": "f64836f7d8f2ac9e95c2f0bd6eadcc056626f9b12f4b774542d2fcebbcf53e92",
+"size": 44027
+},
+"assets/char_heads/Jianxin.png": {
+"sha256": "11f2ccaeb58997d23c34c24f46052ad9919bee7dea19bc00f21f9932ea664e3d",
+"size": 39016
+},
+"assets/char_heads/JingRan.png": {
+"sha256": "7e9fc42a7e5425cc823693c98b5f3d81004903667216f273fa3c51d8a42a2c5e",
+"size": 37793
+},
+"assets/char_heads/Jinhsi.png": {
+"sha256": "0ace6e4132d69ebf861d05c8adf2717a5edb5b404d8cbb7cd9ac86ad1ee6b35d",
+"size": 38714
+},
+"assets/char_heads/Jiyan.png": {
+"sha256": "4e809e878015d5513cc08936ea1754c4d0d936b6d4f0882dd461f9c8f42c1c7b",
+"size": 41938
+},
+"assets/char_heads/Lily.png": {
+"sha256": "f62abf8130c7f906ea12f2a86d97b4efc065f015e3174f55b12dc8b9236b5295",
+"size": 41865
+},
+"assets/char_heads/Lingyang.png": {
+"sha256": "7fd1dca7d6e7b7bf632ae6cbed313a70a2842066348d02bbdb7f79d4925be423",
+"size": 37374
+},
+"assets/char_heads/Linnai.png": {
+"sha256": "acf32448f853dbecdfc2f34d8ec6902e03086f6015da42105c9b2074c6c926ba",
+"size": 40887
+},
+"assets/char_heads/Lucilla.png": {
+"sha256": "9455452e0babe44d73833473a34aef51e194f874e07f67fc3d5c5bfd75587952",
+"size": 42889
+},
+"assets/char_heads/Lucy.png": {
+"sha256": "cded07035a0caaa214878acb2b4b0b5fb1cce074ee47c3c7db38e0b48a1941fe",
+"size": 40350
+},
+"assets/char_heads/Luhesi.png": {
+"sha256": "b4efce30165ae958899b12df7eba28e5b2c0d8b9db85a3afd542e384b777196a",
+"size": 36464
+},
+"assets/char_heads/Lumi.png": {
+"sha256": "79985d1a51e83c313d5ea70f3aaf5e5bb6269f833e79edba78790383ed64e8ad",
+"size": 44364
+},
+"assets/char_heads/Lupa.png": {
+"sha256": "b9ce4090ee82866f6b128a05f906b2ede0b47d94846aa10ba8e14c693c61d39d",
+"size": 45635
+},
+"assets/char_heads/Mornye.png": {
+"sha256": "e54a52d38eeb80d3d49069002afb09806428764a0f1602b5a364a039b90fe24c",
+"size": 42073
+},
+"assets/char_heads/Mortefi.png": {
+"sha256": "39c1934f4c3f80646346d3174b44331a58c34b4bd4f3551e89faf9f439746dd3",
+"size": 36876
+},
+"assets/char_heads/Phoebe.png": {
+"sha256": "f33bba659afb27439983ae8be2d951bb37f40f7e8004fe9ca86c5429127175d2",
+"size": 38637
+},
+"assets/char_heads/Phrolova.png": {
+"sha256": "2df812ee8d52f816bb0232c4c156ec5dd51de40e082510ec987f70b4ddb973e4",
+"size": 37983
+},
+"assets/char_heads/Qingxiao.png": {
+"sha256": "9056f331c93f54478d1867779be69f1c4e21193e047945a671724038db30fadb",
+"size": 43805
+},
+"assets/char_heads/Qiuyuan.png": {
+"sha256": "00a98da32279a65f3fa9082523bba50c84e13f612a0ce8ba260a8bca8706d1a2",
+"size": 44727
+},
+"assets/char_heads/Rebecca.png": {
+"sha256": "5b5117731b441360275fa91b594266f092050c4e1dc8eb7c1878ada7c43f7edb",
+"size": 39435
+},
+"assets/char_heads/Roccia.png": {
+"sha256": "9340e94cb04d294ea7efbc8fb3d6ec230a407eaac2ca62520d5b837fa11ddccc",
+"size": 42330
+},
+"assets/char_heads/Rover.png": {
+"sha256": "36c7cfc52af91002d6a7554a9c140c2e1d8f6c563ec5274b25bc0e1911f02ee4",
+"size": 32675
+},
+"assets/char_heads/Sanhua.png": {
+"sha256": "117956b32c9789aa25dc730fac8b859f3ef353e25dbcfb0abcb3595d4041d686",
+"size": 38672
+},
+"assets/char_heads/ShoreKeeper.png": {
+"sha256": "cb77bfb7133579cf8be546f318736f3f7cfd857fa302651ad921ba2974260a43",
+"size": 40346
+},
+"assets/char_heads/Suisui.png": {
+"sha256": "2d11280c494f19ef4151db10870df60b605e4bb428f08f5034deaf0b461b96d4",
+"size": 38771
+},
+"assets/char_heads/Suoming.png": {
+"sha256": "0613c8e5ec964cf7d60b57a864f1de09dcc3670ddc222a089174c6bd4ee1f545",
+"size": 41400
+},
+"assets/char_heads/Taoqi.png": {
+"sha256": "f86fb02e75e2a9c1afad8aafacb18f7df96fea09d08786052237f6d7e09923c4",
+"size": 39563
+},
+"assets/char_heads/Verina.png": {
+"sha256": "3e5837bc237a97d7c70570d91731d6167a8e47fd26db28f37fc28193fd08a59d",
+"size": 37726
+},
+"assets/char_heads/Xiangliyao.png": {
+"sha256": "f0eb51bdea48ef1c175ae08b377f1d63e6cf9ccb4d16441381dd5a5f343d7a1d",
+"size": 32640
+},
+"assets/char_heads/Xigelika.png": {
+"sha256": "624744fd396d25b454c25887df485c6ab703430522e26e312a7e21266bcc8054",
+"size": 45645
+},
+"assets/char_heads/YangYangSp.png": {
+"sha256": "c52b622b98b854af9e1381058afed3c6f3c93c25e196daeb1fb2cd154bec5c89",
+"size": 40441
+},
+"assets/char_heads/Yangyang.png": {
+"sha256": "8c340e5db9d65b5905acd6b6303753c47babf96bf801a160a6f4ea092083bae2",
+"size": 39278
+},
+"assets/char_heads/Yinlin.png": {
+"sha256": "1f6b6ba3c997d93841a08143550665950d44f086ad4b6877cb7cd5d9762effd6",
+"size": 39469
+},
+"assets/char_heads/Youhu.png": {
+"sha256": "00d57abdd44329d246a8e3690ef4ddb9bcc524d2f3360a96924cb92652def298",
+"size": 35797
+},
+"assets/char_heads/Yuanwu.png": {
+"sha256": "f0d706a54e1094e5d9c0bdbcd3b6fdda3c0445b79d76aaa54cd56c100f3671ae",
+"size": 30942
+},
+"assets/char_heads/Zani.png": {
+"sha256": "1c7cbe4d3ceda3c02bb67f2a5a6a367d24bf1d65ffd66b390918144e781c6c11",
+"size": 40535
+},
+"assets/char_heads/Zhezhi.png": {
+"sha256": "2da1f3daec00ea08f8014aa7689db1643a54c4939ac949f6fbeab7bb5123d416",
+"size": 44143
+},
+"assets/coco_annotations.json": {
+"sha256": "81ca5138ff6fb2b04ceaa2d9596dcd0ad5f6a526c66ecf7b92840b98b83289ef",
+"size": 163507
+},
+"assets/echo_model/echo.onnx": {
+"sha256": "59dd2e9edcefd128baee4839967d830b5c053a79af7a759f0b6b34e0b063e6b5",
+"size": 37907104
+},
+"assets/images/0.png": {
+"sha256": "79fff4476bd23084285bc71a0b768ab1a5550ecc39821d4b7e0ae8e13ea5c400",
+"size": 606490
+},
+"assets/images/1.png": {
+"sha256": "1b43a711ac66af8c1204ff4f56527f0efff0b2b3ac8e0dd689978aa41d468ad6",
+"size": 281481
+},
+"assets/images/10.png": {
+"sha256": "0f61c92461f354887a02c0e14f10d84de6c6ee93e777a9952ceeb534a9e17449",
+"size": 55338
+},
+"assets/images/11.png": {
+"sha256": "cf46a5337d4e3f6a5b6939140d792e8edc5413fa0690fbd54297c40d2288cc07",
+"size": 42334
+},
+"assets/images/12.png": {
+"sha256": "e7333eaf87671cc1fb1d06d8d0f53b7c5a5db8e705a96fe47d09ec0cebf6c58b",
+"size": 65254
+},
+"assets/images/13.png": {
+"sha256": "92553d8bc99614cbf4939304839b83a1a84e86411b4319e6e223c5253291e5b1",
+"size": 53666
+},
+"assets/images/14.png": {
+"sha256": "7c65f5a1fc43d6b25fb2eb2608e946d6ba718b010e9966784827e7940acad94a",
+"size": 62145
+},
+"assets/images/15.png": {
+"sha256": "af2fcb9f4d55f81333a7afd02c98496cfc5c8fb23280d1f6efb5b48a122b67ff",
+"size": 40814
+},
+"assets/images/16.png": {
+"sha256": "dad3155616b8c651f9477c37f14b324c5f81e865478ff37ec681afe914d6f099",
+"size": 58602
+},
+"assets/images/17.png": {
+"sha256": "5fe24d1a138f7fc0050ce3943decd3314cc53dffff8a0dbf5752ebb891cd6804",
+"size": 41656
+},
+"assets/images/18.png": {
+"sha256": "e32d79c1793d8645399942a4402547b5a2f60f9b7f88f89e517b7088d9950b8f",
+"size": 39618
+},
+"assets/images/19.png": {
+"sha256": "5345b4a6121431fe26abbc026480d00a18acfc3a0221f8888dc09d866981fa21",
+"size": 53899
+},
+"assets/images/2.png": {
+"sha256": "973cd6bd6ab09dcd89accdf765787e8e9b3b575547dceed7dad46c328b2fb742",
+"size": 175932
+},
+"assets/images/20.png": {
+"sha256": "b456da9c81d22ab05ab36d02dd1dccfa76d7ba5503c848c644cf9a19e9542b6e",
+"size": 55651
+},
+"assets/images/21.png": {
+"sha256": "8d730c00f00f0d9fdf93d6289951eedfdacaaf4e1a6461a5b8d2279055d263cb",
+"size": 47927
+},
+"assets/images/22.png": {
+"sha256": "2ae48d4901c93f03612803bbb383f82394ff4d47dca901c5adefe406c211ec69",
+"size": 82253
+},
+"assets/images/23.png": {
+"sha256": "d6c1c1716f8f5246e0d97945d62c71499f12e6c91cd2e6fac5e6d8486346bff3",
+"size": 47284
+},
+"assets/images/24.png": {
+"sha256": "62953e07c66fe46365f13a85ab6f8aed37b6eaf0fea91f828660e7d68ecec2ca",
+"size": 73380
+},
+"assets/images/25.png": {
+"sha256": "ea2e2c902998920084e46c23296a3919145223a6f3c6c29191bf01095ff94de3",
+"size": 36158
+},
+"assets/images/26.png": {
+"sha256": "62fc66bc742a738ecdcc8c50b078e2bb3318691a4b66bc76e31e26e6b2d9b277",
+"size": 45521
+},
+"assets/images/27.png": {
+"sha256": "1c9adaac1d1f46afe8b1a4cd5b51c17fad6ff9cff071120cb5fce0533ab6f687",
+"size": 41062
+},
+"assets/images/28.png": {
+"sha256": "324ff2075a5e67d743facc41f22e2e7b22a95489e0558adfcba5a58ecf38c8d1",
+"size": 48848
+},
+"assets/images/29.png": {
+"sha256": "34010f7ccaeebe8d4dfae87e778c68a491973cb6b0227037b161ee139f2be3aa",
+"size": 48729
+},
+"assets/images/3.png": {
+"sha256": "6b803861c63ce64cde9b6fbb17d48631e29b91c10d475154359b8b8f4af7770d",
+"size": 110190
+},
+"assets/images/30.png": {
+"sha256": "97565d4af6a3de1ed9d8e5e554cf1a4ac2e2a340a15d94513a03b07eb7f61f53",
+"size": 60859
+},
+"assets/images/31.png": {
+"sha256": "f67dcc22c5a2bb03d2480c128b38efe2143026e5c6ce1da72668fa01bbfd4425",
+"size": 51913
+},
+"assets/images/32.png": {
+"sha256": "a61c29358e38276271cf7b1b42dfeb8ad9c4df16db9adc7a7dbe048a655c8f80",
+"size": 54990
+},
+"assets/images/33.png": {
+"sha256": "9dd7cded458c16d67e90f1efd87aa6395bf876c44d4840c597bd3ccdad610f75",
+"size": 62977
+},
+"assets/images/34.png": {
+"sha256": "b3629d68483b141ae2c63a7e8300645271327bf367fee3d83d165526241e7813",
+"size": 41780
+},
+"assets/images/35.png": {
+"sha256": "e981f7d54ad86380a22d79a4d2b79a7a9893af0f48268298ab743fd58e35b373",
+"size": 44201
+},
+"assets/images/36.png": {
+"sha256": "60e9bebb80d79d6440c212cd9b5766c2d047804df098ec71c2fa499f20efe8b9",
+"size": 339148
+},
+"assets/images/37.png": {
+"sha256": "ce325fd709822266f62ab79873791ca176d7bb4dc8296105a1a82f8c138096a1",
+"size": 75212
+},
+"assets/images/38.png": {
+"sha256": "e15c3c1ce47e6656d582a3beb9bd63293ce5f82ea1e32053850150d4fe692962",
+"size": 32494
+},
+"assets/images/39.png": {
+"sha256": "cfc46806b935def6cd7b40db67b52e4b5674b02e1f3f32777dc1361881e0f281",
+"size": 24557
+},
+"assets/images/4.png": {
+"sha256": "17aff3583845a8187f05c3005590d2abcabe941d31b20e6985652714ae9b53b8",
+"size": 105977
+},
+"assets/images/40.png": {
+"sha256": "b9123c56db519fcb16c78bd26f24b60dd217efa35320a28eb9e0a8dd710cd251",
+"size": 22781
+},
+"assets/images/41.png": {
+"sha256": "20be7298110f20c14063c74b27da11e112db66f30db34bc83e4db4c6c44e27a9",
+"size": 13428
+},
+"assets/images/42.png": {
+"sha256": "0c865d8a42b44e0427564a91fedae4bbd1902a2cf63c36d94ee089c2928f82b1",
+"size": 13067
+},
+"assets/images/43.png": {
+"sha256": "6032b3ed91d2f7a2b268469f510c62529b144101e10b0fb626d26e2ab6021026",
+"size": 29409
+},
+"assets/images/44.png": {
+"sha256": "4a6550cd856938f187ab886a8e7265d6abbd53ffa1c14885f3e9f2acd524dfb7",
+"size": 7228
+},
+"assets/images/45.png": {
+"sha256": "7a49725e153017f02a4a23d4e9516878f0aa7c2fcf76717cade6bd8f854842d1",
+"size": 7620
+},
+"assets/images/46.png": {
+"sha256": "f8f781778ac79bcc920aeb5113a2024e2de4dc642c621ba74e1136f562619cb6",
+"size": 7595
+},
+"assets/images/47.png": {
+"sha256": "1b64891114f3ae8ce7ffddbba5b2f9be397a39c9050bd831bc2513e8dc954aa4",
+"size": 7181
+},
+"assets/images/48.png": {
+"sha256": "f6e1170a97f7b7d8869a4bfa58fec42623003912a3cd9181a1163fbef4ef90fa",
+"size": 14219
+},
+"assets/images/49.png": {
+"sha256": "cade14b5c8bb4430b77b3a05a6147fefa340e5f8fcc77aa0f1b67e586c23b807",
+"size": 59286
+},
+"assets/images/5.png": {
+"sha256": "1950b4612736cd13ec4c3d1b5db82085e32b445511ea1082d58a3dd5dfb3fb0c",
+"size": 109633
+},
+"assets/images/50.png": {
+"sha256": "e0a1a30d0f525bdc39d8403b47ff79701be281dbba600566df9f6b0629085c74",
+"size": 22582
+},
+"assets/images/6.png": {
+"sha256": "83be5e1d584e86bf863132991faf41cef39186b4d10ee7f8d4a1d743f14fd80b",
+"size": 77600
+},
+"assets/images/7.png": {
+"sha256": "e786ce19fc9aebcc6635eab55c8eed3282d4334bf6bbd6275f4f9550c1f31fdf",
+"size": 70844
+},
+"assets/images/8.png": {
+"sha256": "0f20640b0e19f0244c228a6f8d4e17489256e32c6011b969125c4b62c4205826",
+"size": 46460
+},
+"assets/images/9.png": {
+"sha256": "81579b6ddbe4469c112fbdb6ac2998f24f3a072255221ac91c54633d19c60182",
+"size": 42834
+},
+"assets/templates/Augusta_3840x2160_3554_464.png": {
+"sha256": "f90a6d377d4e356e4dead051c8119bbe9cf4956fd62cb8b2460cd417a7e1ed77",
+"size": 9061
+},
+"assets/templates/Augusta_jump_attack_3840x2160_2826_1890.png": {
+"sha256": "c031f76d4d4af889fb0a1801273ffd82fced030803bc0355472e67496aa93c39",
+"size": 11601
+},
+"assets/templates/Augusta_lib1_3840x2160_3585_1890.png": {
+"sha256": "6f952a1df6620884051ef891d6699fa4c556e677281a36b1372dbcfe55434b8c",
+"size": 14009
+},
+"assets/templates/Augusta_lib2_3840x2160_3585_1890.png": {
+"sha256": "1b2ff424b0f0e95e73e312094c6a357803fad798ad970aa0089eb25afaa46ee3",
+"size": 14085
+},
+"assets/templates/a_garden_back_1920x1080_1067_860.png": {
+"sha256": "e22d3c6c99b44446a4992218a285d75d228158735bd8a663e841ab9efbe1f18c",
+"size": 1626
+},
+"assets/templates/a_garden_restart_1920x1080_772_863.png": {
+"sha256": "e506bf36f5ea84c673195d1d651328b51a1bb2b1bb94d286ef708f040a8298ac",
+"size": 2662
+},
+"assets/templates/absorb_en_US_3840x2160_2680_1081.png": {
+"sha256": "2329d5870d03f4316eb65ec3c57ccf9af63e5e0279eeb67aee825e1818869e8d",
+"size": 12290
+},
+"assets/templates/absorb_zh_CN_3840x2160_2681_1080.png": {
+"sha256": "a22ac9101e81bb49577c8df9950c817a37ca046aa9cb41abd99d35113c4619ba",
+"size": 9675
+},
+"assets/templates/abyss_start_marker_3840x2160_1912_994.png": {
+"sha256": "fbf6763007b2671c8ad88931d0a7d1adffa9c1210494623ab9db9ce45df01b9a",
+"size": 4023
+},
+"assets/templates/abyss_tower_start_marker_3840x2160_1900_1062.png": {
+"sha256": "0940d9d2badebba93b59cb28d98e9a761a0d1247cdf92a2880749a4a552272f0",
+"size": 12999
+},
+"assets/templates/account_close_2048x1152_1307_359.png": {
+"sha256": "0ab02e5659019fba9e657067496d7acc379305f1d8f1232aa4e8e26f41c1d2f4",
+"size": 3844
+},
+"assets/templates/account_drop_down_2048x1152_1273_496.png": {
+"sha256": "d4f1e7621128552dd14fcec87e9d4aae55a4b2b5c5f01641b533918ff2a8f6b2",
+"size": 463
+},
+"assets/templates/aemeath_e1_3840x2160_3187_1879.png": {
+"sha256": "9f8c25b76792a9ff48454cd18fb93cd901112923f3696badc9b710153c82ff4c",
+"size": 17344
+},
+"assets/templates/aemeath_e2_3840x2160_3199_1884.png": {
+"sha256": "eb5e1f3e099af74b3850361c590621d6d8e5495bf556eb5aeb69ecafadde6625",
+"size": 15057
+},
+"assets/templates/aemeath_human_heavy_3840x2160_2818_1881.png": {
+"sha256": "c064fe3326fc6679851842438fdabd066f8321fe85839b1029c79a1fa9921276",
+"size": 14413
+},
+"assets/templates/aemeath_lib2_1920x1080_1795_945.png": {
+"sha256": "fb3b68959341e2730509c08e2ff8f5a4bbbde992fde95c4aa8f9633513e2764e",
+"size": 3953
+},
+"assets/templates/arrow_3840x2160_200_188.png": {
+"sha256": "643b69bf6466f4f289a00ee4e8bc7d4036d01cdd3b2bc763e48e525a8a9535fd",
+"size": 4344
+},
+"assets/templates/big_map_diamond_3840x2160_1878_1046.png": {
+"sha256": "fde58f31e81594d11d20cf34f37998dbd0623b72c5f5eb91c11690d9f7252a09",
+"size": 5859
+},
+"assets/templates/big_map_skull_3840x2160_1916_901.png": {
+"sha256": "7f098c4826572af46a4aef86a8140b2330bcd35c933273c7d92b2634be718fda",
+"size": 6295
+},
+"assets/templates/big_map_star_3840x2160_764_1022.png": {
+"sha256": "305fc707826bdffed928679ea7e08fee4779a0f3b21e930aabc00a8cbd9021ce",
+"size": 3108
+},
+"assets/templates/book_wuyin_1920x1080_209_493.png": {
+"sha256": "fae2f85221a6bd9d4badb6cb7e8fa85b5cc02abfcdd9e9da9d7fb7c00802ebeb",
+"size": 6775
+},
+"assets/templates/boss_break_lock_3840x2160_1203_95.png": {
+"sha256": "69d6011fc6801c210e838cdd0ed765db41a64e54511f91dafc9c61eea975a56a",
+"size": 4578
+},
+"assets/templates/boss_break_shield_3840x2160_1203_95.png": {
+"sha256": "b526957856bb6e15f4c08daf818365118ab258c72055465e021d5ad90fb055f8",
+"size": 4829
+},
+"assets/templates/boss_check_mark_3840x2160_925_809.png": {
+"sha256": "166b1af3a7c34bd4a0d405b47113e49d1b1def18bbc8e72b1d877f704bd61157",
+"size": 2505
+},
+"assets/templates/boss_check_mark_minimap_3840x2160_365_169.png": {
+"sha256": "ed66f92c6db8b6275f6c1fed7173e72fc677f27328ca2b7ee25116ddc881bfb9",
+"size": 1238
+},
+"assets/templates/boss_no_check_mark_3840x2160_1591_583.png": {
+"sha256": "440e95d5598933824451ecf041ee7461794e8913fbc4907327dae2d14cc70605",
+"size": 1883
+},
+"assets/templates/boss_proceed_1920x1080_1781_404.png": {
+"sha256": "89bfb006a77937a05b579302bd08b784617c6feef4ad40e568a542e649af7649",
+"size": 2648
+},
+"assets/templates/box_arrow_3840x2160_178_152.png": {
+"sha256": "5d9e864776c8390ddff820c4879875835f422eaa520703a240f16cd1e77f781b",
+"size": 472
+},
+"assets/templates/box_char1_switch_wave_3840x2160_3346_480.png": {
+"sha256": "9b510688a0a19d5b61440bd6a1be2d7396df4376763abc87aaf9704baad1095e",
+"size": 291
+},
+"assets/templates/box_char2_switch_wave_3840x2160_3347_740.png": {
+"sha256": "9b510688a0a19d5b61440bd6a1be2d7396df4376763abc87aaf9704baad1095e",
+"size": 291
+},
+"assets/templates/box_char3_switch_wave_3840x2160_3348_994.png": {
+"sha256": "9b510688a0a19d5b61440bd6a1be2d7396df4376763abc87aaf9704baad1095e",
+"size": 291
+},
+"assets/templates/box_char_1_3840x2160_3515_418.png": {
+"sha256": "836bfacd0f2be7e10d7f3709df09d9bae9b85e1505e71d003f0447d64f85ed82",
+"size": 396
+},
+"assets/templates/box_char_2_3840x2160_3515_686.png": {
+"sha256": "f1bbe43c24c8aeb5b5e4055f1842e19fd9f4b65d709a753e3dcdc58aa2662097",
+"size": 376
+},
+"assets/templates/box_char_3_3840x2160_3516_954.png": {
+"sha256": "cb40c661b59a26e6c5ecd8962816972290d4c3fb7615b99cce967896446ee00b",
+"size": 388
+},
+"assets/templates/box_concerto_last_dot_3840x2160_2169_1996.png": {
+"sha256": "52a03e6a198829985357f55cf30f30f8494c4e0d51c8d141cca81bd18df1d498",
+"size": 181
+},
+"assets/templates/box_echo_3840x2160_3371_1877.png": {
+"sha256": "663f1ba25db8d404c89d4b8389961a8c6d4338dbc48c1644282a25b97c597d59",
+"size": 345
+},
+"assets/templates/box_extra_action_3840x2160_2586_1846.png": {
+"sha256": "85844d073eae279cb3c6e7a8a5f4b66d53b4b9ee538fab9bfe6e9142e406295b",
+"size": 566
+},
+"assets/templates/box_forte_1_3840x2160_1693_1993.png": {
+"sha256": "1e36ff45d5d98596e8682d8e8081726840109f29ccef8829ef58a7863381df52",
+"size": 202
+},
+"assets/templates/box_forte_2_3840x2160_1888_1991.png": {
+"sha256": "c0cde614505aec665fb05d93698ab831ac9fd0995f944f533629da703c8939b7",
+"size": 200
+},
+"assets/templates/box_forte_3_3840x2160_2072_1991.png": {
+"sha256": "a968208fff38f6344c263d4f25dcc15417f89b1aa28c32398b30397cad1f85da",
+"size": 202
+},
+"assets/templates/box_gray_book_1920x1080_14_115.png": {
+"sha256": "4f7102fee4e03528e9cbcef0d04f57d0062a0aa579a51cb5d4433fc839105cb5",
+"size": 1268
+},
+"assets/templates/box_liberation_3840x2160_3572_1877.png": {
+"sha256": "c30dd3134bb919942baece7e36700ce88edf3a8e6719a892fa4df210d350eb9c",
+"size": 329
+},
+"assets/templates/box_luhesi_lib_3840x2160_3584_1887.png": {
+"sha256": "08696699a15d9849ba05ad3b7bba6ff8651a5edb1f57cbb8026379440bc518cb",
+"size": 264
+},
+"assets/templates/box_minimap_3840x2160_72_57.png": {
+"sha256": "b4fe4a84a78b8e8abb720ce42f0c08d4f51d3b183635ba41a34ed0bdc87cbf9e",
+"size": 1055
+},
+"assets/templates/box_resonance_3840x2160_3185_1877.png": {
+"sha256": "62717e27b527c6b3d48b84f70716af3bcca4b3a049854aefb28a6c08ccd5af8f",
+"size": 341
+},
+"assets/templates/box_target_enemy_3840x2160_2867_1913.png": {
+"sha256": "9d8cd465b2896d5e9452f664a56e959173310172cdded02595e91e43d963ce37",
+"size": 239
+},
+"assets/templates/box_target_enemy_inner_3840x2160_2884_1936.png": {
+"sha256": "ff3e4a13b8ea6a67edbc51db5a992986ddd53b7c34cdf7d062e6626197860a74",
+"size": 195
+},
+"assets/templates/box_target_enemy_long_3840x2160_2668_1900.png": {
+"sha256": "670d14217d6b0b4a1c3ac2fad83dcf219616bca9a7c4aa5d74c0eca018e0a3f1",
+"size": 269
+},
+"assets/templates/box_target_mouse_3840x2160_2876_1985.png": {
+"sha256": "e1932fec86820701c020ad6d229672b3dadf8ababc40e3078da6c2b3cd64802d",
+"size": 217
+},
+"assets/templates/btn_auto_play_dialog_3840x2160_3381_107.png": {
+"sha256": "197334ca00b2a9eb7c55e827f0d311d21dbd99b99e5ebec3b842707c9ab043f4",
+"size": 3645
+},
+"assets/templates/btn_dialog_3dots_3840x2160_2523_1221.png": {
+"sha256": "950b0fbab6527b5e7fe3fe7c9a6a54c4ef6e0e9abe88143970e46d4ca8ba558e",
+"size": 5894
+},
+"assets/templates/btn_dialog_arrow_3840x2160_2525_1384.png": {
+"sha256": "e2f0c55badd796f63a25f0264edfba24ab4a15ae7e5eac4d6d7e928713ce8433",
+"size": 4792
+},
+"assets/templates/btn_dialog_close_3840x2160_3560_65.png": {
+"sha256": "259615621acb45ac00750ae13a82550f2774e528493b76430d87ec5ca123a33b",
+"size": 16787
+},
+"assets/templates/btn_dialog_eye_3840x2160_3565_111.png": {
+"sha256": "ce72c2a8a9b354de48d2a1d75591fc81b4b6e7300d59d11ce1820d77d646ec8b",
+"size": 4604
+},
+"assets/templates/camellya_budding_3840x2160_1589_1997.png": {
+"sha256": "8d87fe2917e0a3e7a370006f7a22a4d0d77df2b1be8029173922b7afaa12f987",
+"size": 2130
+},
+"assets/templates/cancel_button_hcenter_vcenter_1920x1080_455_644.png": {
+"sha256": "11b5baf067af1e20d323d6156551a50d2ed230261d5bbfc822681c47f7d5143c",
+"size": 3572
+},
+"assets/templates/cancel_button_highlight_hcenter_vcenter_3840x2160_914_1255.png": {
+"sha256": "d2cc5e7a0aad94bcdd2eb7bd34bb65ce067804efda354a088e78febad61a2084",
+"size": 9587
+},
+"assets/templates/chang_changli_3840x2160_3537_723.png": {
+"sha256": "b41669818f7f48522f5fb47e3a3486f485e8b23ec552c37ae6aaf3acc299c84d",
+"size": 9992
+},
+"assets/templates/char_1_lib_check_mark_3840x2160_3650_474.png": {
+"sha256": "9d7ac5e51f2f6ba0ce5e8387f8538ce5e3c7a704c6f2b11da7044eaa97bc6790",
+"size": 1179
+},
+"assets/templates/char_1_text_1920x1080_1738_214.png": {
+"sha256": "85276a6c24269541668b6c0aaa3d45caca9ea8d4f4e77736cceef4f920ecdd6a",
+"size": 546
+},
+"assets/templates/char_2_lib_check_mark_3840x2160_3649_739.png": {
+"sha256": "58197bdbc755e827c13d2991b66570652f4fbf055c6541bc3244dcd7ad47f74b",
+"size": 1202
+},
+"assets/templates/char_2_text_1920x1080_1738_345.png": {
+"sha256": "81914251b72eca0a59b7a15e697d726e705eb08cf4202f5e1164c7b1e9c0451b",
+"size": 673
+},
+"assets/templates/char_3_lib_check_mark_3840x2160_3649_1005.png": {
+"sha256": "ae2157971be296f1b2f90efcd171827238460c969ac76d45a1f792e9e7cd0719",
+"size": 973
+},
+"assets/templates/char_3_text_1920x1080_1737_477.png": {
+"sha256": "26161dd19205bbafc917c3a82bec65eab61153b6de6a33f376b9b0db9988c4f5",
+"size": 720
+},
+"assets/templates/char_4_text_3840x2160_3476_1219.png": {
+"sha256": "2df6e4a3707a639f1f5630c3bd189861a8d01977518f31aec53eb4e58ea3f9ea",
+"size": 1223
+},
+"assets/templates/char_aalto_1920x1080_1770_224.png": {
+"sha256": "31a94b9812ac8c07a3d386f0932bc62f267c57be46e363408b7804f03d2e1e34",
+"size": 5326
+},
+"assets/templates/char_aemeath_3840x2160_3545_986.png": {
+"sha256": "187b81668f4aa5a7ad6c1d148db421d2f5cf3b3019811457b9fc6a3c76bb423a",
+"size": 12949
+},
+"assets/templates/char_baizhi_3840x2160_3557_991.png": {
+"sha256": "3ef0a3fe5eb240c49acab45e6ebe8014da1a056965cf7aa3fd3bee3ce296e4cf",
+"size": 8138
+},
+"assets/templates/char_brant_3840x2160_3540_454.png": {
+"sha256": "5db5a039dcb69b1fbe2d6a048c587c2a71cf1ee34e84b2ce96ce0e1d6deabb39",
+"size": 12003
+},
+"assets/templates/char_calcharo_3840x2160_3550_733.png": {
+"sha256": "56f9b5b0d52ae3a6bccdcb7e3e578998d55e52275ca6d87b4350aba6b97bdd32",
+"size": 9427
+},
+"assets/templates/char_camellya_3840x2160_3546_449.png": {
+"sha256": "0cf251e19b02ecea1e8d1e5960d0b31419ac97d4f0385c23c247904a78687573",
+"size": 11307
+},
+"assets/templates/char_cantarella_3840x2160_3545_460.png": {
+"sha256": "7d7b8d0df69f57b444f217b7140a96b963dac993c79e9f556e21c23d08356a01",
+"size": 14464
+},
+"assets/templates/char_carlotta2_3840x2160_3550_465.png": {
+"sha256": "1303a85312d9bfe5cbf9fb4c74790d11312c52a4aa571f4cd40cc3f13c14a954",
+"size": 13676
+},
+"assets/templates/char_carlotta_3840x2160_3551_464.png": {
+"sha256": "44b8c25b4b19e038700fb219e13c30b92594b46a4881053017cfb1a0d8b00ab1",
+"size": 13215
+},
+"assets/templates/char_cartethyia_3840x2160_3547_465.png": {
+"sha256": "9e4a1f0e7291b08fa7261d12294b046dd1245518bc2dc4fc1bf9faa8f444df20",
+"size": 16657
+},
+"assets/templates/char_changli2_3840x2160_3539_455.png": {
+"sha256": "fe11df7a06c74bd594d7ac2a044253a79513c991f6b651f5b3b6f4f7b679e641",
+"size": 10015
+},
+"assets/templates/char_chisa2_1920x1080_1776_227.png": {
+"sha256": "e154143896ad3de97643e64f60ccf0864f128305c60dd10a6c33099e9af3b51a",
+"size": 4148
+},
+"assets/templates/char_chisa_3840x2160_3550_457.png": {
+"sha256": "a0820e23edc82cbb26ffbe83e0e484a223b5ecbcb413a42a5437fb0164377793",
+"size": 10707
+},
+"assets/templates/char_chixia_3840x2160_3545_983.png": {
+"sha256": "2556614b33f729461cb379863114f526b05830c0fbcaa08ab71e379d8c38a784",
+"size": 13873
+},
+"assets/templates/char_chouyuan_3840x2160_3538_439.png": {
+"sha256": "dbdbb76a65bdeaeee0b6c4dc7576ddd794824cb4822d89028c96802f05a8db41",
+"size": 11120
+},
+"assets/templates/char_ciaccona_3840x2160_3543_452.png": {
+"sha256": "6949f3206aba3736737876a0dc0472eff96a06299065492c69d6c557686ad99c",
+"size": 16927
+},
+"assets/templates/char_danjin_3840x2160_3541_464.png": {
+"sha256": "470d599150a6451cb82b94f84c060a28d3c7641bc24e771f8ad5fb98d077e468",
+"size": 11016
+},
+"assets/templates/char_denia_1920x1080_1771_232.png": {
+"sha256": "eee9fe2a9270d1b89c204db322fbcc5da219ca04a96421ec80b79b401581b5b9",
+"size": 3242
+},
+"assets/templates/char_douling_3840x2160_3550_460.png": {
+"sha256": "9a8ad14798c0a23373e095105347ac961a256b6f02dd95df9279ffae344debae",
+"size": 16261
+},
+"assets/templates/char_encore_3840x2160_3541_477.png": {
+"sha256": "12bdd4eaf0f5a6151bc4177f970bec4770fb40a7a5033ebd835dbb51ae9803ef",
+"size": 7908
+},
+"assets/templates/char_galbrena_3840x2160_3537_439.png": {
+"sha256": "ef1a1fd165c13bc9379cf1a821441e937307db6b66fa31d5581d35d5a96725d2",
+"size": 14742
+},
+"assets/templates/char_hiyuki2_3840x2160_3558_482.png": {
+"sha256": "120a00d0a3965098aebb2658156d848f8f8f804978f399bee768152a2190b855",
+"size": 6768
+},
+"assets/templates/char_hiyuki_3840x2160_3554_463.png": {
+"sha256": "43bf638473ccbe3741cb4402e72d345c9faf416bd6024f482fdd4d90c1aba521",
+"size": 9526
+},
+"assets/templates/char_hsin_3840x2160_3552_442.png": {
+"sha256": "6e7a4f5c2c2a59961492881056645628e26ea3b53ad4d78414f5f84492465cb9",
+"size": 12744
+},
+"assets/templates/char_iuno_3840x2160_3547_454.png": {
+"sha256": "6a84846c2f08d3cce2b8139a31157760b38162355b465f7162be8b5a6fdf8ba3",
+"size": 14350
+},
+"assets/templates/char_jianxin_3840x2160_3554_734.png": {
+"sha256": "8e26d548ce6a4c86a55f9bb9bf866aed88c8059a3b786a68e76fd6c98a6e3d29",
+"size": 10401
+},
+"assets/templates/char_jingran_3840x2160_3542_464.png": {
+"sha256": "91d8f8cfc48b1e0de6e2bcd9f99b78154b72311dbdb540f0aa55eb5ba6bf8ada",
+"size": 11237
+},
+"assets/templates/char_jinhsi2_3840x2160_3541_454.png": {
+"sha256": "7a743c98d7f26ce8478ab2608c1b569fda66c52401fcc86ee585e9e573ffefaa",
+"size": 12323
+},
+"assets/templates/char_jinhsi_3840x2160_3543_733.png": {
+"sha256": "7fdba5c98c8feb65f486acfd40ee0a9db20187ba0416d142c9332ed8ff382f2d",
+"size": 10264
+},
+"assets/templates/char_jiyan_3840x2160_3538_456.png": {
+"sha256": "6ca62be32ee33322a80289362c85c283bd3cff7d0f70953a3c710cdb5480b67b",
+"size": 7255
+},
+"assets/templates/char_lily_3840x2160_3560_476.png": {
+"sha256": "5fff1ca7f5c0058e897df974cdfb8c0f07288ece02d428beab1aee543d24b97f",
+"size": 7001
+},
+"assets/templates/char_lingyang_2560x1440_2355_304.png": {
+"sha256": "0f3b362b4006294e2888e6305f7896b68d249dd033572817450f622a033111fd",
+"size": 7748
+},
+"assets/templates/char_linnai2_1920x1080_1774_221.png": {
+"sha256": "7623e37c12c383ca560c39419a07e72618bd6892ddbb6c1577af35866661c71f",
+"size": 4449
+},
+"assets/templates/char_linnai_3840x2160_3547_441.png": {
+"sha256": "c60524fb1fe8015e1ba22696e7f29ae27dad25ca66a2eb466ede61e0e7eb5a23",
+"size": 13440
+},
+"assets/templates/char_lucilla_1920x1080_1779_229.png": {
+"sha256": "732e1ac53369e4a9b29c999d068c674073ff9be1d92d03ae4827760ef2d1e56e",
+"size": 4488
+},
+"assets/templates/char_lucy_1920x1080_1783_226.png": {
+"sha256": "343a8d5ce0c1ed34d608ead720826af6409d5963683b5b3b901bd54f4736451a",
+"size": 2630
+},
+"assets/templates/char_luhesi_3840x2160_3554_441.png": {
+"sha256": "7cc1b2815bd58940ff83bbe9dc8baa9949a10ecb8ac1b5c1fcd690c3982931b3",
+"size": 13164
+},
+"assets/templates/char_lumi_1920x1080_1767_357.png": {
+"sha256": "764e93038657adff5506e19d1acaef15cf83f411f988aba6bd74bd8e29fe4e66",
+"size": 6870
+},
+"assets/templates/char_lupa_3840x2160_3547_450.png": {
+"sha256": "73d45555f4df394d4786d19037755536c364acc01f5841edcb8becc1efdf8951",
+"size": 13553
+},
+"assets/templates/char_moning_3840x2160_3555_447.png": {
+"sha256": "3f3c99df7e34bfb3f0f00ee78cfadcf690070b5ee6dd9d7c3dfa81b88c8b308d",
+"size": 15691
+},
+"assets/templates/char_moning_new_1920x1080_1775_482.png": {
+"sha256": "1adbce88d5c800ffb7fd3219eb4afb7b089c3f70e57afc529923eacdba0da745",
+"size": 4249
+},
+"assets/templates/char_mortefi_3840x2160_3550_716.png": {
+"sha256": "b22ce27d713d3c4d95bb3cbf984c35f456d56ff99f7da142611fa36b3cfe2a1d",
+"size": 12487
+},
+"assets/templates/char_phoebe_3840x2160_3543_473.png": {
+"sha256": "a1491072e02aed23c206f67e68246ddb3634697d013f4db7c044d37b4555842c",
+"size": 13382
+},
+"assets/templates/char_phrolova_3840x2160_3547_459.png": {
+"sha256": "cfc1f4624a764157c89e58aed8c12c01c5554350842c9b29541d165777902e18",
+"size": 16753
+},
+"assets/templates/char_qingxiao_3840x2160_3554_454.png": {
+"sha256": "4c2c8eb4ce7d2b5a52b5c52d3d93e5b44f0b225cfa6e21a6cd68d0daeb0be05b",
+"size": 16225
+},
+"assets/templates/char_rebecca_1920x1080_1776_365.png": {
+"sha256": "465239f620871e7065cd8816b051532c12bd3fdd8f0cc9e59554d02534fb3bf7",
+"size": 3808
+},
+"assets/templates/char_roccia_3840x2160_3549_991.png": {
+"sha256": "38b2ac1632a9cca7412c59f95d59676f1fa71aca35c7ef1fd4f0da6a7487c644",
+"size": 17009
+},
+"assets/templates/char_rover_3840x2160_3541_991.png": {
+"sha256": "a4634f44322e832c9f829f8a143f8d6dc0583bb5a0a4dda4b67e323b48918c15",
+"size": 13081
+},
+"assets/templates/char_rover_male_3840x2160_3552_979.png": {
+"sha256": "293230d3e109188035828d9b1c36a9a7b8070e2be8e4d52955c8e99e691b8f5e",
+"size": 9157
+},
+"assets/templates/char_sanhua2_3840x2160_3535_986.png": {
+"sha256": "5208d06aeb2ad8c8f18ffa381d77d9709af38ca7b206e393f4ec44f64b6a2fef",
+"size": 11863
+},
+"assets/templates/char_sanhua_3840x2160_3534_1004.png": {
+"sha256": "71b05cf241b7e1e0b4d916e36ffca6c7617ed73bb4bfa00aa2b36ec47702b478",
+"size": 7632
+},
+"assets/templates/char_shorekeeper_3840x2160_3543_991.png": {
+"sha256": "db0a3675e74abf2a8a652f1df75e6fc292349dc5bc319d2dcb3b12cbf7ee07fd",
+"size": 14226
+},
+"assets/templates/char_suisui_1920x1080_1773_231.png": {
+"sha256": "62286f74e35b00f4f5d6bd200390d513b8cdba7c5a82c2d3b846a289a30f5a3b",
+"size": 3952
+},
+"assets/templates/char_suoming_3840x2160_3534_450.png": {
+"sha256": "891b93d0d7c0ca59ff2591b8f94125f84fa8dd54ae1bc1f9009067aba8cc791c",
+"size": 14751
+},
+"assets/templates/char_taoqi_3840x2160_3541_977.png": {
+"sha256": "dda96b90e161f215efa151e89b515eb40222334d219b96e5b3375ad783ecc1f9",
+"size": 12337
+},
+"assets/templates/char_verina_3840x2160_3534_745.png": {
+"sha256": "c2e0f98b3aa1fe6476ce43ed25c3e6541dae3bb1db7a5cb884f5a8a140951e84",
+"size": 8885
+},
+"assets/templates/char_xiangliyao_3840x2160_3548_453.png": {
+"sha256": "7fa03ea4fc3d554608a5c1b919b141039e99fcade653fff32b1b56e4087a8c2d",
+"size": 9338
+},
+"assets/templates/char_xigelika_3840x2160_3547_450.png": {
+"sha256": "c01f8ad74910475ff659f0b72edfdf730874ec4f38012af52d786480cd13b225",
+"size": 18927
+},
+"assets/templates/char_yangyang_1920x1080_1770_493.png": {
+"sha256": "67e4462f7cfdcf3f6ad4182463e423c459730b8b57609b2388cc9b900fe8ffa4",
+"size": 6229
+},
+"assets/templates/char_yinlin_3840x2160_3541_485.png": {
+"sha256": "310bd988d74e34ca6f7ac387476f48e4f1e50e1342f51e8026d96fef9a830470",
+"size": 7297
+},
+"assets/templates/char_youhu_3840x2160_3546_465.png": {
+"sha256": "4e681c09d63867b54d8600013cf81ce3d5ec5fdd8450cc1b8d9d0cd644314a47",
+"size": 10436
+},
+"assets/templates/char_yuanwu_3840x2160_3552_713.png": {
+"sha256": "5b8ace991f7a8fa899973f5317944796c5fd25bcb513012855f81db19e08f2cd",
+"size": 9313
+},
+"assets/templates/char_zani2_3840x2160_3547_452.png": {
+"sha256": "38d34569e7f9e05c432e06e8e036d505b7dbc1840bd3ed8fbf28e37218dd117a",
+"size": 9142
+},
+"assets/templates/char_zani_3840x2160_3549_462.png": {
+"sha256": "3fcef660b0d677c06c0302d958940890f850c86523f98469a6e64813f6347c0d",
+"size": 14111
+},
+"assets/templates/char_zhezhi_3840x2160_3542_723.png": {
+"sha256": "59bc129606a955a208094cadf5c6a971355c2aa9589270f487168414259bc75e",
+"size": 13546
+},
+"assets/templates/chisa_e2_1920x1080_1600_945.png": {
+"sha256": "fbc1082fc06c1e823cc3d6be15779a3a44429e3549fbf6433a0fbda9096a5fd5",
+"size": 4360
+},
+"assets/templates/claim_cancel_button_hcenter_vcenter_1920x1080_454_623.png": {
+"sha256": "a059411d7199d2ef780966a78e6f958e0c0350d855ce7a423919543517aae19b",
+"size": 4078
+},
+"assets/templates/claim_stamina_sign_1920x1080_1284_324.png": {
+"sha256": "8273e3a63e7693ad85f0bdac77afa9d12706b345a4aa9f230a1ecc482e43ec08",
+"size": 5257
+},
+"assets/templates/con_electric_3840x2160_1465_1973.png": {
+"sha256": "44e416a87bacf06da3a957532037325c4b147630caf1589b21c066fa33c66691",
+"size": 7428
+},
+"assets/templates/con_fire_3840x2160_1473_1977.png": {
+"sha256": "27578084338d24e0da1740acac8f61772189b651bbfacf1e4b839014c6d67d1c",
+"size": 5818
+},
+"assets/templates/con_full_electric_3840x2160_3654_788.png": {
+"sha256": "90984a35b9fd5851d486765f54dd39a2f990cad111b95edf18edc8adaaf23559",
+"size": 1726
+},
+"assets/templates/con_full_fire_3840x2160_3654_788.png": {
+"sha256": "e8cebf6af68a74e5e310305a35b65546d31c4501d479fe5dddfc0ea110d57788",
+"size": 1364
+},
+"assets/templates/con_full_havoc_3840x2160_3652_1052.png": {
+"sha256": "2b12e7c34bd8707df2592ef7d44ffbd48e81d0632039d907190440653078a7a9",
+"size": 1528
+},
+"assets/templates/con_full_ice_3840x2160_3653_789.png": {
+"sha256": "32a5e4cc6549c1b6c85144da4318cefeb9ecb17d2aabc98d182cc3cc1f134131",
+"size": 1471
+},
+"assets/templates/con_full_spectro_3840x2160_3651_1054.png": {
+"sha256": "19406863938e614cf9ca0deaf8fe980fdf2eedf181bcf251d3a5e9e5587db919",
+"size": 1673
+},
+"assets/templates/con_full_wind_3840x2160_3653_524.png": {
+"sha256": "6c986ad1e454f8cb56e74c862b786114012d0d4d8ac344849cf214ba806de026",
+"size": 1656
+},
+"assets/templates/con_havoc_3840x2160_1465_1978.png": {
+"sha256": "dbf20e079b58e656a7ee39398faee71e6aabfbd17902a1505ec08ecd4b67eab2",
+"size": 6866
+},
+"assets/templates/con_ice_3840x2160_1465_1975.png": {
+"sha256": "668829f6d66b07a0dfb95e3008f2dc90e648e086184be07b978608f6c8f5d270",
+"size": 7302
+},
+"assets/templates/con_mark_char_1_3840x2160_3646_516.png": {
+"sha256": "abf158ab506813b2512639243a4d23164258637171f0c30df469c53dca976c12",
+"size": 3508
+},
+"assets/templates/con_mark_char_2_3840x2160_3643_777.png": {
+"sha256": "2feb93ee83870f19b1911af8a97f7dd4cfe7ecb9d8373c2f7dcd509c60e49642",
+"size": 4939
+},
+"assets/templates/con_mark_char_3_3840x2160_3643_1044.png": {
+"sha256": "8555b8a6aeb3271c2f459ed7499e1c01805f2b579e11ac8c76a044576c96cb2b",
+"size": 4341
+},
+"assets/templates/con_spectro_3840x2160_1465_1975.png": {
+"sha256": "cd2461151987c19134c9b2cccd6d10e3e99b081e88f786688935378b607c54b5",
+"size": 7355
+},
+"assets/templates/con_wind_3840x2160_1467_1974.png": {
+"sha256": "5bead5647721d2c3a47c9b3ca0f18175a3c0e1659374b8c5ace36fdd78ff14ef",
+"size": 7415
+},
+"assets/templates/confirm_btn_hcenter_vcenter_1920x1080_1390_639.png": {
+"sha256": "2b2d579cde9675effa8723d6934ba36e192a6f4f145f411c6713f151eb907597",
+"size": 4359
+},
+"assets/templates/confirm_btn_highlight_hcenter_vcenter_3840x2160_2807_1236.png": {
+"sha256": "cda176c48ca2876d0ba94c18aa997a9b547e2857d4d45ec462b41652689953c1",
+"size": 10875
+},
+"assets/templates/custom_teleport_hcenter_vcenter_3840x2160_1909_1038.png": {
+"sha256": "56f929d2454ca122fe934585756086085b81f50a960026c2851f4187b57cc61f",
+"size": 5172
+},
+"assets/templates/data_merge_hcenter_vcenter_3840x2160_1978_366.png": {
+"sha256": "9e338bc71b75e37f14c9d7ae0c5e4e337a50b8dd7b61382445ed09c111c6817b",
+"size": 4059
+},
+"assets/templates/denia_e1_1920x1080_1600_945.png": {
+"sha256": "d909e02cada6ef874423c91ded57cbba611d607825dd07ecea717dba1edbbabd",
+"size": 4470
+},
+"assets/templates/denia_end_lib_3840x2160_3593_1886.png": {
+"sha256": "8f57173da36f960cb11f854786ea309c1794b16d2c5c79d5875fa96d98f3f38f",
+"size": 10996
+},
+"assets/templates/denia_lib2_1920x1080_1600_945.png": {
+"sha256": "fe81c2d7bce822808ef99f30eb26dd4445d6ae771dca7ca521a4e472cfdb373b",
+"size": 4107
+},
+"assets/templates/dialog_3_dots_3840x2160_2600_1098.png": {
+"sha256": "2a72c2a007b582c19a1ba9d01ff469d1cfaddd067d2e6b6c1b89675b71ce9241",
+"size": 1613
+},
+"assets/templates/douling_gen_3840x2160_1934_1788.png": {
+"sha256": "b65d8a53427d2a6bfde0181dabedd7a61c11809a20412190f91bb107a10890e9",
+"size": 7774
+},
+"assets/templates/douling_heavy_3840x2160_2822_1896.png": {
+"sha256": "a12bed92cf6d9ee5c20e7972a3d2e9744a02de152cee11534bedacd914c977b6",
+"size": 14074
+},
+"assets/templates/douling_zhen_3840x2160_1805_1788.png": {
+"sha256": "57df9841d97584c43e2c3b5fc2e4aaa45b7ce5399a1bf3ed432cf9b2fa54bafc",
+"size": 8872
+},
+"assets/templates/e_3840x2160_3230_2016.png": {
+"sha256": "c91eac6d6cdfb53cbca697cf069567a64684793dc7f0246bdc15aeab212a9bb0",
+"size": 1042
+},
+"assets/templates/e_forte_3840x2160_2279_1994.png": {
+"sha256": "756d50def4767dc0de5d253b51cb0d06d7668d72c4573d912a2c52c14fd92f95",
+"size": 826
+},
+"assets/templates/echo_dropped_1920x1080_534_152.png": {
+"sha256": "06f2131ab7fad2cbe2400d6a511565ba26b0e134e8e8224c91c7fdb701bcd4b9",
+"size": 1327
+},
+"assets/templates/echo_enhance_btn_3840x2160_381_1941.png": {
+"sha256": "f34d1abb353d4b48f475e60c821aeedaf2c54db30d76649f302ed0419dd655e3",
+"size": 6520
+},
+"assets/templates/echo_enhance_confirm_3840x2160_2322_1421.png": {
+"sha256": "90b07472cd816fd41795861123ae772de16d1f9f107aa2d0d50e50c7e7244344",
+"size": 8479
+},
+"assets/templates/echo_enhance_success_3840x2160_2274_549.png": {
+"sha256": "caee2a1542a63a84a97ce7f300a6239a11fbcff7c5131205462637c8b37b8ba0",
+"size": 15783
+},
+"assets/templates/echo_enhance_to_3840x2160_450_358.png": {
+"sha256": "eb8a5d445e2658728b9542756e261415f414c0f6db98749b86f2b1238ca602f2",
+"size": 4500
+},
+"assets/templates/echo_locked_1920x1080_631_152.png": {
+"sha256": "3fad9849294d8e127a70ef9372608ca093b45113d42661cb0c46fc303e0ba421",
+"size": 1027
+},
+"assets/templates/echo_merge_3840x2160_149_1967.png": {
+"sha256": "ce549864c909188de062e3d294ef1efab7d17a5d99df67a9bab40bb99631bf7c",
+"size": 5249
+},
+"assets/templates/echo_not_dropped_1920x1080_534_153.png": {
+"sha256": "767d60e7e6b25985013e662afad0a02a7dbf0fa0ee2c398fcb7e04b1a4572126",
+"size": 1199
+},
+"assets/templates/echo_not_locked_1920x1080_631_151.png": {
+"sha256": "22f78cc75a4dace979fc5e0340cd6b5999803c234c6bb5793af07c218d9304cd",
+"size": 1214
+},
+"assets/templates/echo_select_all_3840x2160_1060_1948.png": {
+"sha256": "e022ca4062762dc9f07531446acfb1a184f530f5b40033afd2c43c499a3b1050",
+"size": 2859
+},
+"assets/templates/edge_levitator_3840x2160_3015_1887.png": {
+"sha256": "f9133b8463bcf3fc65c112c356d366257c338fbfe95774a4a37f0728303cbc12",
+"size": 8562
+},
+"assets/templates/esc_setting_1920x1080_1738_998.png": {
+"sha256": "aa0c1c6449206bfacf1379f5248a5ae44e3b5f2c336b147362f0b70562715f6f",
+"size": 3245
+},
+"assets/templates/f_break_3840x2160_1694_1514.png": {
+"sha256": "43abe693f5cfd0e33feed9461731c8436e13f0ed667fcfc0ba0287063cf31922",
+"size": 1433
+},
+"assets/templates/f_break_full_3840x2160_1211_75.png": {
+"sha256": "853a7759b236ffbdb568024266ccdc962dc3238b4dc36e03abb91ef0a23135de",
+"size": 1244
+},
+"assets/templates/fast_travel_custom_3840x2160_3220_1930.png": {
+"sha256": "9edffb51e383957d7956b989abf62d385ff38720cbdc36ec25e78c9c7b108ef9",
+"size": 8681
+},
+"assets/templates/forte_cartethyia_space_3840x2160_2296_1992.png": {
+"sha256": "843c4518be53217aea2beca68b53a018fefcd7385f671f9b1b453bac9404ef80",
+"size": 2893
+},
+"assets/templates/forte_cartethyia_sword1_3840x2160_1694_1980.png": {
+"sha256": "e8f53d0b00279e56e6037bc373537f6cca87fe425df9416fcef0ca742ad9f00f",
+"size": 3824
+},
+"assets/templates/forte_cartethyia_sword2_3840x2160_1879_1984.png": {
+"sha256": "e57327b056cdde9fb901206dc22ae27d4d3de9a67622ce23b476f8bf681ab5ad",
+"size": 3501
+},
+"assets/templates/forte_cartethyia_sword3_3840x2160_2068_1981.png": {
+"sha256": "0e2e9b692c13cdf2e33e5325fe87d17258be6fb2c776372d0c3e6529cd4b2ccb",
+"size": 3714
+},
+"assets/templates/garden_confirm_1920x1080_1079_658.png": {
+"sha256": "0e09aa879e10e329d88967f7420c2103134a9cae96417b649d5f00634a915450",
+"size": 2912
+},
+"assets/templates/garden_continue_game_1920x1080_1345_622.png": {
+"sha256": "0a7ecb1a0c2be5bae50336a85525491df2d9c714e1086dd622c13e1395fa799c",
+"size": 2902
+},
+"assets/templates/garden_get_confirm_gray_1920x1080_1319_837.png": {
+"sha256": "9098aa6d3a165f094f2a303e09121c5de4b438a26454679813e6eec6d63aa7ee",
+"size": 1131
+},
+"assets/templates/garden_get_gold_1920x1080_619_179.png": {
+"sha256": "6beb21f2a3bd21cd51476eac806f21233057d3a8e01cd3512cb3cc2d3355227d",
+"size": 1848
+},
+"assets/templates/garden_get_purple_1920x1080_1506_173.png": {
+"sha256": "93c2ac5760c7881d5a5fdf8cb076bcf22c8fc337f9e6613c71882fbcbdcf14e7",
+"size": 2997
+},
+"assets/templates/garden_get_skip_1920x1080_997_835.png": {
+"sha256": "788ca6967add69d60e3185407cc8a534d8d98d25a7412331dfe5b628a64abea2",
+"size": 1195
+},
+"assets/templates/garden_new_stage_1920x1080_1311_653.png": {
+"sha256": "64a56ac28c01ffd7abbc660ca534eae376d06de9e1db01758d8dd20b54e3c513",
+"size": 3134
+},
+"assets/templates/garden_next_day_1920x1080_1614_963.png": {
+"sha256": "638b319335e30798211d38f09492b90ce41787dc089d499f8cbf729d38cac28e",
+"size": 1246
+},
+"assets/templates/garden_not_interested_1920x1080_775_293.png": {
+"sha256": "0c7142bf744664f3834f087c8fad6a558484951c4204254a7bff0808f107963a",
+"size": 677
+},
+"assets/templates/garden_not_interested_confirm_1920x1080_1555_628.png": {
+"sha256": "eec8e0f1a35c430b5f817dca771badf2873f7011ede48a02cc528f3a612e1c21",
+"size": 2575
+},
+"assets/templates/garden_shop_buy_1920x1080_1400_694.png": {
+"sha256": "eb4601c0e19b6dd20e9045ee539c0287728fc50e53dfe64e26eedd42976dfc54",
+"size": 2661
+},
+"assets/templates/garden_shop_close_1920x1080_1595_54.png": {
+"sha256": "03c901ca273093ccaf472959082422a42d30ec7ad561bda7e6d64e2d19fcbd48",
+"size": 1303
+},
+"assets/templates/garden_start_game_1920x1080_1570_969.png": {
+"sha256": "5700dfe2a3ffa06e39f3fb4fa1d86a2b5d33aa749f1eda5120ac5da068ca7d2e",
+"size": 3144
+},
+"assets/templates/garden_tip_close_1920x1080_1541_176.png": {
+"sha256": "cd8912520e6789b298869622f1b1d5ab52ad9659645a5d4e059e7785e74cf3f5",
+"size": 1497
+},
+"assets/templates/garden_unpause_1920x1080_1360_455.png": {
+"sha256": "5d6b96e8f7b27174b54f02b9bd5de7eba3b5ea934cea8420b53e484766d79809",
+"size": 2537
+},
+"assets/templates/gem_add_stamina_3840x2160_2174_824.png": {
+"sha256": "afc683cf47ebeab827163e44548a3ccf4e7994b50476f9c62b939da5bb6f8773",
+"size": 51715
+},
+"assets/templates/gray_book_all_monsters_1920x1080_39_695.png": {
+"sha256": "75ec5b9ad408854a8b27fa85ed05e66d4daca71d3e01c0ff938dd6d9c45caa8d",
+"size": 6029
+},
+"assets/templates/gray_book_boss_1920x1080_43_283.png": {
+"sha256": "8238b6c9c55c3f1b6768fde11a68c1ae08e67915b834ffa9497df59b46fa43ef",
+"size": 6736
+},
+"assets/templates/gray_book_boss_highlight_1920x1080_42_289.png": {
+"sha256": "f98e4be047ffe9879d8d51be26a78f4b9d7a6d010b176218f9974b99298532de",
+"size": 7159
+},
+"assets/templates/gray_book_quest_1920x1080_48_156.png": {
+"sha256": "95b6b789b0c7c24945980a1f0cc423169ed757d3931f58813c417dd6803a449e",
+"size": 6022
+},
+"assets/templates/gray_book_weekly_1920x1080_42_426.png": {
+"sha256": "9ca4cf046a8f57ab50ea4458774ed3b1b22f2be08d8238f4a12b11435ef400df",
+"size": 5475
+},
+"assets/templates/gray_button_challenge_3840x2160_2413_1859.png": {
+"sha256": "e20792b505a7e8ba8f390eb81b48d687da2d7bfcf81bb1eb3e62e47695966db9",
+"size": 6132
+},
+"assets/templates/gray_combat_count_down_3840x2160_1747_274.png": {
+"sha256": "b85a4170e39b5eccc4c80337077d7bfad8633412df322354806b3e797b859d47",
+"size": 4911
+},
+"assets/templates/gray_confirm_exit_button_1920x1080_1392_643.png": {
+"sha256": "3dc15498c5c90a0e1d05c42f1a789802b4a470b5fd00b17b59f929dea897ab3c",
+"size": 4396
+},
+"assets/templates/gray_crownless_battle_3840x2160_272_327.png": {
+"sha256": "cf7db966ecf523aef17f8ddfeb94ecc5a624e058be2c432e4952b2172b7ddd27",
+"size": 18551
+},
+"assets/templates/gray_custom_way_point_3840x2160_2513_1239.png": {
+"sha256": "30a5828a723e5a5dbd686de798fdc98e64dbe804ca1fc9e064551d96704fc7bc",
+"size": 8643
+},
+"assets/templates/gray_start_battle_3840x2160_3579_1875.png": {
+"sha256": "83eb89ed5408b6e666065a2c09b6a60a14086c334e6209754b4314e2ae3fbf29",
+"size": 3633
+},
+"assets/templates/gray_teleport_3840x2160_2619_1939.png": {
+"sha256": "e836aa5c41036645f772280b2e06ce18581241ecbdbd0426e160ea29e47813e4",
+"size": 12549
+},
+"assets/templates/has_target_169_1600x900_1198_799.png": {
+"sha256": "8578c6451bab74afa3196f671abd8b26e567497fc4c44035df9827b54580274c",
+"size": 1184
+},
+"assets/templates/has_target_3840x2160_2868_1917.png": {
+"sha256": "7fe384cdeed7927ebe5007fb6eadf44945993fbd4ad260fd9ccbf75b7a13747f",
+"size": 5283
+},
+"assets/templates/has_target_cloud_1600x900_1198_799.png": {
+"sha256": "fbd340f35c06bc8a55fa4134914a152826ca51099866ea8495050bb10f26ce90",
+"size": 1507
+},
+"assets/templates/hiyuki_left_3840x2160_2628_1891.png": {
+"sha256": "fb4b99538e6721321db4fae5c0e6be1e1cc5fe6d9c133ed83de8738a7fe0ba84",
+"size": 10238
+},
+"assets/templates/hiyuki_lib_forte_3840x2160_2295_1976.png": {
+"sha256": "d7506cb550e885b8718a4a6022d2e3a31a34db9922a2d5d4f18308aff42a072a",
+"size": 1546
+},
+"assets/templates/hiyuki_right_3840x2160_2819_1893.png": {
+"sha256": "3ee4c8f019f48fe7fa8b470319aa5c475999090c6d63c6a987883401c7920183",
+"size": 12205
+},
+"assets/templates/hsin_h1_3840x2160_2826_1893.png": {
+"sha256": "52d947fc1bf396d42d46b959c08c116d2cd0516b1acd4b7f767d94c2ca0a9739",
+"size": 9638
+},
+"assets/templates/hsin_h2_3840x2160_2825_1890.png": {
+"sha256": "c51af4c53bce85cd599419a53a1cb39195fccce562d28eb70495ca0af32aa9d1",
+"size": 10313
+},
+"assets/templates/hsin_lib1_3840x2160_3588_1894.png": {
+"sha256": "0a4744786dda66c3bedfb174128de99a42847e86f4b9d4236bfab0516086d58e",
+"size": 10096
+},
+"assets/templates/hsin_lib2_3840x2160_3587_1891.png": {
+"sha256": "076a29e670fb8533ce8537576dc1448a2e4ca5ae8746214b377df8c43da4abb4",
+"size": 11618
+},
+"assets/templates/illusive_realm_exit_3840x2160_29_63.png": {
+"sha256": "6355f7d152b5d02f5c09cf0c4c1f00d0d2ec8a042fe6d02286f3b5abbcabf119",
+"size": 8608
+},
+"assets/templates/illusive_realm_menu_3840x2160_217_70.png": {
+"sha256": "beaac3a433c8a7cf74bb2767ce82174f8f8d4fdfeac1f5e003ecec8aac2f4a83",
+"size": 5894
+},
+"assets/templates/iuno_heavy_3840x2160_2823_1893.png": {
+"sha256": "c199471b18e337ec09077ca7e6b63da0c5ef093ec1c0f29e9b29aba994a3a11f",
+"size": 12353
+},
+"assets/templates/iuno_jump_3840x2160_2624_1893.png": {
+"sha256": "fc57a244cdb4061acf631fff780db8b9b0ae777a67ceaad5a8ae6cd9a1d6bf1f",
+"size": 11097
+},
+"assets/templates/levitator_roccia_3840x2160_3012_1885.png": {
+"sha256": "bb4bc764aa53495d2447500f9fc8faa98d8f0e5d193b73d759f07f02872c7ae9",
+"size": 14701
+},
+"assets/templates/lib_cartethyia_big_3840x2160_3592_1888.png": {
+"sha256": "8e750789cd55e6851cb9a6586fdaa9cb46f1e00388437fad2af5d8c187c96a40",
+"size": 11897
+},
+"assets/templates/lib_mark_char_1_3840x2160_3648_469.png": {
+"sha256": "63794b0909625aab64b050572dd325dfc73f8c04dbb52e946553cbda9508b958",
+"size": 2477
+},
+"assets/templates/lib_mark_char_2_3840x2160_3648_733.png": {
+"sha256": "22d5069474a544cf5683f77dcf4fab5968b421bf2294ba5fc2e37a1d77761b1b",
+"size": 2339
+},
+"assets/templates/lib_mark_char_3_3840x2160_3647_998.png": {
+"sha256": "3e5ced86489fea58c528b454fd6e1314c27efa3caac044ebe7f74dbd1d378354",
+"size": 2914
+},
+"assets/templates/lib_ready_electric_3840x2160_3655_740.png": {
+"sha256": "b59f61a5218917e88472f451c0ab8fed17dbb7e8e326a08cd3432b484fe3ff97",
+"size": 979
+},
+"assets/templates/lib_ready_fire_3840x2160_3654_742.png": {
+"sha256": "509cde885b92424ab513b2aec47817b08012f019e8005e4769921a22b2673041",
+"size": 829
+},
+"assets/templates/lib_ready_havoc_3840x2160_3653_1003.png": {
+"sha256": "c1e81d06decbfe42e75ec51ed1d79ed343201af49172d19ff1497e270e6c192e",
+"size": 1100
+},
+"assets/templates/lib_ready_ice_3840x2160_3652_742.png": {
+"sha256": "fbe8029bc7b0db0064af6d48bdf723af92ff0198ff2fc56e046398cb0914c785",
+"size": 849
+},
+"assets/templates/lib_ready_spectro_3840x2160_3653_1006.png": {
+"sha256": "520697eabee1414e71fb5b7adf96c6c9e528cda37c19be00440f276c1c9a45f7",
+"size": 1059
+},
+"assets/templates/lib_ready_wind_3840x2160_3653_475.png": {
+"sha256": "73226b33e8c005f09d9d426410ba7a8f46beeba8bbedb6a9635dc52828b3e53e",
+"size": 1310
+},
+"assets/templates/lily_heavy_3840x2160_2839_1900.png": {
+"sha256": "a36cf8a07b8ac65dad15eae5ecd8a44ec52c6134f72fc5d65f8f86fa00c3c259",
+"size": 5471
+},
+"assets/templates/lily_liberation_3840x2160_3603_1904.png": {
+"sha256": "9aa78d7c3b7a6892b54fb681de7aed1db726da74b9fd267fe1ecf5ac08426243",
+"size": 6018
+},
+"assets/templates/lily_slumberland_3840x2160_3584_1937.png": {
+"sha256": "810dfaabddc4ec8ef6c43943a2deb5caf5125cff33d3352557c555bf5c67d6c9",
+"size": 3341
+},
+"assets/templates/login_account_3840x2160_3567_1188.png": {
+"sha256": "1487323fcd2af121055807131a49b9e66223f712beee8deb4bd3539cf15d4054",
+"size": 14335
+},
+"assets/templates/login_close_1920x1080_1553_159.png": {
+"sha256": "42d441299ae1b5adaf5445c47ca7e744db05f7168f040b4a897c47a4044294ca",
+"size": 1736
+},
+"assets/templates/luhesi_kick_3840x2160_2810_1891.png": {
+"sha256": "8593584b80c0f47c320e5e855d0ee002be01ce274a28cdb0e4f6db9fafa3862d",
+"size": 13824
+},
+"assets/templates/lupa_wolf_icon1_3840x2160_1746_1971.png": {
+"sha256": "26efad6f45bfd18ccf87dcd378e2cd10bab9d281c27b83f217ac0bdd38fe0d9a",
+"size": 4417
+},
+"assets/templates/lupa_wolf_icon2_3840x2160_2034_1970.png": {
+"sha256": "f130ad9858ce4f9784ee56cf89d51e8aa32b55ff0592c70d0229929dcd66e2d9",
+"size": 4710
+},
+"assets/templates/map_my_location_3840x2160_3581_507.png": {
+"sha256": "c950003342b9c2b1ca7e26f9e998eb343d149454cc296540b526702aa1c5385f",
+"size": 2293
+},
+"assets/templates/map_way_point_3840x2160_1711_1044.png": {
+"sha256": "ca6da727a5512c4e36949d5d670e5e5422035a55ba4a1c4a621e0c80ecc67fa9",
+"size": 792
+},
+"assets/templates/map_way_point_big_3840x2160_1316_817.png": {
+"sha256": "69f205ec58ad1183c06cbe96241cf12a3e89cf1e67ad54e841cd0073db0fce33",
+"size": 1891
+},
+"assets/templates/map_way_point_pop_up_box_3840x2160_2439_837.png": {
+"sha256": "6d4cc20a2f9d09ca89834b98c17dc1a7685ba6a026acc1f9ddd9b2eb3df3d50e",
+"size": 113071
+},
+"assets/templates/merge_echo_check_3840x2160_3169_1266.png": {
+"sha256": "21268ef5bc1d9e12d8a404c4f9315baa9a0093e862567d04fdc4ac23b54761da",
+"size": 3705
+},
+"assets/templates/message_1920x1080_409_46.png": {
+"sha256": "4de4eda64194bf8fda72bf8dfe80d1d40ac749e36aba65ce8f5173004c67aaab",
+"size": 1791
+},
+"assets/templates/message_dialog_1920x1080_434_637.png": {
+"sha256": "b9af297e735027c21c68f554c5ebc9f861f9552ffbfa605a9175794768b7a246",
+"size": 768
+},
+"assets/templates/monthly_card_1920x1080_841_582.png": {
+"sha256": "cc287aff00c02988891f7d4a8f326d6bfc46d0aa2b42e007905d6d2482cb4bfc",
+"size": 29280
+},
+"assets/templates/mouse_forte_1920x1080_1141_978.png": {
+"sha256": "b9cac4fa72e34c76b05492f542af0264f8266c6b3af4740182838b693c9b124a",
+"size": 1219
+},
+"assets/templates/multiplayer_world_mark_3840x2160_77_69.png": {
+"sha256": "3c64c7f47861d6cb74afcfa6f8892f3acd91d3940374c28d96dba25c9835ae9c",
+"size": 1346
+},
+"assets/templates/new_realm_4_3840x2160_3473_1218.png": {
+"sha256": "aa88cdf32f1bd5632a75d84fb24e4fd685baf9e5887c2b33bd69decdb7399783",
+"size": 1404
+},
+"assets/templates/no_target_169_1600x900_1198_799.png": {
+"sha256": "e9136f0f833fecce53098d8c9e720d4763a4f5cf8ed20c360e0d729ac7c44a92",
+"size": 1228
+},
+"assets/templates/no_target_3840x2160_2868_1917.png": {
+"sha256": "96b563d52941392d5f3eba596a0a4274c9769d06e6d191f6a3c137fc15c5a17e",
+"size": 4955
+},
+"assets/templates/no_target_cloud_1600x900_1198_799.png": {
+"sha256": "b2246c683c9292b502624006902832704b54f8378140684b01f8ad8c933d5fc0",
+"size": 1491
+},
+"assets/templates/on_the_wall_3840x2160_3150_1875.png": {
+"sha256": "b17188777936fd8a14e769376182347e0a6ceb9628ec097321558b3fd74f7185",
+"size": 14921
+},
+"assets/templates/pick_up_f_hcenter_vcenter_3840x2160_2441_1090.png": {
+"sha256": "65cd7e19572209736d5acee5e0ee2c7ac38c11e9d6b82ef490fc3268116d3e6a",
+"size": 1881
+},
+"assets/templates/pick_up_xinyao_icon_1600x900_1076_449.png": {
+"sha256": "66ec6c11f96abebe3dda3b39ad7fb0a5d5c1ecefd87a89ce14e718d9cc7b13da",
+"size": 1850
+},
+"assets/templates/purple_target_distance_icon_3840x2160_2090_867.png": {
+"sha256": "73754fda41d59580f0bb9492458f447c8758aef9657a1f2c4825cc75853e5943",
+"size": 10863
+},
+"assets/templates/q_3840x2160_3613_2014.png": {
+"sha256": "97a9fccacad8de72acf8a5aecdf296f22244bb0c5539f37c4f80186c10b19444",
+"size": 1973
+},
+"assets/templates/qingxiao_e_3840x2160_3205_1892.png": {
+"sha256": "5c87c5c598bc3da44cdc8dddf7052dc059fe1f43920eff5da5eec9df8800f771",
+"size": 9335
+},
+"assets/templates/qingxiao_h1_3840x2160_2822_1887.png": {
+"sha256": "edac0750b1d3d595c66be4cab229544c85d9600e452ed9ea05b98505d945d44c",
+"size": 12560
+},
+"assets/templates/qingxiao_h2_3840x2160_2818_1892.png": {
+"sha256": "a21cec8f659c167c08c5883a52200a83a19c0e1766efd7d7c930579eb4f0fb09",
+"size": 12968
+},
+"assets/templates/r_3840x2160_3421_2015.png": {
+"sha256": "56524e4e46c5d489f54cb7afc29618b2f9d063bc45d77978a6a46087cc9b5724",
+"size": 1455
+},
+"assets/templates/red_dot_3840x2160_221_577.png": {
+"sha256": "a63146a3fd85b801567d5e624ee7ffe13132cf25c9bec5401c4f311a304158d2",
+"size": 2160
+},
+"assets/templates/remove_custom_3840x2160_3084_1924.png": {
+"sha256": "aca77bdb686a84072527cffc6cafee9f356bc7f72715d5aaed0daa49339e0dc0",
+"size": 9539
+},
+"assets/templates/revive_confirm_hcenter_vcenter_3840x2160_2887_1405.png": {
+"sha256": "ff07004a5a0a36780d2c9914901365b74a8415397ed5967b16e368459481edf1",
+"size": 18336
+},
+"assets/templates/roccia_air_forte_3840x2160_1684_1978.png": {
+"sha256": "2f07635338dc8400880b65f5e2455572e98f4cfe2fb32ed50ee6df4188627907",
+"size": 3561
+},
+"assets/templates/roccia_air_forte_second_3840x2160_1866_1977.png": {
+"sha256": "59a0d6860c0471449e211d4cfb7cb166c49e3b67b162c55050deac42a2f30075",
+"size": 4965
+},
+"assets/templates/set_name_10_3840x2160_398_379.png": {
+"sha256": "f2cd4e0a6ff5d7f55b7bcc02fe6b63fe53d92ad8cf71aea2c9f15fa06fe94caa",
+"size": 2143
+},
+"assets/templates/set_name_11_3840x2160_666_379.png": {
+"sha256": "aca9b754e4320bd1bf53e8d6abd0c9f91cb9518bcb1acb31a1dc119a62d138aa",
+"size": 1905
+},
+"assets/templates/set_name_12_3840x2160_1201_379.png": {
+"sha256": "c94341d3e4c3c18749af2e4af895d6a9ae0a1ff8c2dc828c785eb58ee05e9245",
+"size": 2501
+},
+"assets/templates/set_name_13_3840x2160_1467_378.png": {
+"sha256": "e0e10601577b04c2a0ce289851dcca8b309f033ec7739fd19208d6ddd7a3e6b3",
+"size": 2581
+},
+"assets/templates/set_name_9_3840x2160_934_379.png": {
+"sha256": "7558b10bc04bd419a60253b719f783103c19cf0dc92a4ca880428c81db95e6c6",
+"size": 2359
+},
+"assets/templates/skip_dialog_3840x2160_179_104.png": {
+"sha256": "6cdf8f60343fa78f988c3f37905f7cef538ef6ab8b608f494e62f9336a27df62",
+"size": 2503
+},
+"assets/templates/skip_dialog_check_1920x1080_830_570.png": {
+"sha256": "0e723d3afd5c676167dc68b771cad498ba7cd7985691711a34555ba59846f662",
+"size": 1011
+},
+"assets/templates/skip_dialog_confirm_1920x1080_1073_645.png": {
+"sha256": "48f1c43669674318c804e5687f0903cfb0df978929f61f371105840c97f7b70b",
+"size": 3658
+},
+"assets/templates/skip_dialog_new_3840x2160_136_350.png": {
+"sha256": "d2d65320a51ae3876979bfe4db1532ddd4a2957a0e5734ec083661cb3b59d03b",
+"size": 2009
+},
+"assets/templates/skip_quest_confirm_1920x1080_1157_734.png": {
+"sha256": "23fc79b94d1c51884eca44244eb62ccac6a593588b4f051dab373e6e2f4ef305",
+"size": 2596
+},
+"assets/templates/skip_quest_confirm_new_1920x1080_1106_683.png": {
+"sha256": "15365b3af45cf96bcbf5aff1f03f21f92e5bc300c371a2ce8267131011db2a23",
+"size": 2040
+},
+"assets/templates/star_3840x2160_139_187.png": {
+"sha256": "f69f546b97941dcd124462f7cc81dde7f281a46b42935f748f8d58e4165b1841",
+"size": 4009
+},
+"assets/templates/suisui_e1_3840x2160_3211_1896.png": {
+"sha256": "0aeff9ea53fbeb6951848d25e4940e5610eb74155f8701b35b4cc2739dba0fb2",
+"size": 7239
+},
+"assets/templates/suisui_forte2_1920x1080_947_986.png": {
+"sha256": "b884fd5b7db741aedeed24590de46302601f6c46f2b772c97fa27495d6962265",
+"size": 717
+},
+"assets/templates/suisui_forte3_1920x1080_1036_981.png": {
+"sha256": "4b45fdb7bbfbec10800d3296c77baec7d9d9ac0ca603b38d0bbe42cc2b613e63",
+"size": 1077
+},
+"assets/templates/suoming_forte_e_3840x2160_3209_1893.png": {
+"sha256": "83d94e48245ceb87267e856e348fb6d3353c9aa35f14d6fb6c3595fc7a730859",
+"size": 11177
+},
+"assets/templates/switch_account_1920x1080_1796_533.png": {
+"sha256": "a5a5f65386f1ed739912c1b2eea74430d44c355ae41443ce192b56aa884ffa93",
+"size": 3194
+},
+"assets/templates/t_3840x2160_3039_2015.png": {
+"sha256": "1c54e08be762a077ac9ef4b96dccaf98d54493d5dec374e4d4916e76460962bf",
+"size": 992
+},
+"assets/templates/target_box_long2_3840x2160_2482_1909.png": {
+"sha256": "17dc1d3719e3e4442ffb9b8776dd9f206ab442e4391d492bea7f9dc930c566bb",
+"size": 6965
+},
+"assets/templates/target_box_short_1920x1080_1526_956.png": {
+"sha256": "4a10e1baadf7d7b6d09954c888831ea9f02fc61215c2765c9c9608a86c4068da",
+"size": 2954
+},
+"assets/templates/target_enemy_long_inner_3840x2160_2691_1934.png": {
+"sha256": "ae6a749548b861541ff6183d6a83c8ec0255ea069ea187b8b5425e77918ca97b",
+"size": 1509
+},
+"assets/templates/target_enemy_white_3840x2160_1688_983.png": {
+"sha256": "e1a3e1e82dfddf1faab4739b54dcdba8255d3d1570f6767404724a944a983eef",
+"size": 789
+},
+"assets/templates/team_close_1920x1080_1780_30.png": {
+"sha256": "ac542cae1ba37fcf2f2a641befc3e51c46472db1516fbb7b4ad2c777c230bf16",
+"size": 4451
+},
+"assets/templates/team_start_challenge_1920x1080_1754_950.png": {
+"sha256": "5615beb2ee030c0e9e0ca56315e9b7c9c74eb528e8a010da814040b56f5e7294",
+"size": 6471
+},
+"assets/templates/teleport_port_3840x2160_1827_1155.png": {
+"sha256": "8674f25de94a84c5024dacb81bdc308dd06d2e3b1e74a496fd3d5302ab3c3ed9",
+"size": 6818
+},
+"assets/templates/the_garden_max_1920x1080_1227_43.png": {
+"sha256": "95e2c6277366540970b5c3c23a0a68c33432a20279a5a33e913c9b7aea626680",
+"size": 2874
+},
+"assets/templates/tool_teleport_3840x2160_3005_1890.png": {
+"sha256": "3773258bab32915da67bd08ec45d28df80f9dc4451df92bcd1ed1cf6714f2fe9",
+"size": 14280
+},
+"assets/templates/treasure_icon_3840x2160_2925_970.png": {
+"sha256": "0b79d322320f666d67def9d4b5bd61b4ed1976f83c9defddfab6310c873e7573",
+"size": 4818
+},
+"assets/templates/wheel_levitator_3840x2160_2218_1370.png": {
+"sha256": "5c8c60ec9b57c43255b1e717d95b927ed0620dad489d040517c3297e03ac4e0f",
+"size": 31926
+},
+"assets/templates/world_earth_icon_3840x2160_26_97.png": {
+"sha256": "243a560f44bdc9eaf9329299f6a46cc64f716b488e2cb024342715e3ab67512a",
+"size": 6722
+},
+"assets/templates/ww_1920x1080_790_246.png": {
+"sha256": "23a68d1179ee8bce8914fa83303a82dc42b4ccb12314c49a23dc01143b624374",
+"size": 196966
+},
+"assets/templates/yangyang_sp_1920x1080_1774_227.png": {
+"sha256": "57cbdebedc0b07643cd8fa500a4a46bab835dadc87e15e81be40cd02e31c676d",
+"size": 5380
+},
+"config.py": {
+"sha256": "9b99c55cfff866cc7a170bc0413ce35032fb70100fe06f8626ece7cea969dbe2",
+"size": 11948
+},
+"configs/AutoCombatTask.json": {
+"sha256": "2d1327c200f2c3636fc0054586b0b5f5d1323c41930499ebe53d3c782c3cceb4",
+"size": 278
+},
+"configs/AxisRecorderTask.json": {
+"sha256": "b9b4f30db41a89eb41c16a22b6fc2086e211a980029b585e95ed9c0e032a4e8e",
+"size": 687
+},
+"configs/Basic Options.json": {
+"sha256": "c9495a4b857e62fb02198ebe49ea9b9f83bdf5142f9b69d919bfe9271a2966ea",
+"size": 555
+},
+"configs/Character Config.json": {
+"sha256": "0a0c4a8fd24c9618d7172ab8adb22021797f538bfe4757c15f3841fb7f146102",
+"size": 103
+},
+"configs/FStartCombatTask.json": {
+"sha256": "38c73461b9839b22a00b8348625de858ea110a9fdbefdc3261e500dd1094d3f0",
+"size": 26
+},
+"configs/FarmEchoTask.json": {
+"sha256": "39f4dd0f823bcc2a70eaed6d3ae9ecde3a40d895a23f534c2730c1d1d827a0af",
+"size": 426
+},
+"configs/Game Hotkey.json": {
+"sha256": "ab587d32ac82157b67f1fdb6246253ef1bc38531c188eab06e8db0f7e041cb1a",
+"size": 230
+},
+"configs/Monthly Card Config.json": {
+"sha256": "8497ebafe99818919657b38a67f78b43a0dd31a6955790cc6fefc8c27f093cfb",
+"size": 65
+},
+"configs/MouseResetTask.json": {
+"sha256": "38c73461b9839b22a00b8348625de858ea110a9fdbefdc3261e500dd1094d3f0",
+"size": 26
+},
+"configs/_con_full_size.json": {
+"sha256": "1cd45f557ae53663607db1a7310c4a8409ab09effc99f69767fe21f8baa2a1c4",
+"size": 93
+},
+"configs/custom_teams/Aemeath__Chisa__Denia/Aemeath.py": {
+"sha256": "fa6d7b1f8397126644d776c0b153a3c1fff9c5abe5e8c178bbfae4caf9581ecf",
+"size": 91013
+},
+"configs/custom_teams/Aemeath__Chisa__Denia/Chisa.py": {
+"sha256": "dee5abf058a3d3ce289e12b955ba4f75b5b86798a44d3bc645a3ca020943e246",
+"size": 25402
+},
+"configs/custom_teams/Aemeath__Chisa__Denia/Denia.py": {
+"sha256": "0134cc75df63e906abb4af7236572d5d15700b41f34865d51d0f8a105a24a01e",
+"size": 199839
+},
+"configs/custom_teams/Aemeath__Chisa__Denia/team.json": {
+"sha256": "62f0d18226634290a8dec706895ed79d9f0b5cf15d1cb7be191c707c6774b62b",
+"size": 1002
+},
+"configs/custom_teams/Aemeath__Linnai__Mornye/Aemeath.import.py": {
+"sha256": "aa60c0c0a312ba58f83ab1f5b7cb48195b35c3c973eac7fb408967b58fa84cf5",
+"size": 9907
+},
+"configs/custom_teams/Aemeath__Linnai__Mornye/Aemeath.py": {
+"sha256": "aa60c0c0a312ba58f83ab1f5b7cb48195b35c3c973eac7fb408967b58fa84cf5",
+"size": 9907
+},
+"configs/custom_teams/Aemeath__Linnai__Mornye/Linnai.import.py": {
+"sha256": "3fed2fba9139ddb8517a36002896a7ea558a045b30dd21c1972260f93859606d",
+"size": 16092
+},
+"configs/custom_teams/Aemeath__Linnai__Mornye/Linnai.py": {
+"sha256": "3fed2fba9139ddb8517a36002896a7ea558a045b30dd21c1972260f93859606d",
+"size": 16092
+},
+"configs/custom_teams/Aemeath__Linnai__Mornye/Mornye.import.py": {
+"sha256": "6d25159a98f18dfcce03b4323355649aee9176d8f45c7b32f6a027dde87ac9f5",
+"size": 7209
+},
+"configs/custom_teams/Aemeath__Linnai__Mornye/Mornye.py": {
+"sha256": "6d25159a98f18dfcce03b4323355649aee9176d8f45c7b32f6a027dde87ac9f5",
+"size": 7209
+},
+"configs/custom_teams/Aemeath__Linnai__Mornye/team.json": {
+"sha256": "4a293d814cd5425c578e562fdf4b39f863ade64ddd85258b953a63618e25da26",
+"size": 1193
+},
+"configs/custom_teams/Augusta__Iuno__ShoreKeeper/Augusta.py": {
+"sha256": "5dd5631c5cc7310ab7ff3873d8bcbce957d4385ccad87515f087933c4b907fea",
+"size": 172222
+},
+"configs/custom_teams/Augusta__Iuno__ShoreKeeper/Iuno.py": {
+"sha256": "b3004a2844f13d9bce701489b00de3dfd1a0afdd4411d841b3ac8bd3bbf797ab",
+"size": 2132
+},
+"configs/custom_teams/Augusta__Iuno__ShoreKeeper/ShoreKeeper.py": {
+"sha256": "0f8cb0a5194afa754b946ca53974c65e7d42fe5010749034c6ae9eff48a33f6e",
+"size": 2163
+},
+"configs/custom_teams/Augusta__Iuno__ShoreKeeper/dryrun.py.tool": {
+"sha256": "c40439f759c7e148be4dc3e48eb3b145586fa1f046410662ce882f7e168a61c0",
+"size": 45183
+},
+"configs/custom_teams/Augusta__Iuno__ShoreKeeper/team.json": {
+"sha256": "66d00dfb852cf15fca97613b7a57fccece0cd84f20ecfa8757d511efc1cacee8",
+"size": 1625
+},
+"configs/custom_teams/Brant__Changli__Lupa/Brant.py": {
+"sha256": "fb3694bb3047a780ff37c2fb0c7a47973534a1c812bb548b65ea21facbcd861b",
+"size": 4377
+},
+"configs/custom_teams/Brant__Changli__Lupa/Changli.py": {
+"sha256": "6b78e61a4cc3670d6615cc3d36b9f3ae765588242b1c946d09ac0066382ff3da",
+"size": 184878
+},
+"configs/custom_teams/Brant__Changli__Lupa/Lupa.py": {
+"sha256": "5dfa7bfb4a6b46d776cbb6b53e41079edc017fe4d322d1308eeeca5fa8229b38",
+"size": 3841
+},
+"configs/custom_teams/Brant__Changli__Lupa/dryrun.py.tool": {
+"sha256": "da25f9169e30eb79621347462385359d0e3d465392d1258f0710cf4d98654c15",
+"size": 5629
+},
+"configs/custom_teams/Brant__Changli__Lupa/team.json": {
+"sha256": "9015cc47880a9fa0d7de0c7f9b6eb14a44ba1465e879a4971a711ffcf959da33",
+"size": 558
+},
+"configs/custom_teams/Cantarella__Douling__Phrolova/Cantarella.py": {
+"sha256": "f21a5ca3b9cca1be00c7f479f061e1e801c8bebdd82271d58c7154eb53207c5a",
+"size": 4192
+},
+"configs/custom_teams/Cantarella__Douling__Phrolova/Douling.py": {
+"sha256": "a20acf04bfefe9824fe04635988fe9b1270415903296f4a771bf57846a509472",
+"size": 4030
+},
+"configs/custom_teams/Cantarella__Douling__Phrolova/Phrolova.py": {
+"sha256": "db46daf97f0d7f093444b73c1d84eb01c462aedee51dca96132061fadd777a01",
+"size": 322572
+},
+"configs/custom_teams/Cantarella__Douling__Phrolova/team.json": {
+"sha256": "3d19f78dbbe2e85b93781c39bff284fbcbe4471512be39db4a5971a8ff83afb1",
+"size": 1354
+},
+"configs/custom_teams/Cantarella__Mornye__Phrolova/Cantarella.py": {
+"sha256": "e9355c3696f7947aad52b504817ab68a660fac8789c67291d4429bea5c54b5ba",
+"size": 4244
+},
+"configs/custom_teams/Cantarella__Mornye__Phrolova/Mornye.py": {
+"sha256": "a02c9ceec24e763c9b1c1de205b222de8b280e8aaf0a12912d06cc7c70987946",
+"size": 6373
+},
+"configs/custom_teams/Cantarella__Mornye__Phrolova/Phrolova.py": {
+"sha256": "ebc1509232b94332aac7865c7aecfef59072dfe3a55f117980319192b669c6a7",
+"size": 286651
+},
+"configs/custom_teams/Cantarella__Mornye__Phrolova/team.json": {
+"sha256": "e98fa767b0857ffd77402acd990a5acf0138cd20646d8cc4fb190523e97b3e85",
+"size": 1398
+},
+"configs/custom_teams/Carlotta__Douling__Zhezhi/Carlotta.py": {
+"sha256": "28f117532159907129589398a9d541e5d1a0a4aa0499097dd950a4899637100c",
+"size": 41117
+},
+"configs/custom_teams/Carlotta__Douling__Zhezhi/Douling.py": {
+"sha256": "3414005784e1a85ea04f9057a3704ba102ab9353efdb72b1a2d32950bfb997a8",
+"size": 37697
+},
+"configs/custom_teams/Carlotta__Douling__Zhezhi/Zhezhi.py": {
+"sha256": "a7f620f207ff7d77f43f9ef0105a61df189f08912f5cfcef94ef0b57d67d5427",
+"size": 42338
+},
+"configs/custom_teams/Carlotta__Douling__Zhezhi/team.json": {
+"sha256": "b67ee7171bfe6150f56c0f64dead227c466cc7191a9d944a7a4c349f860fd8e3",
+"size": 519
+},
+"configs/custom_teams/Cartethyia__Ciaccona__Rover/Cartethyia.py": {
+"sha256": "ddd5d59b5cde1b0dff5fd968e33d1e35bde33096b17a83cbd89c55501a7a796d",
+"size": 161501
+},
+"configs/custom_teams/Cartethyia__Ciaccona__Rover/Ciaccona.py": {
+"sha256": "06ef579be93fa03e89278daed00a7554e198e0e3915dfc651f580bc9dbb97ff8",
+"size": 2699
+},
+"configs/custom_teams/Cartethyia__Ciaccona__Rover/Rover.py": {
+"sha256": "5f949d711dd6a88d894fa9563c9e3e84a956317d8caa7da6a175e9589b0bb9c3",
+"size": 3985
+},
+"configs/custom_teams/Cartethyia__Ciaccona__Rover/team.json": {
+"sha256": "a9b8376b376211ee3b050ca652e419fcaf0ae2e50d51deae49d6d91db33c3992",
+"size": 248
+},
+"configs/custom_teams/Cartethyia__Ciaccona__Youhu/Cartethyia.import.py": {
+"sha256": "264cbbb76bb36ab73e8b1ec0665347f89f01ca1039175454ce7c7f5f28abf554",
+"size": 65205
+},
+"configs/custom_teams/Cartethyia__Ciaccona__Youhu/Cartethyia.py": {
+"sha256": "264cbbb76bb36ab73e8b1ec0665347f89f01ca1039175454ce7c7f5f28abf554",
+"size": 65205
+},
+"configs/custom_teams/Cartethyia__Ciaccona__Youhu/Ciaccona.import.py": {
+"sha256": "e22105a52b13d746c8f1fa2fd60fd768604dc03d4518ddb159f338f39ebb06ee",
+"size": 2392
+},
+"configs/custom_teams/Cartethyia__Ciaccona__Youhu/Ciaccona.py": {
+"sha256": "e22105a52b13d746c8f1fa2fd60fd768604dc03d4518ddb159f338f39ebb06ee",
+"size": 2392
+},
+"configs/custom_teams/Cartethyia__Ciaccona__Youhu/Youhu.import.py": {
+"sha256": "ad2513dfbcb794412fc733ea3407e2eb58c5f4073efe5c29542daf22c477cf4f",
+"size": 2243
+},
+"configs/custom_teams/Cartethyia__Ciaccona__Youhu/Youhu.py": {
+"sha256": "ad2513dfbcb794412fc733ea3407e2eb58c5f4073efe5c29542daf22c477cf4f",
+"size": 2243
+},
+"configs/custom_teams/Cartethyia__Ciaccona__Youhu/dryrun.py.tool": {
+"sha256": "a58ae47275b73aec60becc42ee3cfce6ccaab76abbeed0a66b67337c6cf05530",
+"size": 20803
+},
+"configs/custom_teams/Cartethyia__Ciaccona__Youhu/team.json": {
+"sha256": "c346ad5edb48043d2f2eb5b9a7eead55ceb110f52ec0ae93441a4c0fbc3f7585",
+"size": 1882
+},
+"configs/custom_teams/Changli__Hiyuki__Jinhsi/Changli.py": {
+"sha256": "2edb946b905658d54337a77be53168e21eefda5d6667a473b09375b4550e97ba",
+"size": 173473
+},
+"configs/custom_teams/Changli__Hiyuki__Jinhsi/Hiyuki.py": {
+"sha256": "59583fcc7af5c6e4e361b67d24652013b43f3c1f88abbee37bf1ddd434e412ec",
+"size": 1963
+},
+"configs/custom_teams/Changli__Hiyuki__Jinhsi/Jinhsi.py": {
+"sha256": "043f3201d19319421420261932193e859b6d9c1a12f616006e87be56e9307a79",
+"size": 2242
+},
+"configs/custom_teams/Changli__Hiyuki__Jinhsi/dryrun.py.tool": {
+"sha256": "262b5eec54107a450e84e35bfc424cad03ee7bc45c056398e48264a1a2fb43b1",
+"size": 8992
+},
+"configs/custom_teams/Changli__Hiyuki__Jinhsi/team.json": {
+"sha256": "4c8f8c0984fa1b4e1a1981af741399f061a078638be91ade93a4a72402ef4b50",
+"size": 694
+},
+"configs/custom_teams/Changli__Jinhsi__Verina/Changli.py": {
+"sha256": "95ec8bf61ac2a0a77e03b51c7dac4b703573f71df54fe51ac98ed79ecfd71175",
+"size": 97928
+},
+"configs/custom_teams/Changli__Jinhsi__Verina/Jinhsi.py": {
+"sha256": "3b394078b32f414da2e45e7184ba9de70c155c3efb7f12735e1b0e573b8a7d67",
+"size": 2595
+},
+"configs/custom_teams/Changli__Jinhsi__Verina/Verina.py": {
+"sha256": "0706fb5ff5b5613bb158206c82c369a05a5f58bb770ca401af45a7289e419873",
+"size": 2315
+},
+"configs/custom_teams/Changli__Jinhsi__Verina/dryrun.py.tool": {
+"sha256": "a68b647e7fcb8085c7d9b236a79096962e5b6ce329eddce10fd5617b66ac93d7",
+"size": 12796
+},
+"configs/custom_teams/Changli__Jinhsi__Verina/team.json": {
+"sha256": "0d602e36b62b62a2e0e13438945c402be6f92b92506ac06842f9c3d077ab9d12",
+"size": 887
+},
+"configs/custom_teams/Chisa__Suisui__YangYangSp/Chisa.py": {
+"sha256": "2b26b97a9b3f4a4b08eee8868e981c9a771190cb3ddf0388969b7f226234b670",
+"size": 2679
+},
+"configs/custom_teams/Chisa__Suisui__YangYangSp/Chisa.py.bak": {
+"sha256": "dee5abf058a3d3ce289e12b955ba4f75b5b86798a44d3bc645a3ca020943e246",
+"size": 25402
+},
+"configs/custom_teams/Chisa__Suisui__YangYangSp/Suisui.py": {
+"sha256": "ec005318e3686c3f6f372d134949e6f60d2539a63995891dfa9a161afe332436",
+"size": 3084
+},
+"configs/custom_teams/Chisa__Suisui__YangYangSp/Suisui.py.bak": {
+"sha256": "5e691746e98fa818dd927b0ccc7529a11316283e223bb106cadce5f82dffa178",
+"size": 28119
+},
+"configs/custom_teams/Chisa__Suisui__YangYangSp/Suisui.py.videoaxis": {
+"sha256": "9e8bb9103091b3d32c60eb09dec54a0174c6a5412fc1237d95b05fc3c330c52d",
+"size": 29877
+},
+"configs/custom_teams/Chisa__Suisui__YangYangSp/YangYangSp.py": {
+"sha256": "e0663ee98523ce25d601c6cdcbfe4662f5eff2229abe58f539d55b5d2e43e5d5",
+"size": 207103
+},
+"configs/custom_teams/Chisa__Suisui__YangYangSp/YangYangSp.py.0922_2113": {
+"sha256": "7f7e6a172a0450ea25ad0e199a439e7d9f39860c79d6194d0a8c6acd74124351",
+"size": 133036
+},
+"configs/custom_teams/Chisa__Suisui__YangYangSp/YangYangSp.py.attempt2": {
+"sha256": "03fbdbd20009bcee245f9daee9a5793dad48f8fac9673c34b8f882cc334c1f53",
+"size": 32311
+},
+"configs/custom_teams/Chisa__Suisui__YangYangSp/YangYangSp.py.bak": {
+"sha256": "c20ff475dfb9698fe2e581f9deba0164a49283acfcbe733aa95bfd3aa375c0dd",
+"size": 28952
+},
+"configs/custom_teams/Chisa__Suisui__YangYangSp/dryrun.py.tool": {
+"sha256": "41b59e5a438bcf67ebfbc8eb46414ce4635c2ec20f79c1c548ddbb39713c2939",
+"size": 19505
+},
+"configs/custom_teams/Chisa__Suisui__YangYangSp/team.json": {
+"sha256": "7f35a616c59f77a0fbb96bb34c9fb9695547a41a7792b75d0d62757fde8ba438",
+"size": 1267
+},
+"configs/custom_teams/Chixia__Hiyuki__Youhu/Chixia.py": {
+"sha256": "aee147db1d22a7bb46211d646cb679a6874a49211cc857159032a8efd1da71b5",
+"size": 1881
+},
+"configs/custom_teams/Chixia__Hiyuki__Youhu/Hiyuki.py": {
+"sha256": "849f5ff127b5c7bd18ad0a5bc103b0c4f78c57fb2b6fa94d79d7ada64a808acd",
+"size": 21322
+},
+"configs/custom_teams/Chixia__Hiyuki__Youhu/Youhu.py": {
+"sha256": "7b43d00878f126ace0737a7e49e0e4d560a916fb6222e7621fc4e2bb3683c26d",
+"size": 1935
+},
+"configs/custom_teams/Chixia__Hiyuki__Youhu/dryrun.py.tool": {
+"sha256": "8e260c43ccddae28d79c491311fdf6f8eb89eee27b55ad575382f7673bae0010",
+"size": 9475
+},
+"configs/custom_teams/Chixia__Hiyuki__Youhu/team.json": {
+"sha256": "ed84dba7ac225b5e8fcfb41f69a93965d2f87486375c127141e7cb515dbdf1b2",
+"size": 567
+},
+"configs/custom_teams/Denia__Mornye__Qingxiao/Denia.py": {
+"sha256": "52d84562d5de7e2d96194b411a2c2879ba495ff3df7dae75aff1c7ccf5e3efee",
+"size": 219896
+},
+"configs/custom_teams/Denia__Mornye__Qingxiao/Denia.py.v1axis.bak": {
+"sha256": "b4fe4f1d671d9af219858f36e67d9ecd9e33149fa092ee69da41395b680b3704",
+"size": 180715
+},
+"configs/custom_teams/Denia__Mornye__Qingxiao/Mornye.py": {
+"sha256": "495f117e7c1325c34177e6dfb359cdaa59e089fcbd64c7f91350433915008d38",
+"size": 4894
+},
+"configs/custom_teams/Denia__Mornye__Qingxiao/Qingxiao.py": {
+"sha256": "aa9a17ccea533477977e79b26dc51be380243e2e16f64d691bec7c93be8c7d1f",
+"size": 5291
+},
+"configs/custom_teams/Denia__Mornye__Qingxiao/team.json": {
+"sha256": "92cbbce7f2d616f55e9265ad1895bc6b5233519a3e1f8c01aed2ae882c1d39c0",
+"size": 140
+},
+"configs/custom_teams/Douling__Hsin__Suisui/Douling.py": {
+"sha256": "5267d8dfbdc1611954a678d8a0ecd9f3747b0f29b3f631fc548e61fc7b9e216e",
+"size": 2661
+},
+"configs/custom_teams/Douling__Hsin__Suisui/Hsin.py": {
+"sha256": "a961b3f97bf7b77e5823a36767c2a667a35290af2f80884ca09643b4e841d944",
+"size": 149797
+},
+"configs/custom_teams/Douling__Hsin__Suisui/Suisui.py": {
+"sha256": "fca728f2a02c7ed4d1bed425c85ed4014b2eab99cf988632e21b6eeb15e4af17",
+"size": 2275
+},
+"configs/custom_teams/Douling__Hsin__Suisui/dryrun.py.tool": {
+"sha256": "586e225e2b1962f8637997250b92f138c7dea86f605fd24d503675155cb04155",
+"size": 27898
+},
+"configs/custom_teams/Douling__Hsin__Suisui/team.json": {
+"sha256": "59b312e9e698a2e17bd18b41f663ac815dec6dcb783b2618e93c7e8093536aa3",
+"size": 1724
+},
+"configs/custom_teams/Douling__Lucy__Rebecca/Douling.py": {
+"sha256": "ee47606f23491e3cba565ae6370fdcf01919e81f1b43827ad4b89717ee173150",
+"size": 3052
+},
+"configs/custom_teams/Douling__Lucy__Rebecca/Lucy.py": {
+"sha256": "c54e142701ba2bc345e3686bae6393d23aa870f681b2ff63184a89c3425b033c",
+"size": 159881
+},
+"configs/custom_teams/Douling__Lucy__Rebecca/Rebecca.py": {
+"sha256": "2f8b06cef39a6a76f4f6e085c13d246d53961d99998a70b4968dda9d37590781",
+"size": 1737
+},
+"configs/custom_teams/Douling__Lucy__Rebecca/dryrun.py.tool": {
+"sha256": "12b24a0d2f4f7e59885f9d8ff2a700e74ef3d8cceb14f17cf3dc6d27a29bf50a",
+"size": 26551
+},
+"configs/custom_teams/Douling__Lucy__Rebecca/team.json": {
+"sha256": "87e0c51d8a709e5f2ced6982a322791bf8fc46cf6ac7597010c00187d5ab05e8",
+"size": 411
+},
+"configs/custom_teams/Galbrena__Lupa__Mornye/Galbrena.py": {
+"sha256": "1486ae950b713280d4177a9887550824c7dbd8ce73794cb43b7c1e61f17eda23",
+"size": 95682
+},
+"configs/custom_teams/Galbrena__Lupa__Mornye/Lupa.py": {
+"sha256": "054f20b9616466e662529ed63bd7cac1da05fbc157c36b7a7a949616355ea8d0",
+"size": 2141
+},
+"configs/custom_teams/Galbrena__Lupa__Mornye/Mornye.py": {
+"sha256": "b399ffc2737987be29322abbb3b027dff3d0a13728d96cfb6128a9ebb8581c4e",
+"size": 2905
+},
+"configs/custom_teams/Galbrena__Lupa__Mornye/dryrun.py.tool": {
+"sha256": "2ab5ef7b563f9e6ed8bc4f2d80fcb4e24d92b2b44780285f10198df02b7b2d91",
+"size": 34524
+},
+"configs/custom_teams/Galbrena__Lupa__Mornye/team.json": {
+"sha256": "e1d2f33880cc2be57783ac3edd685f1df35c538a8f4f616d4e120922c9d9c3b5",
+"size": 1731
+},
+"configs/custom_teams/Galbrena__Qiuyuan__ShoreKeeper/Galbrena.py": {
+"sha256": "b855719cdc3097e7cbb959f5f6c6ae1b627776755a56766a907b1b66dd398d79",
+"size": 48135
+},
+"configs/custom_teams/Galbrena__Qiuyuan__ShoreKeeper/Qiuyuan.py": {
+"sha256": "a69a0743d805682cc8f3e1ce5a60b801e9da12cd504255710f84414fff144d99",
+"size": 37970
+},
+"configs/custom_teams/Galbrena__Qiuyuan__ShoreKeeper/ShoreKeeper.py": {
+"sha256": "126253681ac977fa0393866d1ce637cdf15f20a92ccc94d636900a58cf895b92",
+"size": 30538
+},
+"configs/custom_teams/Galbrena__Qiuyuan__ShoreKeeper/team.json": {
+"sha256": "90858f5c419e239b719ffb6698ad843b46689db8ed56125c7204bc74be3ec8b0",
+"size": 441
+},
+"configs/custom_teams/Hiyuki__Lucilla__Suisui/Hiyuki.import.py": {
+"sha256": "c0671c4df5310bd6fbd5033b2f6f315bfa85f41cdda505dfd00bebc715c177ef",
+"size": 146600
+},
+"configs/custom_teams/Hiyuki__Lucilla__Suisui/Hiyuki.py": {
+"sha256": "c0671c4df5310bd6fbd5033b2f6f315bfa85f41cdda505dfd00bebc715c177ef",
+"size": 146600
+},
+"configs/custom_teams/Hiyuki__Lucilla__Suisui/Lucilla.import.py": {
+"sha256": "ca64c2130ad2f99bf680070994b8c7f6c58fa4ef8e754d99af52363fdc9b7e40",
+"size": 2105
+},
+"configs/custom_teams/Hiyuki__Lucilla__Suisui/Lucilla.py": {
+"sha256": "ca64c2130ad2f99bf680070994b8c7f6c58fa4ef8e754d99af52363fdc9b7e40",
+"size": 2105
+},
+"configs/custom_teams/Hiyuki__Lucilla__Suisui/Suisui.import.py": {
+"sha256": "041aa208df5d5053156e6f127b8763098243368e931f8f6f2949b9df9f9966dd",
+"size": 2242
+},
+"configs/custom_teams/Hiyuki__Lucilla__Suisui/Suisui.py": {
+"sha256": "041aa208df5d5053156e6f127b8763098243368e931f8f6f2949b9df9f9966dd",
+"size": 2242
+},
+"configs/custom_teams/Hiyuki__Lucilla__Suisui/team.json": {
+"sha256": "1cb55e95a9fad0145f80a2ee66d9a1d180844f0bc700ca5cd8e8468e58d47c7d",
+"size": 4742
+},
+"configs/custom_teams/Hsin__Jinhsi__ShoreKeeper/Hsin.py": {
+"sha256": "25300e3b2b92d60041391ff9c36cd905f0e3b952a69dca457c22655da888c9bb",
+"size": 149883
+},
+"configs/custom_teams/Hsin__Jinhsi__ShoreKeeper/Jinhsi.py": {
+"sha256": "9a90f9432dd2a496e7af38a8826ce0cd6e19532febfe9afdc193b07956a0e624",
+"size": 1913
+},
+"configs/custom_teams/Hsin__Jinhsi__ShoreKeeper/ShoreKeeper.py": {
+"sha256": "c48405ca501658ea752ce21eea5540d1ba3b7ec9f568f285803357ad9d5cb581",
+"size": 2036
+},
+"configs/custom_teams/Hsin__Jinhsi__ShoreKeeper/dryrun.py.tool": {
+"sha256": "88adfb9c29cfb6d90c120e6662341c4c7507e7ff4a56e0771ace7fe3d90b5985",
+"size": 28392
+},
+"configs/custom_teams/Hsin__Jinhsi__ShoreKeeper/team.json": {
+"sha256": "ce0bc45ac7409d39a2253f10b9b9b2ba1f9aba6056dc371979228faa46c6426c",
+"size": 1265
+},
+"configs/custom_teams/Hsin__Rover__Suisui/Hsin.py": {
+"sha256": "e9241302ae04b4e6a681873cd0ce1b0d6433ad63320db64152422e0b8fa3ed8f",
+"size": 129757
+},
+"configs/custom_teams/Hsin__Rover__Suisui/Rover.py": {
+"sha256": "63b123646759bb981789a27853d1d86d1f915d7d8a47e1bf2d842874b9130833",
+"size": 2186
+},
+"configs/custom_teams/Hsin__Rover__Suisui/Suisui.py": {
+"sha256": "d292dbb6d486d0e798cada81258341b7c5fab41507f19b1e8a0edb4ea7b99301",
+"size": 2331
+},
+"configs/custom_teams/Hsin__Rover__Suisui/dryrun.py.tool": {
+"sha256": "92188ad704e5d4b141979e2822916d6935e07dd019d824cd5168af04feab25b0",
+"size": 30663
+},
+"configs/custom_teams/Hsin__Rover__Suisui/team.json": {
+"sha256": "a926c262eab37efbedd9ce9c4a55ca40c6a771f4b2ec66624a3fc6aec7f7c45f",
+"size": 1766
+},
+"configs/custom_teams/Hsin__ShoreKeeper__Suoming/Hsin.py": {
+"sha256": "125e0e6f083367ebe7c8f52c8b1552ba59dcd5329f768a3e96ca48e5e513595a",
+"size": 214591
+},
+"configs/custom_teams/Hsin__ShoreKeeper__Suoming/ShoreKeeper.py": {
+"sha256": "35dee0c7c37d7b0a931770d03f2d9ffe2a93d502ff0187c93f56ea2724d82825",
+"size": 2037
+},
+"configs/custom_teams/Hsin__ShoreKeeper__Suoming/Suoming.py": {
+"sha256": "4bfa008078baf2a2ab1b23e4ca36f447579f08a1a218a9f8d789248f30267dfd",
+"size": 1888
+},
+"configs/custom_teams/Hsin__ShoreKeeper__Suoming/team.json": {
+"sha256": "57a96722357119ecab65d4dbbd8bad1a5135c298ebfa96d196873c480eb9a4c7",
+"size": 2203
+},
+"configs/custom_teams/Iuno__JingRan__ShoreKeeper/Iuno.py": {
+"sha256": "198474ab227a523050d31d61e155d431bd807a9258f8682b48ff1e93d184fd39",
+"size": 1851
+},
+"configs/custom_teams/Iuno__JingRan__ShoreKeeper/JingRan.py": {
+"sha256": "499e2c97bbc4cee6ee0d1c18a0912ef7996d4163eedc8f9417437b5396fa1718",
+"size": 102518
+},
+"configs/custom_teams/Iuno__JingRan__ShoreKeeper/ShoreKeeper.py": {
+"sha256": "50fb11f315cb32a71b3d9140f26115a2ede18362f93dce417916e9b86724b6c1",
+"size": 2051
+},
+"configs/custom_teams/Iuno__JingRan__ShoreKeeper/dryrun.py.tool": {
+"sha256": "53422de645a202797517ce759f85823057ee507e70d1f07c668968a12b75434a",
+"size": 23154
+},
+"configs/custom_teams/Iuno__JingRan__ShoreKeeper/team.json": {
+"sha256": "4677df37cd83999635bf01204d73d44df6ad4b240bac0b318f25279b3c1a035c",
+"size": 588
+},
+"configs/custom_teams/Lucy__Mornye__Rebecca/Lucy.py": {
+"sha256": "3be7bdc259f8702ea5862db36f23b7ea6dd0fb3375aede10e2e2bc8686b4ea6b",
+"size": 138948
+},
+"configs/custom_teams/Lucy__Mornye__Rebecca/Mornye.py": {
+"sha256": "47a11738078981823aeb15d9df0201b37d51ebb70feb821144041063a5843904",
+"size": 2745
+},
+"configs/custom_teams/Lucy__Mornye__Rebecca/Rebecca.py": {
+"sha256": "87fe6a723959bec4121b93fc2ad346085c218bc82fab8ae3bbbb2ec3d14f19fe",
+"size": 1736
+},
+"configs/custom_teams/Lucy__Mornye__Rebecca/dryrun.py.tool": {
+"sha256": "777c4d34efa5650c2a8714a9bc614dc946685d88f687c407b1412ffca48be05e",
+"size": 22993
+},
+"configs/custom_teams/Lucy__Mornye__Rebecca/team.json": {
+"sha256": "81ff97ffbf7ebda50615524050c30d70e6b25ae31f9d252c76f866de3c786a3a",
+"size": 559
+},
+"configs/custom_teams/Lucy__Rebecca__ShoreKeeper/Lucy.py": {
+"sha256": "cd682e79cec50cd6a7b41ae4e261a446a84d5a7450ebbe6ddbea2f751b88954d",
+"size": 126127
+},
+"configs/custom_teams/Lucy__Rebecca__ShoreKeeper/Rebecca.py": {
+"sha256": "46586e891515d966e5f836a96afd74991d7d8ec22ee4c4f089cdd9a6921a646f",
+"size": 1747
+},
+"configs/custom_teams/Lucy__Rebecca__ShoreKeeper/ShoreKeeper.py": {
+"sha256": "c11cba900783103f743bf4a7a82970d5f13aed6d38824674bf2e1872483c63bb",
+"size": 2018
+},
+"configs/custom_teams/Lucy__Rebecca__ShoreKeeper/dryrun.py.tool": {
+"sha256": "50517b6da7c6a09bc87b01a362e1a7badac7f8a2b16886944ba2e6d4ea3cb368",
+"size": 19047
+},
+"configs/custom_teams/Lucy__Rebecca__ShoreKeeper/team.json": {
+"sha256": "1554ccb990e70faf92a6f6186e655884219f249def8cc8b64a0f90165fd9cdf1",
+"size": 503
+},
+"configs/custom_teams/Lucy__Rebecca__Verina/Lucy.py": {
+"sha256": "6186b9f0cb2f9b3b1a6682faf2a2ef065066002a8a0aada985cf2be15e491aac",
+"size": 132294
+},
+"configs/custom_teams/Lucy__Rebecca__Verina/Rebecca.py": {
+"sha256": "9bdeca2256a67d91f58698cafb80eff09ba8f434f3bff1ecbefea79ef0abe209",
+"size": 1742
+},
+"configs/custom_teams/Lucy__Rebecca__Verina/Verina.py": {
+"sha256": "697ff0d0e0f346916f7c2a9e6bfea3ee61c74ba63ef8928eb4914ac2a15b416b",
+"size": 2631
+},
+"configs/custom_teams/Lucy__Rebecca__Verina/dryrun.py.tool": {
+"sha256": "c10a98d936d8a324174702e26a5222ccf014e2b7f05c3200d062518667d9d2c6",
+"size": 22410
+},
+"configs/custom_teams/Lucy__Rebecca__Verina/team.json": {
+"sha256": "03ac272d1ea45a3ec9d06c79b817cbfd906f002c5ec05323ea239d7fa99874cd",
+"size": 396
+},
+"configs/custom_teams/Phoebe__Verina__Zani/Phoebe.py": {
+"sha256": "b3c1273c773aa61c474ec0cc1c4367b81a98b636abb8aba96225179bb9cc5456",
+"size": 3673
+},
+"configs/custom_teams/Phoebe__Verina__Zani/Verina.py": {
+"sha256": "6ab28b65e9c7003fd92089b4cdccc5b8e41d1555a7fbd067c6bec94f3d291541",
+"size": 3387
+},
+"configs/custom_teams/Phoebe__Verina__Zani/Zani.py": {
+"sha256": "bfcfd0fdd799000d2305f95787e0040b5701e6ed91f5dfcdeec25a742867ca83",
+"size": 178257
+},
+"configs/custom_teams/Phoebe__Verina__Zani/team.json": {
+"sha256": "a64e42bfa25068af4a6227d93d7c5a6712f2e61520eba0f28ac7765cf2ce9f00",
+"size": 691
+},
+"configs/custom_teams/Qiuyuan__ShoreKeeper__Xigelika/Qiuyuan.py": {
+"sha256": "eaa3595e9bcf4858dc825c452bb90cd16df592faab722bd2008f08309b818d32",
+"size": 35596
+},
+"configs/custom_teams/Qiuyuan__ShoreKeeper__Xigelika/ShoreKeeper.py": {
+"sha256": "6df8b38a5ebf5743d5f1edd098b854c07ebacafc5c337e1eedfb46738065ad97",
+"size": 42409
+},
+"configs/custom_teams/Qiuyuan__ShoreKeeper__Xigelika/Xigelika.py": {
+"sha256": "46797c5b6d6ca1a4d4dfa0b638b82f7fd481a91cc25b226e01647efba83052bb",
+"size": 85862
+},
+"configs/custom_teams/Qiuyuan__ShoreKeeper__Xigelika/team.json": {
+"sha256": "1cef3e02ec79f522ea7bf1839c23482b8068410e00cf927dedb988f0d3c8c7e6",
+"size": 152
+},
+"configs/custom_teams/Sanhua__Suoming__Verina/Sanhua.py": {
+"sha256": "5615ca4f3febc65f0ad83a57115be2eef5cac6e874318b1388773520711f55bc",
+"size": 2012
+},
+"configs/custom_teams/Sanhua__Suoming__Verina/Suoming.py": {
+"sha256": "9b21bcfa8176684dee3b30c2ca41ebe8231822388fbaa54f12626ecafa4e2b3e",
+"size": 106361
+},
+"configs/custom_teams/Sanhua__Suoming__Verina/Verina.py": {
+"sha256": "9d26396e4ae2578be2ca5889da1cff227e304955151fd426263d08f89beb04b6",
+"size": 1889
+},
+"configs/custom_teams/Sanhua__Suoming__Verina/team.json": {
+"sha256": "b6a2566bf47c727c0b00035e08530c376164de62bcb89098eb52d9dbf74fe892",
+"size": 2247
+},
+"docs/角色操作笔记.md": {
+"sha256": "396b8082da1f9f9d38e48bb10845825141c3e1bb400821ab469683a6ca92a94d",
+"size": 10506
+},
+"i18n/es_ES/LC_MESSAGES/ok.mo": {
+"sha256": "f507a2c79250e590efb24c733cb964d86e25aadfea4719d2626cd1852d2c4854",
+"size": 56380
+},
+"i18n/es_ES/LC_MESSAGES/ok.po": {
+"sha256": "200c745a919367f386b3ba4b19a8388be34d585a925876e4568ffcb8b2783d82",
+"size": 63290
+},
+"i18n/ja_JP/LC_MESSAGES/ok.mo": {
+"sha256": "28de6bd4be9e2735b43f06e9a5626d1968442989b120fc9f51cd2f8d15c29b52",
+"size": 63601
+},
+"i18n/ja_JP/LC_MESSAGES/ok.po": {
+"sha256": "c5dc72898fe19ab658d39d934dc84f04e41b5f7e2e73fa9d969a8995119e74c7",
+"size": 70025
+},
+"i18n/ko_KR/LC_MESSAGES/ok.mo": {
+"sha256": "0b8b437f190a40494ec3f34fd6fdbb6ee0b2318f1cfe66948a807793037729b4",
+"size": 60282
+},
+"i18n/ko_KR/LC_MESSAGES/ok.po": {
+"sha256": "b44ea653d35d73f5896bf81aa385ad88d6bc805d4312c3eb1b0e394b5d787e36",
+"size": 66021
+},
+"i18n/zh_CN/LC_MESSAGES/ok.mo": {
+"sha256": "d3eeca18bcf2a35b2f74933957d911c0def5708abb08410db597a2a58c1891ea",
+"size": 54026
+},
+"i18n/zh_CN/LC_MESSAGES/ok.po": {
+"sha256": "f29cd1d53340ddc1dff16d7c1c10562f33b85f418ff47981f796f3cb711618e6",
+"size": 60024
+},
+"i18n/zh_TW/LC_MESSAGES/ok.mo": {
+"sha256": "527f2fae28d18f8fc7420450f53269dd6b2a847b5126d3126583905da307c057",
+"size": 57104
+},
+"i18n/zh_TW/LC_MESSAGES/ok.po": {
+"sha256": "cdd01703e2bb127402b1059c862bd10c9e1730fb033131925c58a4643a1dafee",
+"size": 63210
+},
+"icons/icon.ico": {
+"sha256": "4107527ca29b680e29469264b76140534ad73ca62637db3584600ba7dde79a69",
+"size": 167614
+},
+"icons/icon.png": {
+"sha256": "c3d3e943b7a35ac8be71733c6cca9d073e554da85a290c377932002e6b61bd5c",
+"size": 110320
+},
+"icons/tasks/README.md": {
+"sha256": "f03dca11689d08a2440e4549a3feb9a8213166e96a9b0154ce266aa480b279a5",
+"size": 2642
+},
+"icons/tasks/boss.png": {
+"sha256": "8dce20ed80fa4cad07b8dea93d69263becec0e20d676cd07311f40ed18ff69ba",
+"size": 11620
+},
+"icons/tasks/category-all.png": {
+"sha256": "47ba60b3392767598bd9771752d73eeba8798c5ac6e88d4bde371f634805c7b2",
+"size": 5019
+},
+"icons/tasks/category-daily.png": {
+"sha256": "b74a8a2fd8312ebd697ea7de706708404070b79a9ac35dfc85a373e1c8b8eedf",
+"size": 6774
+},
+"icons/tasks/category-echo.png": {
+"sha256": "ad56c3a80ca6a8fe7da109a915871b98ddc5a55ee3f67b813055d162cea910be",
+"size": 4919
+},
+"icons/tasks/category-onetime.png": {
+"sha256": "59888dcc22d239bd5e338b6f0fbc10557401721ff30c59adc78478b9b25e504a",
+"size": 3708
+},
+"icons/tasks/category-trigger.png": {
+"sha256": "6ca328338746b44a949282255ab9c1849c88214a06f8d4bc6e8af476e3ccb016",
+"size": 781
+},
+"icons/tasks/combat.png": {
+"sha256": "9eb189be0a6dff69fbf27db246cee7166166c80149588d6944addeec771e0e40",
+"size": 2527
+},
+"icons/tasks/daily.png": {
+"sha256": "198b634ea9e164ef31fe927d4a321e49e08786decb9d9a0bfe9b658555d2bfc9",
+"size": 2303
+},
+"icons/tasks/diagnosis.png": {
+"sha256": "e0999b695ec3ac823c0d166c73e5a472ed0668fd222a49bb93a20efbe5f58d1f",
+"size": 1454
+},
+"icons/tasks/echo-tuning.png": {
+"sha256": "ffc43a354985711dd5dbe175e4d6f191cc020c854c9a1c672b824aad704978de",
+"size": 2786
+},
+"icons/tasks/echo-upgrade.png": {
+"sha256": "bc361fa947f9f6f17e2b3e8bb731e0480efb816562f4eaa03b9ac575ee77ca92",
+"size": 2653
+},
+"icons/tasks/fast-travel.png": {
+"sha256": "04bfd2a986f1396ad1d94ed93255afdae0bb25cf92a1544fd5829945888fc72e",
+"size": 2261
+},
+"icons/tasks/forgery.png": {
+"sha256": "39c150311ecc54dbdfb40ff6ae39463434dc7f62363c4b273fd9db2ca835a46e",
+"size": 2849
+},
+"icons/tasks/garden.png": {
+"sha256": "ee9a4d16707f4f10edc755563c72a2eb47db0dbce7f4945e827365f417094e76",
+"size": 6707
+},
+"icons/tasks/login.svg": {
+"sha256": "775b4f435b8e71e044c409a3d371f5ceae73cc816c70e8cf8b280e995cd71ef2",
+"size": 186
+},
+"icons/tasks/map.png": {
+"sha256": "28422c346f9645e50cd064cc79e6943369773a3ab33f08c0d739156de720a0d9",
+"size": 9047
+},
+"icons/tasks/multi-account.png": {
+"sha256": "534cd409b8b4cc9f73df16334a1b2d1fc8a251a74ca6ea2d67c556a603cc3bcd",
+"size": 5631
+},
+"icons/tasks/nightmare.png": {
+"sha256": "3e66fbe1dda705a94c9fe31da612e31332ab33fcf049f703f89cf1f6cf9e121f",
+"size": 2840
+},
+"icons/tasks/pickup.png": {
+"sha256": "88d32556dcc77e89e3cc6f091e79f3cacf028d7b743fbd25d6324e7e61758deb",
+"size": 6814
+},
+"icons/tasks/settings.png": {
+"sha256": "435237d7372c42b0f5bef8cab0d00b8db6eb422135babac8e856ef90b3c7f488",
+"size": 4881
+},
+"icons/tasks/simulation.png": {
+"sha256": "02b18999f96faed5774123bbb51b6b18962748ab219b85e0feef33aa61c5ee7d",
+"size": 3077
+},
+"icons/tasks/skip-dialog.svg": {
+"sha256": "3092ada1465127c09b5a4a1f85dd226ad6abd59228d5bdb320f5665b58f0f2cc",
+"size": 172
+},
+"icons/tasks/sources.json": {
+"sha256": "3e631d7057c453ac7f2298242dd182970648c31f237ed76365bd1c3a17c245c1",
+"size": 11407
+},
+"icons/tasks/synthesis.png": {
+"sha256": "ab023a3bef644155b974502cdc2b6971ff652fd60a0b82ad2a6b07fac52649ac",
+"size": 9256
+},
+"icons/tasks/tacet-elimination.png": {
+"sha256": "8e884b904fcc54b99aae25be1fe00b2847ff7ba18cbfbc8a6b6f01608c591de6",
+"size": 6604
+},
+"icons/tasks/tacet.png": {
+"sha256": "57ad0483e94dcd522698e03383dcc7bf9eb65a078ef2cc4c63a98cf10ed59bc9",
+"size": 3083
+},
+"main.py": {
+"sha256": "bf7e59dc37bc56ddb5f8e2850612a47186eddd0cd0b0f4d05004a332d8677ad7",
+"size": 135
+},
+"main_debug.py": {
+"sha256": "7b74d14db5c53985e2a543e588bcc31af0eea55320971c03a929ffb4d1049f97",
+"size": 272
+},
+"ok/LICENSE.txt": {
+"sha256": "31d615200438b02fb695b86b72b02c8054c5d93837aabc84701b3b44453dc57e",
+"size": 3017
+},
+"ok/__init__.py": {
+"sha256": "ea76b0a8e8c7a63554aaf59c4645a877fbfd04534db7c8100a480e23ade13522",
+"size": 57328
+},
+"ok/__main__.py": {
+"sha256": "590aac23fe159c766544d6794718b9bcc99fe81b9e30ccb5e30da87fd88c1388",
+"size": 82
+},
+"ok/agent_resources/.agents/skills/develop/SKILL.md": {
+"sha256": "b68d5c359f63cf1cc5c24988f3cf5b5e8998f05381206a28c667e7bfd7a33bb6",
+"size": 9854
+},
+"ok/agent_resources/.agents/skills/develop/agents/openai.yaml": {
+"sha256": "d7ea08db9af898a353ff6743abd1c215be5c2f58764f29e57e7b4c931f35b426",
+"size": 320
+},
+"ok/agent_resources/.agents/skills/develop/references/windows-input.md": {
+"sha256": "96c167e99b0a83068361657fcfa43995df4b492eace0f20b2226a9051e4704e6",
+"size": 5667
+},
+"ok/agent_resources/.agents/skills/generate-templates/SKILL.md": {
+"sha256": "00eb8da2ed6f2a99683aed3b8a40e2cccd945f7717351cf6705cefaa624e6abe",
+"size": 11595
+},
+"ok/agent_resources/.agents/skills/reload-tasks/SKILL.md": {
+"sha256": "c39b0c8b4238ecd64b2110ede8d58dfaf3d3e9714794f3ed27ef28528f700712",
+"size": 3879
+},
+"ok/agent_resources/.agents/skills/reload-tasks/agents/openai.yaml": {
+"sha256": "67deec6d92dab121c0a87a7a10e4fbc4cd5a28e41037d43483c20d23827b8f94",
+"size": 275
+},
+"ok/agent_resources/.agents/skills/setup-env/SKILL.md": {
+"sha256": "cbec881eb78d1b477173275cef9c13f5d1ba35d83f343ce73b9de2816e2a71bb",
+"size": 7159
+},
+"ok/agent_resources/.agents/skills/setup-env/agents/openai.yaml": {
+"sha256": "e677ea29c442501158ab43f1784375e4fc35ae046261b80e0034ddce941384d4",
+"size": 260
+},
+"ok/agent_resources/.agents/skills/setup-env/assets/ok-script-develop/SKILL.md": {
+"sha256": "bc3567af92d7a0bb438f3abd23a79a4a23eb2d6dbc455b551e8f154cd7a19499",
+"size": 4642
+},
+"ok/agent_resources/.agents/skills/setup-project/SKILL.md": {
+"sha256": "65242ed630cd13639c1d1c2212c3c1f0f72de7b55bb3c923ef1fbbfaa576e914",
+"size": 9564
+},
+"ok/agent_resources/.agents/skills/setup-project/agents/openai.yaml": {
+"sha256": "1dbc2db764a30fe8bc6e31849973a8fad0fa77dffe5a427892af8c9bdc2414dd",
+"size": 254
+},
+"ok/agent_resources/.agents/skills/use_venv/SKILL.md": {
+"sha256": "79d99dc23b29b03a46f179867c7278e6cc554d2d440fccc81424d5fd39810f5a",
+"size": 1419
+},
+"ok/agent_resources/.agents/skills/write-test/SKILL.md": {
+"sha256": "a2cfc76c05a4fe1901ddb2baea03232329f7c2b2f034129598dc1fca992ba413",
+"size": 7810
+},
+"ok/agent_resources/.agents/skills/write-test/agents/openai.yaml": {
+"sha256": "446e698a8d0360ce1ec1bbebd823c8baac3af433a2dd1a37e63650caa50ab32c",
+"size": 136
+},
+"ok/agent_resources/docs/agent-setup.md": {
+"sha256": "9c54d93712741c99cffba32d52bfe7b03d78f7703a6be7fb8ec56d8f2915d5d3",
+"size": 6687
+},
+"ok/agent_resources/docs/feature-crops.md": {
+"sha256": "87a9d807262f82c80295d029e1d101ad2f67e4b83c374d58d677824bc98a64c6",
+"size": 6367
+},
+"ok/agent_resources/docs/mcp.md": {
+"sha256": "27838ab558df018ccb5e919142770a9e0555d5b1ed0d82d6a7b27db1a5d5c177",
+"size": 18700
+},
+"ok/agent_resources/examples/mcp_observe.py": {
+"sha256": "d9db49a134f551ee7587a7a0321823705f8c42a7f9af7f3c18bf1054d82ad8c3",
+"size": 1216
+},
+"ok/alas/__init__.py": {
+"sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+"size": 0
+},
+"ok/alas/emulator_base.py": {
+"sha256": "1aeb13ea26ccf09e32cf04572ba515cf267bafc88e1489735e255d821f1b3ec4",
+"size": 8082
+},
+"ok/alas/emulator_windows.py": {
+"sha256": "c44d1a7a79dac0ef396bf35696d75c5fbbe2b1abd73017fc2ff4f1c74529e772",
+"size": 20936
+},
+"ok/alas/platform_windows.py": {
+"sha256": "3aa1a032715dcf9d6093457f0ff580179c0c4f16fe2eaac6728931a86e72ea4e",
+"size": 1516
+},
+"ok/alas/utils.py": {
+"sha256": "8be0f51a8403fec9a51d6aa3b2d442fc60cb8be7757270ac3bf496e87a6cf66d",
+"size": 3863
+},
+"ok/assets/default-icon.png": {
+"sha256": "53d63fb5a4661960596066009f1c3590d678e5959463f3c43cdcec81d23b5ff3",
+"size": 1109
+},
+"ok/capture/__init__.py": {
+"sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+"size": 0
+},
+"ok/capture/adb/__init__.py": {
+"sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+"size": 0
+},
+"ok/capture/adb/deep.py": {
+"sha256": "1058902625fcdb02f14a0acab9c354c8983807d83742d8d0f6b99e09df95e87e",
+"size": 13680
+},
+"ok/capture/adb/minitouch.py": {
+"sha256": "c0bba965acfae232230dd59e937d008f0b99fc5f2e4b16f0409701b4d5abc5b6",
+"size": 2389
+},
+"ok/capture/adb/nemu_ipc.py": {
+"sha256": "018c430d0697838f6a34abf7b1978c796f0ac099f85a9b25d79235ad992de2b5",
+"size": 18922
+},
+"ok/capture/adb/nemu_utils.py": {
+"sha256": "d187aa2adf9fa7f806f05138f543efc83ff3ee92bdccc94b75f677d9f5be5efd",
+"size": 6639
+},
+"ok/capture/adb/pool.py": {
+"sha256": "4b77d068e337732e21ac0ca2f566bf4901fb72b7d335de7af93ee7cf17f8e415",
+"size": 12478
+},
+"ok/capture/adb/timer.py": {
+"sha256": "665b732aed96243e51bd80b74b8f1f315c74abbf4f7967d9b410b4a765633e1f",
+"size": 4083
+},
+"ok/capture/adb/util.py": {
+"sha256": "a6607f5baff8b4de344c5d8cbefc8bc84952f2842857da5f5585b74d10a645eb",
+"size": 32130
+},
+"ok/capture/windows/__init__.py": {
+"sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+"size": 0
+},
+"ok/capture/windows/d3d11.py": {
+"sha256": "12c901ddd464576489c426c2f250bc9b383b602b497b0eccbea463df288ce7dd",
+"size": 2599
+},
+"ok/capture/windows/dump.py": {
+"sha256": "7687d39f3ebbf25c13d656acb49b3a01ea7cfdc4f75ddc8b5567ca5542baeab8",
+"size": 953
+},
+"ok/cli.py": {
+"sha256": "e6d690e077cee50c5f31f533016aa38c0e559024123461a7c05e85a895eb34bf",
+"size": 4382
+},
+"ok/core/__init__.py": {
+"sha256": "fdf1df604eaca2827beb0b83930fbd4db7312177c2531d649d16eb30512649b4",
+"size": 181
+},
+"ok/core/capture_labels.py": {
+"sha256": "8cf7cd69aff7c95f9e4f21344430be5702de650beec39c3ee6855467b4800459",
+"size": 295
+},
+"ok/core/code_runner.py": {
+"sha256": "5db8634bd73e6e00cdf2e743fb23ece57d8084370ccc12ce5a43d6e05a97b9c8",
+"size": 9008
+},
+"ok/core/config_schema.py": {
+"sha256": "2afd2fee2ff973ae65a3238def835591822da2a5c236f57f49b4565578a29463",
+"size": 4694
+},
+"ok/core/downloads.py": {
+"sha256": "35bb27bb827a0489285eddeac2c4d070b8bbdd8ac9f3c934f923db91f0b384c6",
+"size": 6085
+},
+"ok/core/events.py": {
+"sha256": "42a6233b5fea517951e2e3e524c4dcbaa8b02625ff4940645ff1f1149798849b",
+"size": 4031
+},
+"ok/core/icons.py": {
+"sha256": "3202de4e21fb33f86044eae729b1fecbfc375ba0b3852e6c39177212109e8f74",
+"size": 251
+},
+"ok/core/mcp_runner.py": {
+"sha256": "a20888d1c17db72c8b05aa3725bf5540d21983e66df7fc58165401fb4dc003eb",
+"size": 20250
+},
+"ok/core/mcp_server.py": {
+"sha256": "040dba8f3b14029f412fb91cbc01e708d7d50dd8c3502971a011c6cdd26b8a6e",
+"size": 17904
+},
+"ok/core/notifications.py": {
+"sha256": "65c17a600a6a914c2393908463f16600567208c6e305bd4fc5454e780fd17c77",
+"size": 315
+},
+"ok/core/plugin_staging.py": {
+"sha256": "3c916238703a8f988bc5b39b6599786f05135baf3f7014dc98845e3eaacecedb",
+"size": 12275
+},
+"ok/core/plugins.py": {
+"sha256": "8cd94e53b15e6b2ff6d306e1c01246ac42e5a3048629c01388e5786d3766f902",
+"size": 7430
+},
+"ok/core/screenshot.py": {
+"sha256": "6f604d5a5a64aa72f85566f1c599a2166aecbc3d2c914c7d7aeb979adad67eec",
+"size": 11116
+},
+"ok/core/script_editing.py": {
+"sha256": "44565f16102d3b47e04e9039362c8d6b00f5569bd8646170301fb10baeb4b6db",
+"size": 3056
+},
+"ok/core/script_packager.py": {
+"sha256": "f4e742032f4b5559ed62a1a02ada0044d28b81cc7e558bf8c1f8f7c766a2834f",
+"size": 14763
+},
+"ok/core/script_templates.py": {
+"sha256": "ef4fa3a8615c21b68860db19e3da2f9dfbb51949d2afe43c47ff25f42a3280c8",
+"size": 5433
+},
+"ok/core/skills.py": {
+"sha256": "b18deab974463f8c9a7d959f982417a6f8566d8661de145969ebdfc464ee15b1",
+"size": 1623
+},
+"ok/core/start_controller.py": {
+"sha256": "12bc74c617d8c08b8cf9067b307fa2f85f7d516322a7c55511b66891cfe83798",
+"size": 23502
+},
+"ok/core/task_manager.py": {
+"sha256": "c9adcd4da9e2707da03e69083c8067b893327f2ae9a99d6ec10755e871eb9f1a",
+"size": 27485
+},
+"ok/core/template_store.py": {
+"sha256": "fa478d35c4d8b1a19aca7b1fafcacb9f8f755beef0d03589b27832903d954a79",
+"size": 10394
+},
+"ok/core/translation.py": {
+"sha256": "4119d29e62c927d5eeb58c1c8686276528a6688bb100e78da0fcc31d880e8dfc",
+"size": 5369
+},
+"ok/core/ui_config.py": {
+"sha256": "e9ac7ee33ca12dbd2cdd12f53961b1dc85edcb9c332a2e9423a931cdd78f0868",
+"size": 1544
+},
+"ok/device/DeviceManager.py": {
+"sha256": "7014743c3c73745ac2fcb2d223fe93a6677f1e74bfdffabafdad0b17fd856167",
+"size": 51625
+},
+"ok/device/__init__.py": {
+"sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+"size": 0
+},
+"ok/device/capture.py": {
+"sha256": "43f06a3ec4a3bc27e55d0dc2e9393f4a6b489f4def77472069399098db5bcf24",
+"size": 320
+},
+"ok/device/capture_methods/__init__.py": {
+"sha256": "8b1ff169cfdcf7f8df3087c6418d5d6826bfd2b089d7dcce526ddd8871adb970",
+"size": 1487
+},
+"ok/device/capture_methods/adb.py": {
+"sha256": "3cc68e303d8903f710c531be4f60e65592e34d09002bb8c34d5094167a361d53",
+"size": 1004
+},
+"ok/device/capture_methods/base.py": {
+"sha256": "8352a6218bbfab02c57094179465cd90b2844023a37381ac87fe370194ef226b",
+"size": 3095
+},
+"ok/device/capture_methods/bitblt.py": {
+"sha256": "a1dfcfa8a58e2984d4d91b10e5fb45237886698e5cc5e0471e9fc13b1449f605",
+"size": 4565
+},
+"ok/device/capture_methods/bitblt_utils.py": {
+"sha256": "0004ba86e2a1f959c4d1075356193c4fd822699719386160ece17a1ef6fa3d64",
+"size": 9017
+},
+"ok/device/capture_methods/browser.py": {
+"sha256": "0f45b1ecb9f2b4a6647f357dd2b46c2948cee99f835211d0317ef7108ec93b4b",
+"size": 12212
+},
+"ok/device/capture_methods/desktop_duplication.py": {
+"sha256": "e6b612f3a4eabd86c331ff84cbd93e841a4946ab35b5bfa7f7275b5b1e374a06",
+"size": 1785
+},
+"ok/device/capture_methods/hwnd_window.py": {
+"sha256": "e20f41876f3496f251b5d74e4e7b44e1a0bcfcecdeefb3133b315642504d0b30",
+"size": 20055
+},
+"ok/device/capture_methods/image.py": {
+"sha256": "e1989c9b57ee014029500aa342388788eec0a9d0143c7e6681dfbc0fe10aa87c",
+"size": 1120
+},
+"ok/device/capture_methods/nemu_ipc.py": {
+"sha256": "0b2927f49eb55dafab4bea814c6583f34472fe8b60e6fb0be8654a2954e65e52",
+"size": 2927
+},
+"ok/device/capture_methods/types.py": {
+"sha256": "c60590ada40e605ca702ed5d75993c62c71c4be27c8e4adab100f086f28c97ac",
+"size": 670
+},
+"ok/device/capture_methods/update.py": {
+"sha256": "32977d32ef66a6d3d531bc5df3c5c68e06051e2077f4153942e9b86209101a0c",
+"size": 5983
+},
+"ok/device/capture_methods/windows_graphics.py": {
+"sha256": "9cddca6b3fee98bdebaf7cc8ade6c399d657bec81bb47e2129508fb66ac5d543",
+"size": 20165
+},
+"ok/device/capture_methods/windows_graphics_hdr.py": {
+"sha256": "20d4d7375775f96e587d198ec3db7eb87c4acea05b593063b8d7cc5f9bcdcd7a",
+"size": 2778
+},
+"ok/device/interaction.py": {
+"sha256": "bf7e92cd9fe9a200a949bafb796d0bd37db33cec59f017fcbbf6c595a7653d77",
+"size": 96
+},
+"ok/device/interaction_methods/__init__.py": {
+"sha256": "8ce4ee2e4fea09a3929c8fe728a67403154b9a1e90b5dd6e61321eb45c8347c1",
+"size": 856
+},
+"ok/device/interaction_methods/adb.py": {
+"sha256": "4f4a45aa9d0dc4831bdccc18f8ea65974bd080bbe5debff13f9a6a99461062e1",
+"size": 4834
+},
+"ok/device/interaction_methods/base.py": {
+"sha256": "f152455b78ab9a5d03f9d36705a134b5063a3a89f8d50dab2f7f73d9a2dbab49",
+"size": 1168
+},
+"ok/device/interaction_methods/browser.py": {
+"sha256": "f57fce27418261d553f7a72142affbc5380f365c8ac7292f43e27c7cea00f1ff",
+"size": 5922
+},
+"ok/device/interaction_methods/do_nothing.py": {
+"sha256": "7923b37ffb19e5916a3d9a665a51b70ba49280f9cacc4beaffb7045f0eee718d",
+"size": 118
+},
+"ok/device/interaction_methods/foreground_post_message.py": {
+"sha256": "6656a2c6ce2e483e130173772c42be1c000a15c19e93f14e22ccfa2fb4007fbb",
+"size": 887
+},
+"ok/device/interaction_methods/genshin.py": {
+"sha256": "11541ec99b62e0fdc9aa10571c12e1d57879af9555f4eff7d186af2d010da946",
+"size": 11375
+},
+"ok/device/interaction_methods/keys.py": {
+"sha256": "61c27e747161403d4f82400721fc4947d8a1d9141f5bb77c5b1e69cd044dd475",
+"size": 5163
+},
+"ok/device/interaction_methods/post_message.py": {
+"sha256": "d657bf47ffdcd0ceb21ec25e5a034258dfc36b05a2c3132bcd717ab0d2770b5d",
+"size": 10301
+},
+"ok/device/interaction_methods/pydirect.py": {
+"sha256": "108d614dd2c4046e37d3b954b9dbfab9db0c2e6c7418f5f9cf1607167b367ca9",
+"size": 5465
+},
+"ok/device/interaction_methods/pynput.py": {
+"sha256": "0147039dc58edc74501cbcdd418a97d308b54830f202cba6e8ed58d4d4090af6",
+"size": 6813
+},
+"ok/device/interaction_methods/swipe.py": {
+"sha256": "9008df38bcd86828f897d385acd32e022999774e8cd4ad467b3e04f0ace09b31",
+"size": 2172
+},
+"ok/device/intercation.py": {
+"sha256": "3a39e188e9169b3b07e6ed7efbc308eb9f2864ecd16de70406b6dbebc94284f0",
+"size": 125
+},
+"ok/feature/Box.py": {
+"sha256": "cd795d7e7a372613834e92b49a8540faf803d04b3a80ce7ee16d1376eb4a38a5",
+"size": 15525
+},
+"ok/feature/Feature.py": {
+"sha256": "f510b96234d9ca04b76f7888cd097fdbcf3a7c8264316d94a0c4f9ebf5326ac2",
+"size": 1064
+},
+"ok/feature/FeatureSet.py": {
+"sha256": "25a0c42fa0f42a2f5023e26ca20f457d1a9d30202cb0826a46ff8627720bf893",
+"size": 49459
+},
+"ok/feature/__init__.py": {
+"sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+"size": 0
+},
+"ok/gui/__init__.py": {
+"sha256": "9ae8e92431bf8fcc0f508c44be7db733b1a2ce19918412793ee25440f404fbeb",
+"size": 1641
+},
+"ok/gui/util/pyappify_startup.py": {
+"sha256": "e2a8f2d7c55233af00c81e9978d495de65a9ede3963580edb08431a6c8786b95",
+"size": 136
+},
+"ok/notification/__init__.py": {
+"sha256": "b5499a9452fa158c68f875ba98b3dd0e7c8b791c6de211316dc7b20240fcd5c0",
+"size": 215
+},
+"ok/notification/manager.py": {
+"sha256": "30d48315059d63f7e5fd53b86661154d2845347d9f5ba0c5bea618408189cfc9",
+"size": 6710
+},
+"ok/notification/messenger_images.py": {
+"sha256": "510afb795938c62360442070748679cc53213b3af8728b15f008af4a0629029e",
+"size": 5624
+},
+"ok/notification/pipeline.py": {
+"sha256": "c24e6e4f4d0b66b908f12b985030893318f0b900dc24b2cb4ac2e7ae607b76db",
+"size": 2311
+},
+"ok/notification/ppocr.py": {
+"sha256": "dc99f256ac609b843db6bbb1833285545130fee27a5b1ea44a84402cbc73c628",
+"size": 1835
+},
+"ok/notification/providers.py": {
+"sha256": "bbddb8ae7f744c44780fba09920e2f2e8c710ae64c87925a4d74da254ae9630f",
+"size": 9405
+},
+"ok/notification/system.py": {
+"sha256": "1e60f9fdc7605823a3dd0e67abfd143ca6616766a064b64e394c79df7d4aea06",
+"size": 8216
+},
+"ok/notification/windows_messenger.py": {
+"sha256": "d8be6e682006450ec482ec2cc3e16bc20f90f692f8ed66c12558315fc72cc981",
+"size": 23646
+},
+"ok/ocr/__init__.py": {
+"sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+"size": 0
+},
+"ok/ocr/download_paddle_model.py": {
+"sha256": "ea657fb8f8ccffd7ed494eb554c5673bbd61f4712890abee4af2bef4c4461936",
+"size": 571
+},
+"ok/rotypes/Windows/Foundation/Collections.py": {
+"sha256": "f9f8f53d432953b4f28943f13f649e2d62ea7b7cc78dd343cb943e10b186048c",
+"size": 1963
+},
+"ok/rotypes/Windows/Foundation/__init__.py": {
+"sha256": "50ee12393f6b6d42995a9c661967124d001aa6379664716d59eee7b0add470e7",
+"size": 5232
+},
+"ok/rotypes/Windows/Globalization/__init__.py": {
+"sha256": "b30094d9c856c4ed3a8b3c3893289133dc9cbfe4fe0fe2c9dae8229042b1ba26",
+"size": 884
+},
+"ok/rotypes/Windows/Graphics/Capture/__init__.py": {
+"sha256": "0d3e020d311e42ca7fc7309004101ae522d4023cde1ec2d24ee3951fdcffbb88",
+"size": 4565
+},
+"ok/rotypes/Windows/Graphics/DirectX/Direct3D11/__init__.py": {
+"sha256": "4585af02718f92794d013e0fcef8baccb874abce0ae639566e46b91ab3b68e30",
+"size": 1193
+},
+"ok/rotypes/Windows/Graphics/DirectX/__init__.py": {
+"sha256": "727a34c00992ed4a84d4f64eecf2ebc2d77dde84ece4aac84654ad208fa68ab7",
+"size": 4014
+},
+"ok/rotypes/Windows/Graphics/Imaging/__init__.py": {
+"sha256": "b5a69225196c695b7784cb91f15bb6e7d44994a88d944fb2b50e71fbe7cd8e38",
+"size": 1019
+},
+"ok/rotypes/Windows/Graphics/__init__.py": {
+"sha256": "367b0c293106f4bc9665817c0937a19d78febf4d5d638f51593599614e6beaad",
+"size": 122
+},
+"ok/rotypes/Windows/Media/Ocr/__init__.py": {
+"sha256": "0f305913d309c8cc65818dd9c7e27ba37a236f1b93581a49df0e9dad12979d00",
+"size": 2963
+},
+"ok/rotypes/Windows/Media/__init__.py": {
+"sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+"size": 0
+},
+"ok/rotypes/Windows/Security/Cryptography/__init__.py": {
+"sha256": "f169657f77942ffd1febc2b8331dd6422ca86f9283737023358da65f92069d48",
+"size": 680
+},
+"ok/rotypes/Windows/Security/__init__.py": {
+"sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+"size": 0
+},
+"ok/rotypes/Windows/Storage/Streams/__init__.py": {
+"sha256": "1c002e57ebd57ed6107d0e830e00e94a914f3c28b2fd3deba93bb2628aabdf61",
+"size": 810
+},
+"ok/rotypes/Windows/Storage/__init__.py": {
+"sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+"size": 0
+},
+"ok/rotypes/Windows/UI/ViewManagement/__init__.py": {
+"sha256": "5105117beccb5323da0ea3bb682a6395a22b2b63cb1fda772e21c9705a75aadd",
+"size": 1089
+},
+"ok/rotypes/Windows/UI/__init__.py": {
+"sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+"size": 0
+},
+"ok/rotypes/Windows/__init__.py": {
+"sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+"size": 0
+},
+"ok/rotypes/__init__.py": {
+"sha256": "02ba626914383375d26d02837825c697107b940a809f822da2a525a4ab4bf60c",
+"size": 141
+},
+"ok/rotypes/delegate.py": {
+"sha256": "67b49b07912cd72befcac119020b4ed55706578c48bdd96d5bc2784ba62c83ca",
+"size": 3428
+},
+"ok/rotypes/export.py": {
+"sha256": "a9e1149d5f87bd266d8f0d7ccfdecf06963805ea41e3fe7247eb811b83ffdf67",
+"size": 554
+},
+"ok/rotypes/idldsl.py": {
+"sha256": "55458a8b42fc3daddeed885e0617b937ff1b25ed70bce299b026debb0291d2a6",
+"size": 9012
+},
+"ok/rotypes/inspectable.py": {
+"sha256": "6e39cc6a7d19c6c431b15771449863a05f2e1932acdbff1c5795ea82908861cc",
+"size": 2232
+},
+"ok/rotypes/roapi.py": {
+"sha256": "d62b5342a1e58adc6165b938948dbd83ca1f335b4b905fd289b5fb8497041aa9",
+"size": 810
+},
+"ok/rotypes/types.py": {
+"sha256": "596aa47adfb23b808d3dd3966641ff0249349915ba2c25d039e51bd7ea34a05c",
+"size": 2516
+},
+"ok/rotypes/winstring.py": {
+"sha256": "cb89237a195a8d898a729f35aa8ba97c6274b3dbc0733d32fada4036a25419b3",
+"size": 1522
+},
+"ok/task/DiagnosisTask.py": {
+"sha256": "30b69dddccb0936e2cc6d3e773bce5b875b33ddee5560ac0580be42a5dc12442",
+"size": 2138
+},
+"ok/task/TaskExecutor.py": {
+"sha256": "2a30847288a83fd40295d4e60850e376ee4c1681029cfc3229af891d808bff98",
+"size": 39781
+},
+"ok/task/__init__.py": {
+"sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+"size": 0
+},
+"ok/task/exceptions.py": {
+"sha256": "22836d3542c5aa9cbb7974a50960a4d6c5a41b4d9f6a50359b5ae4f47941be6d",
+"size": 1043
+},
+"ok/task/task.py": {
+"sha256": "223dbf3183b03196cd3398e68af9d6daafda5a789374fba8b88e8f5d60de53bb",
+"size": 59224
+},
+"ok/test/OKTestRunner.py": {
+"sha256": "d4d9c83921b9c57b444c1f423b5acbd10da1f67ab30da7c167a7addd12b93a12",
+"size": 581
+},
+"ok/test/RunTests.py": {
+"sha256": "cc9917db786099f721e8b887586ab7707d3368a7b1bd9d06903793dc8bd79db3",
+"size": 287
+},
+"ok/test/TaskTestCase.py": {
+"sha256": "b8976c2525ffcedc38aa07c0805716f73ffa5eb06701a9d1f6be69fd32998a18",
+"size": 1663
+},
+"ok/test/__init__.py": {
+"sha256": "09e0685e1d106adc664f09d57597a4fde8d90fbfa8e789ed8eb514cf65bef45a",
+"size": 1588
+},
+"ok/third_party/__init__.py": {
+"sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+"size": 0
+},
+"ok/third_party/paperclip.py": {
+"sha256": "33ed251f3143c0ab88ff682eaf3d027babef82efff5690d8e286d7159cdb1a8a",
+"size": 23246
+},
+"ok/ui/__init__.py": {
+"sha256": "dedb1775d9d96689a0557e5256f3ace58bcbec760242531157c7bfd352a6301d",
+"size": 40
+},
+"ok/ui/overlay/__init__.py": {
+"sha256": "9b76b90d8b396071211596edebe9dba957e340dcb896bc2d5a8f00d94adb9a7b",
+"size": 137
+},
+"ok/ui/overlay/win32_gdi.py": {
+"sha256": "222ee04293b5904e6779523f4fecfca46dde874d42d3702c3cdc707fffbcf853",
+"size": 45918
+},
+"ok/ui/qt/Communicate.py": {
+"sha256": "812f726a31090573732eba148a10851a1f5ebee2da71d15fa7839eb7cfdbef76",
+"size": 209
+},
+"ok/ui/qt/MainWindow.py": {
+"sha256": "41fad5351a14c3496ab50d5aea3d3bbf500302d5a9635f00061b1b58b5e0c69a",
+"size": 38608
+},
+"ok/ui/qt/MessageWindow.py": {
+"sha256": "30d947e00b8415045186e1c7f457b2b55e3b4ccd2ff5e90564088cda214a41c1",
+"size": 1837
+},
+"ok/ui/qt/StartController.py": {
+"sha256": "fb512d1a56e6015ea312d15e80c1517a68f87ad01addd994cdbc235e05fcebde",
+"size": 150
+},
+"ok/ui/qt/__init__.py": {
+"sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+"size": 0
+},
+"ok/ui/qt/about/AboutTab.py": {
+"sha256": "6199168f2e487e8bc79f94ba97e12d641de81ad2ba1127b4ed7662dd0da1d4c7",
+"size": 12815
+},
+"ok/ui/qt/about/UpdateCard.py": {
+"sha256": "a03d438dc191d78fd46f21a5d3ca2930dbe9e7e5ddff1ab28dca32785c7da224",
+"size": 19029
+},
+"ok/ui/qt/about/__init__.py": {
+"sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+"size": 0
+},
+"ok/ui/qt/common/__init__.py": {
+"sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+"size": 0
+},
+"ok/ui/qt/common/config.py": {
+"sha256": "b17e5e4b6fd7edcb2932236b7208e585776e24eb57e8c62a6086ffbdcbad326b",
+"size": 4143
+},
+"ok/ui/qt/debug/OverlayWidget.py": {
+"sha256": "a01d4c536eb8d5d452232ca67aa35e087705b169c71c5b36689f3c57dda907f8",
+"size": 10055
+},
+"ok/ui/qt/debug/Screenshot.py": {
+"sha256": "430121a7e0cfa236982579c91e07a231ad6c513ab134867c1f0f632b1ca39038",
+"size": 118
+},
+"ok/ui/qt/debug/__init__.py": {
+"sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+"size": 0
+},
+"ok/ui/qt/debug/diagnosis_page.py": {
+"sha256": "023331c0c30a97d3b7893cefa813f049081494a54c701da22f540aa06f1efeed",
+"size": 21032
+},
+"ok/ui/qt/events.py": {
+"sha256": "6e5f456b4e1c97711b5205f31506679447f3c093fafb1659aafe3ea409d94677",
+"size": 2994
+},
+"ok/ui/qt/i18n/GettextTranslator.py": {
+"sha256": "49bf77e76efbcfce30f61b51bfae6139b1572d2d62445b355a46dba78a08d883",
+"size": 116
+},
+"ok/ui/qt/i18n/__init__.py": {
+"sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+"size": 0
+},
+"ok/ui/qt/i18n/en_US.qm": {
+"sha256": "d8038299be833e2b27c25acdc2b85a503d859240fb54b6304ebc693b7d19dd4d",
+"size": 95101
+},
+"ok/ui/qt/i18n/en_US.ts": {
+"sha256": "8c9d09b6b84393f9d51d4004897f935abf881a87910b686d81bede0dc9eeea94",
+"size": 146484
+},
+"ok/ui/qt/i18n/es_ES.qm": {
+"sha256": "2dc1f0126afec00d575f20cc7ef1caad6a11d653491680d1b07803cc7698eb2b",
+"size": 105603
+},
+"ok/ui/qt/i18n/es_ES.ts": {
+"sha256": "2c631c7bfc9781bd12455362e7010a19508196c0f7fa698940c7d4ab68a3ea39",
+"size": 152291
+},
+"ok/ui/qt/i18n/ja_JP.qm": {
+"sha256": "1fdbf9771268d3bfc22012759f5b076f2b942a82a0d0ae7a601c2647e568aec1",
+"size": 80516
+},
+"ok/ui/qt/i18n/ja_JP.ts": {
+"sha256": "04082027d20ded9b32b5fe23470ac006c19d6d5acd696a2673c519a709435c53",
+"size": 157432
+},
+"ok/ui/qt/i18n/ko_KR.qm": {
+"sha256": "4b4a455ce57353a63a2fe7561150b3151f9bdaa3db7f29cca139703d24501fdb",
+"size": 79270
+},
+"ok/ui/qt/i18n/ko_KR.ts": {
+"sha256": "3ab87cc03b2f9e2f2aadd1a2e814d04fa7ed9b093f023eb17edd7fdd69fc508c",
+"size": 152095
+},
+"ok/ui/qt/i18n/path.py": {
+"sha256": "45869a5a3e06f4296872428742267b5924245910ab03a7a696dfd3ec53d2c7b6",
+"size": 49
+},
+"ok/ui/qt/i18n/update.py": {
+"sha256": "97faaf3359c6b9a1d601ff8cf108e1713a3acbcf7ae231f8fe2f32081fd45e8e",
+"size": 918
+},
+"ok/ui/qt/i18n/zh_CN.qm": {
+"sha256": "d19a7e5f42026698ffc6889b460e2a8172d6ff32ed32142f510bce42f7f895de",
+"size": 71762
+},
+"ok/ui/qt/i18n/zh_CN.ts": {
+"sha256": "3ad7bd2cb2d83bb116b90eb83f006d41a6e736da6b8f789dcb59e80bf24f580b",
+"size": 145939
+},
+"ok/ui/qt/i18n/zh_TW.qm": {
+"sha256": "bf7787d09d679997f829b2cdb870e8e792bc36c92b04174be28397306c51c5f4",
+"size": 72166
+},
+"ok/ui/qt/i18n/zh_TW.ts": {
+"sha256": "f2e34107c2dc66e6940e98ced7e80eb62e33e2e7c9dfd6441277baf739b1b2a0",
+"size": 146947
+},
+"ok/ui/qt/kit/__init__.py": {
+"sha256": "7a8beba2475e371c3f93ee481830e1e5efec27cc5e6111fa3ad8ed1caf6cd102",
+"size": 1639
+},
+"ok/ui/qt/kit/buttons.py": {
+"sha256": "c7d08adb56e6fd5532186348874e3cf0cc54f3b5a46a490539159466198189bb",
+"size": 5589
+},
+"ok/ui/qt/kit/cards.py": {
+"sha256": "debe573557e3efba6253af419320d4eccac7a2580705e4bf533e186fa362e5c2",
+"size": 4019
+},
+"ok/ui/qt/kit/dialogs.py": {
+"sha256": "503e754fab1bcc943069f7e9d06f1e6cabf21a1896b4abe480811ca541c82138",
+"size": 5796
+},
+"ok/ui/qt/kit/feedback.py": {
+"sha256": "9e469426c4372514d19f0a16cbc1a3ae841c3f9d159559fb06ac917e46fa693d",
+"size": 12199
+},
+"ok/ui/qt/kit/gallery.py": {
+"sha256": "6a97923443da5c65489cac272a5a91c19348e1f6a2074ae731fcd95061053faf",
+"size": 12497
+},
+"ok/ui/qt/kit/icons.py": {
+"sha256": "7f79ce8089e37f1368db848d505361ee0908fa15e1f955c943028da1e438f1d9",
+"size": 18513
+},
+"ok/ui/qt/kit/inputs.py": {
+"sha256": "c8e06e5bd88be56c159288623673f2e7e6fa66beda7140f86d952f041b9fc37f",
+"size": 4540
+},
+"ok/ui/qt/kit/labels.py": {
+"sha256": "65fe95b6db17107a658a7d285e6695babfbef36289b7d8799e379e1be220badf",
+"size": 897
+},
+"ok/ui/qt/kit/layout.py": {
+"sha256": "014a16f07efda7e28459cbde77276efa1cfe384d0c89358b2835fff710ebaa6a",
+"size": 2637
+},
+"ok/ui/qt/kit/mica.py": {
+"sha256": "108cd23daf693963b4388530245715f277eb4b94a0f12feba7b0f786a2e09b96",
+"size": 9141
+},
+"ok/ui/qt/kit/motion.py": {
+"sha256": "6c5ed158ba97e81b2b9f41589dfbd77cd87149fe770971eddda6a3a8dcc01314",
+"size": 7367
+},
+"ok/ui/qt/kit/navigation.py": {
+"sha256": "26a3accf7a9a3993b12a80cdbb0e0a96faeea0e5483a15b2bde960158a36dfa1",
+"size": 15901
+},
+"ok/ui/qt/kit/options.py": {
+"sha256": "d1dea60a6a88125f4b1b0c933dbdeed47eac5e9866f452960b946f7b09dab0eb",
+"size": 4413
+},
+"ok/ui/qt/kit/popover.py": {
+"sha256": "05db8407c30336512ecfe7bb580302902700a69eff48c53c3b81affdac706b2e",
+"size": 4059
+},
+"ok/ui/qt/kit/qss.py": {
+"sha256": "efb363a223486c8e069fd5266f0b01e40aac66745e52097a7d5cd3d9be49fa2a",
+"size": 18953
+},
+"ok/ui/qt/kit/switch.py": {
+"sha256": "efba91aabefd60a105f4e3ba62937e08f05a072ddb5e847e5a531939feb79fba",
+"size": 3830
+},
+"ok/ui/qt/kit/tabs.py": {
+"sha256": "8a32df8d58da8a9bb2d9e7025fbb928e255c7d7098c775ec5f150a8312ec962c",
+"size": 8382
+},
+"ok/ui/qt/kit/theme.py": {
+"sha256": "8aef9587f4cca3812e3021f24b4a531dd2e2f7ca7f30693f53d921f12059c3eb",
+"size": 11404
+},
+"ok/ui/qt/kit/window.py": {
+"sha256": "ab79377835cbd65d6dbe3516bc031f35884f48fc2e85e8a9d7b5ae6f1750db84",
+"size": 20433
+},
+"ok/ui/qt/overlay/OverlayWindow.py": {
+"sha256": "599bf5dc740e9f4f42e38a5b82313cb20b52284f9a3d4c524bb8ca9adb91fff8",
+"size": 375
+},
+"ok/ui/qt/overlay/__init__.py": {
+"sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+"size": 0
+},
+"ok/ui/qt/plugins/PluginTab.py": {
+"sha256": "3a37ec4ff511fb97b24951b3de611ca70dd471e7cf81502b7c58e18b5d9a96c5",
+"size": 21425
+},
+"ok/ui/qt/plugins/__init__.py": {
+"sha256": "bb08e409317d08f7f803965ebd05d7264d25ba64cc1cf69e0e95b056eac9e2b2",
+"size": 55
+},
+"ok/ui/qt/plugins/imported_tabs.py": {
+"sha256": "60ae9708eb1fed814bb0187cf385fb3b360cbcf889f8c2aa49301e6ecbac81e7",
+"size": 7963
+},
+"ok/ui/qt/qss/__init__.py": {
+"sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+"size": 0
+},
+"ok/ui/qt/qss/dark/card.qss": {
+"sha256": "1c27facc61e7653b6baf6cc96edf933e5a3ad2e5c33c1eb7742f8e3dfd3375d7",
+"size": 355
+},
+"ok/ui/qt/qss/dark/discord.svg": {
+"sha256": "bde5ea7d1a8914970913d298e57aa48b120afa873f6219a1cacd16627203a6e0",
+"size": 2010
+},
+"ok/ui/qt/qss/dark/heart.svg": {
+"sha256": "b435d95187228c8bcd40c1567d70a7b028d22dc8e42153b6a4ccf005cb26b75d",
+"size": 514
+},
+"ok/ui/qt/qss/dark/message_window.qss": {
+"sha256": "1e4bb91cdd625cfead70155e6f81e49d81ca5fe7ad9b153087feef633d114766",
+"size": 765
+},
+"ok/ui/qt/qss/dark/setting_interface.qss": {
+"sha256": "72b5a6a50207e6e11283479288496dce13a1c254355f642a71dfe992cc741ba1",
+"size": 287
+},
+"ok/ui/qt/qss/dark/status_bar.qss": {
+"sha256": "2be47700879390624f1581086cb4177b7f6cfeb7b856dbebd1cbcbfefe212b31",
+"size": 506
+},
+"ok/ui/qt/qss/dark/stop.svg": {
+"sha256": "33e609ccb4827b51fb6b7995220328d7de361c51399a7e542cc4415a1d529ef9",
+"size": 788
+},
+"ok/ui/qt/qss/dark/tab.qss": {
+"sha256": "013778c939af54a5e62ee0b36834f70688a19c3b68dd30f9971327becdf527f7",
+"size": 1742
+},
+"ok/ui/qt/qss/light/card.qss": {
+"sha256": "bd4f47e39b76aa9573722330720978de0a78e33aea9adfd9574f21117552d3de",
+"size": 348
+},
+"ok/ui/qt/qss/light/discord.svg": {
+"sha256": "bde5ea7d1a8914970913d298e57aa48b120afa873f6219a1cacd16627203a6e0",
+"size": 2010
+},
+"ok/ui/qt/qss/light/heart.svg": {
+"sha256": "b435d95187228c8bcd40c1567d70a7b028d22dc8e42153b6a4ccf005cb26b75d",
+"size": 514
+},
+"ok/ui/qt/qss/light/message_window.qss": {
+"sha256": "347fd09d3a3755e6540dca88200dd93c7636573ee71ecec56d3741ab78db28dd",
+"size": 688
+},
+"ok/ui/qt/qss/light/setting_interface.qss": {
+"sha256": "b77d0309d0cc7f73c89a77df7e7d6cb95592153cd48c7070781ec9d080c94e0b",
+"size": 264
+},
+"ok/ui/qt/qss/light/status_bar.qss": {
+"sha256": "ce6e5e8c36ed22365c8161bb7eb174cb74c58bf2e060f31e175e1e98092a6540",
+"size": 365
+},
+"ok/ui/qt/qss/light/stop.svg": {
+"sha256": "2a078a24c48dfd42d8b8c62241ff084a9a233be9341f2100ed7a2f21c5d2ba4b",
+"size": 788
+},
+"ok/ui/qt/qss/light/tab.qss": {
+"sha256": "bc69dfd6db6dd800db026dc9a1357c2d485057028b4108577469138de724589e",
+"size": 1631
+},
+"ok/ui/qt/qt.qrc": {
+"sha256": "470e9771641bce3561e042165b18d22f52fc150099d294c95b160c2e09592d75",
+"size": 243
+},
+"ok/ui/qt/resources.py": {
+"sha256": "593643e789e22b5ebe38c4550f2c54219ac6ea7aa7e3807737bd5e1144752524",
+"size": 879471
+},
+"ok/ui/qt/settings/GlobalConfigTab.py": {
+"sha256": "5e6c78cbbbe5362400f6adae31491ab59608afbba2d1e7fbcad240547717c6bd",
+"size": 1502
+},
+"ok/ui/qt/settings/__init__.py": {
+"sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+"size": 0
+},
+"ok/ui/qt/settings/config_section.py": {
+"sha256": "45dc5d3393665caa3772e7c2c50a6f56edbbd90cbe0fe6d5a26019a09b568e8b",
+"size": 7193
+},
+"ok/ui/qt/settings/settings_page.py": {
+"sha256": "6725b1f48c7d5a6050c25cdb7db828a5e6bc7d5d7ca526bec9f6ffabe2f305fa",
+"size": 8486
+},
+"ok/ui/qt/shell/__init__.py": {
+"sha256": "3381cdbec874f324ecdee3e82763dc885f783bee6ddd682aa1aa9cad205d3453",
+"size": 82
+},
+"ok/ui/qt/shell/connection.py": {
+"sha256": "7e487a3db9b9ea206f01bac5526054b0f8bbf3dcd3177c5ca09d4dc09a5965a1",
+"size": 13501
+},
+"ok/ui/qt/shell/diagnostics.py": {
+"sha256": "192117cb6a0d52b6e14e502d961da780989e96e25f31126f1f83cb1ea2c8e193",
+"size": 4955
+},
+"ok/ui/qt/shell/lazy_page.py": {
+"sha256": "b7f05be5ee45fcdb0ce5631ccdb6ad52f767ba2ba8f92d9b246357051cd720b7",
+"size": 1006
+},
+"ok/ui/qt/shell/log_page.py": {
+"sha256": "f68472dec904c3c99e667a572b3c64109eaace115b0925438131367fd6d87ffb",
+"size": 14044
+},
+"ok/ui/qt/shell/nav_icons.py": {
+"sha256": "58e976ba22321c0982c0507d9317902a26aac967ffe40c2c2298d01baa52ed31",
+"size": 1858
+},
+"ok/ui/qt/shell/run_bar.py": {
+"sha256": "3a25a490e562bfef9a36188010f364e77d1fb087d7921b39febd26dd682ad661",
+"size": 15826
+},
+"ok/ui/qt/start/__init__.py": {
+"sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+"size": 0
+},
+"ok/ui/qt/tasks/EditTaskTab.py": {
+"sha256": "4dbbb563a71be15b02b5821630e15a46cb47d65b8c7140a0a5892818ec3c9310",
+"size": 45751
+},
+"ok/ui/qt/tasks/MarkUpWindow.py": {
+"sha256": "514ddfc746008fdf3ed0d9f7fcc81f4a2fe26928e6e98c081244bc0ce2570c1f",
+"size": 53754
+},
+"ok/ui/qt/tasks/ModifyListDialog.py": {
+"sha256": "53c5cde1e2559b3a5e9630c52380d3b09a034082c30ee7d546b013d5ec5feda0",
+"size": 9429
+},
+"ok/ui/qt/tasks/PythonHighlighter.py": {
+"sha256": "351e74cbbb4583f3b896437090917174ef11d0a8f4f696cea67a89d6d0964f8e",
+"size": 2130
+},
+"ok/ui/qt/tasks/RecordScript.py": {
+"sha256": "3f8058020258b38e1d54304779508dd7e1479ca0488a1dd7ab6cf7d85ba74bdc",
+"size": 14244
+},
+"ok/ui/qt/tasks/ScheduleTaskTab.py": {
+"sha256": "7a843df470b7bca09511eb81f1172abeafe39e1a75f4e4887d6a80e583f8c69a",
+"size": 36578
+},
+"ok/ui/qt/tasks/ScriptPackager.py": {
+"sha256": "6086ac2e6aad7497b4c59b29501747a637ab9845554229bfc5b6344e911b04d0",
+"size": 129
+},
+"ok/ui/qt/tasks/TaskManger.py": {
+"sha256": "8e864bd3cc074a07008d7c167cbe8b8054681652a38ed90c54cfc08d1969cb9b",
+"size": 1660
+},
+"ok/ui/qt/tasks/TaskOpButton.py": {
+"sha256": "d4e687373c205099b81e394166062bd3b9d44720a48e1c475824593df227ca18",
+"size": 647
+},
+"ok/ui/qt/tasks/TemplateFactory.py": {
+"sha256": "901f4ec80c5d025de88996feb5c43d7f00d22d1bacd1f93b70d8c0161474055a",
+"size": 5574
+},
+"ok/ui/qt/tasks/TemplateTab.py": {
+"sha256": "df351ac7527ffb11d2016712783b596737281a026c8bfa68986694adc971ee06",
+"size": 45357
+},
+"ok/ui/qt/tasks/__init__.py": {
+"sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+"size": 0
+},
+"ok/ui/qt/tasks/config_editors.py": {
+"sha256": "cd0e58e225551288610dacfd6b2bd159b89baecdfca8d81a39ba772db6076587",
+"size": 17481
+},
+"ok/ui/qt/tasks/config_form.py": {
+"sha256": "9b94ba9d15e2a37ede8c1fe65d05b7f59347763027c1f4bce92ca079f89a43f4",
+"size": 12245
+},
+"ok/ui/qt/tasks/mouse_buttons.py": {
+"sha256": "99fb608e96d6815b6f1298b1db4204f810f75264c19164f823c45a0391b45876",
+"size": 1741
+},
+"ok/ui/qt/tasks/schedule_index_sync.py": {
+"sha256": "ec3d33695b3559e38548c129ec6ac62c73ba94a29a1ea884a06757353f4c49ad",
+"size": 25129
+},
+"ok/ui/qt/tasks/tasks_page.py": {
+"sha256": "ad342221905f77a3e354bd156b01c169bdc9b1a2959906356b824e6b4e5e066b",
+"size": 42924
+},
+"ok/ui/qt/util/Alert.py": {
+"sha256": "504e8b9d902ac555de41e7a44f3b8ba70cf445cec757ea58208f5d02bf7e8afe",
+"size": 709
+},
+"ok/ui/qt/util/InitWorker.py": {
+"sha256": "cf146c4d88240e2f31aa3301678f61fa31a188e5860555f0643755d64a6ee3ed",
+"size": 244
+},
+"ok/ui/qt/util/__init__.py": {
+"sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+"size": 0
+},
+"ok/ui/qt/util/app.py": {
+"sha256": "d549c01a211ba692051537bf0b24a3e3a3559ab7cb134b22dc6f6388fed3aef8",
+"size": 2405
+},
+"ok/ui/qt/util/download.py": {
+"sha256": "e2d4fe28db7c0b54e650d95c53a5ff95abda7b850963c2cef9e7a52180f042a8",
+"size": 119
+},
+"ok/ui/qt/util/pip_util.py": {
+"sha256": "2a3837b542a38718153e60bba4447e43db595760e8b55634181e3c3f42b0734d",
+"size": 6620
+},
+"ok/ui/qt/util/pyappify_startup.py": {
+"sha256": "cc13fbd31fa08cbab21518ee489be2d20da3beef87f9228ffeeb54ea8591643b",
+"size": 7600
+},
+"ok/ui/qt/util/touch_scroll.py": {
+"sha256": "387b5834c7da2b9fec513b1b5a230ad0d5ec662deb1258369c19fc04b9a54be2",
+"size": 3495
+},
+"ok/ui/qt/util/windows_thumbnail.py": {
+"sha256": "ec0182742ace1ab3f578bdea9aaf3d9b31b3f99555697d79a49368e6115ebfd3",
+"size": 7857
+},
+"ok/ui/qt/widget/Card.py": {
+"sha256": "c1e76dc3be7a0538ce207b43bc2eb718e46cb261c632e1e13901ad7af3b87b07",
+"size": 2029
+},
+"ok/ui/qt/widget/CustomTab.py": {
+"sha256": "cc48b637b5987b3d829d9208a0f186793e43aab74e9a57ff3a73c1c69baa79a9",
+"size": 988
+},
+"ok/ui/qt/widget/FlowLayout.py": {
+"sha256": "45d2f38a8325ed774bd9ae1c82eb0528f3345325aff07e13263aa1235e85d3f5",
+"size": 2405
+},
+"ok/ui/qt/widget/ImageWidget.py": {
+"sha256": "9189028f3a91fa5922756517646f7871b5480c6b4154baf3084bc9e4c0c5d6e3",
+"size": 1791
+},
+"ok/ui/qt/widget/ImportWarningDialog.py": {
+"sha256": "aa4c48837e965bb76e87cfb10a0d378abdcd18a5066501477cdb3d8bf3b95050",
+"size": 2061
+},
+"ok/ui/qt/widget/ListTableWidgetItem.py": {
+"sha256": "9221dd9017c65506012ebc9d18d462969c04cc0e450727870769bd3cbf24e973",
+"size": 918
+},
+"ok/ui/qt/widget/NumericTableWidgetItem.py": {
+"sha256": "0f4b9869e89d8ab25cb63b6a175e758fe8c42571299b09bc4823b0ec3c82c006",
+"size": 1285
+},
+"ok/ui/qt/widget/SortingTableWidgetItem.py": {
+"sha256": "438aba50dbd1c7de2cfc00bae6f29615481628310e7d8e90ebab1dc52e111bf3",
+"size": 1094
+},
+"ok/ui/qt/widget/StartLoadingDialog.py": {
+"sha256": "0b3962b106c8268d88a9a853a72569e64f46c3d0cdb436c5d9d101c4959d5ee3",
+"size": 3169
+},
+"ok/ui/qt/widget/Tab.py": {
+"sha256": "2349ac4f97eb45ff8c0e4e737a1f0c8ca49c2b3fe572042dddf8a0fad1fe9030",
+"size": 2350
+},
+"ok/ui/qt/widget/TabWidget.py": {
+"sha256": "9450efc987afab475c45f239c01095dae19d4951a4ed5d99ec8efe2659bf799c",
+"size": 800
+},
+"ok/ui/qt/widget/UpdateConfigWidgetItem.py": {
+"sha256": "8b0a7db36605106dd628dd6970f16f77afec5ec63b4a8ba5a628c94678f06805",
+"size": 383
+},
+"ok/ui/qt/widget/YesNonWidgetItem.py": {
+"sha256": "cdfa43f49e8be5825b01f4664d721a9b81a6c2e5412ec01f7429a3ce71c3d84f",
+"size": 783
+},
+"ok/ui/qt/widget/__init__.py": {
+"sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+"size": 0
+},
+"ok/ui/web/__init__.py": {
+"sha256": "6722184fba81681dbef881bb054f6bcde21bc6dcd95c73f7a45cdc45226298c2",
+"size": 166
+},
+"ok/ui/web/app.py": {
+"sha256": "c91efdfb8e85a6ef3607cfa80a15497f4c12094bb07273aac8dfdd10d3bd8fee",
+"size": 72557
+},
+"ok/ui/web/requirements.py": {
+"sha256": "6192507a8eb2637770eee11a5f099f723b4a5a3534a69470839145bce2e882fb",
+"size": 392
+},
+"ok/ui/web/server.py": {
+"sha256": "a451cd5fe91e8c8bb7bb9a3e8d8f7ced09127e2beaec5ac43ebe3c420f27bce4",
+"size": 24518
+},
+"ok/ui/web/static/app.js": {
+"sha256": "83afde7ab41806f090bf124debc4189511f9a468b36c0a4647806de6c8a8bbe8",
+"size": 136902
+},
+"ok/ui/web/static/chunk-fluent.js": {
+"sha256": "352d917f7fab843ba2966d26c91bda9bc998ca57c1f8483c2a6dac5f19af83f4",
+"size": 344959
+},
+"ok/ui/web/static/chunk-react.js": {
+"sha256": "0943df9f77ec79c107cf7cc49dd880148ee6561a64efe22b717274fd241c8c5c",
+"size": 192982
+},
+"ok/ui/web/static/index.css": {
+"sha256": "f1cb4bc147f2d6a8abb6629137add371cc1d64c67acd33194d5ad4111fe8b021",
+"size": 47076
+},
+"ok/ui/web/static/index.html": {
+"sha256": "2d13965da134cae6e4b7172377d9d6a4c1995d4677d48c8a8df770d4de4a6798",
+"size": 675
+},
+"ok/update/__init__.py": {
+"sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+"size": 0
+},
+"ok/update/copy_ok_folder.py": {
+"sha256": "e55ce7595d7b3d628c689b6fe17c02de06ff9abc76597c27b4e935573a1ee31c",
+"size": 1600
+},
+"ok/update/inline_ok_requirements.py": {
+"sha256": "e649519c9b82596f124f4d787f092c27cdf6c47b1967b34b655801d3affb41b9",
+"size": 5423
+},
+"ok/util/Analytics.py": {
+"sha256": "abe607f4aa98a26531370ade5e64f4bedc22f05b24a97a990ac82cd421417bba",
+"size": 6194
+},
+"ok/util/GlobalConfig.py": {
+"sha256": "21018dc5130a83d8298c53f316998fe9b22c9b12efdf0392f1dfeab0938ef79c",
+"size": 21973
+},
+"ok/util/__init__.py": {
+"sha256": "591e6e255f34ea61d5e9e630d023f1643a00d523e2963298a0acd8a100efd54e",
+"size": 71
+},
+"ok/util/blur.py": {
+"sha256": "93680f3c2686ca307587238decda38fd34325d640b19e29f9e1c9e7c0f926155",
+"size": 6981
+},
+"ok/util/clazz.py": {
+"sha256": "95706be048d6770d933a03b0e788ce295e641dbf5f91861ce079af6838d003e1",
+"size": 1303
+},
+"ok/util/collection.py": {
+"sha256": "bb44d4137594302d01b67ab76cfcc14188974955a330575a5436775dd2bdbeee",
+"size": 1443
+},
+"ok/util/color.py": {
+"sha256": "740a8a7e3fd5405f0617696730a016c238a81ccb129002f6fc7c11e3eb998e3d",
+"size": 6446
+},
+"ok/util/config.py": {
+"sha256": "becad76c7196de926c669cfbd365e0e0a62302d760f43f8f11deb98ab9e44483",
+"size": 5266
+},
+"ok/util/explorer.py": {
+"sha256": "e51002cd3295ec2437d04a9233eddf0c61b80355f839a8ec51dc15fe9366a8b1",
+"size": 8720
+},
+"ok/util/file.py": {
+"sha256": "8d4d3a9fe6b62fb3f17107c29ec0b816c61a69eff15803bf6297e26f8996b715",
+"size": 9585
+},
+"ok/util/gpu_driver_settings.py": {
+"sha256": "9851fa3722948c6754c2d8f559ea9e7130682bb673fa74e06a62173470a53993",
+"size": 40719
+},
+"ok/util/handler.py": {
+"sha256": "3a4358caed94d6f273cef6c31bb8c763a91ed642e59c72813aa982503711c949",
+"size": 6825
+},
+"ok/util/i18n.py": {
+"sha256": "2e9fef0441202beafcff222cde2e05d886bfb735f5d4d59d730e3e61ff9b8ff5",
+"size": 1029
+},
+"ok/util/logger.py": {
+"sha256": "33be902448621ad1ef28aa300518539b68c8860e1012b0b775bea10b0a1ad1ea",
+"size": 9271
+},
+"ok/util/partial_sync_repo.py": {
+"sha256": "e44961bc157e8c6f604e98a90ff4d11761414926ef5fd6591b8b294f3b057e2b",
+"size": 9196
+},
+"ok/util/print_hwnd.py": {
+"sha256": "d9625856a851c9b673ef09537ac4d50d1440e0f20e97fa515997b5b45e0c7c6a",
+"size": 3844
+},
+"ok/util/process.py": {
+"sha256": "8f9fb095f4cdf3558ce0859ec64559c168d294b7124d711a721c8ab9c68940b6",
+"size": 31307
+},
+"ok/util/shortcut.py": {
+"sha256": "05ffaf44ffb76b4210e60817d241b733eb5a6371e16c40fd8f79068a0ff40c01",
+"size": 2588
+},
+"ok/util/version.py": {
+"sha256": "6b16bb89be23ee2aa0132e0d342be8c8338378a385409ed53afca8c4fce85a85",
+"size": 2388
+},
+"ok/util/window.py": {
+"sha256": "438d7c47bac6e99642f520454317c6d1d4316ea2e4e1ebb58b19d1b413474f0d",
+"size": 18246
+},
+"ok/util/windows_schedule.py": {
+"sha256": "c7cfffb2c31a027f3750228ddf7602dcfa6463b0927268f7005878c27256e46f",
+"size": 57138
+},
+"pyappify/__init__.py": {
+"sha256": "9c3621931bf9a41231d9021d1056f87516f4484f4d3f29bf27e69a43d90cefea",
+"size": 16278
+},
+"pyappify/apply_update.py": {
+"sha256": "43044089bd24194c71199c5d6c32a9e322d0d4e19c7d274343060431c1c8cdf2",
+"size": 6168
+},
+"requirements.txt": {
+"sha256": "0fa2c62600bbd422d7f5dafcc1cc3cb9832f4eda5070cb7fefa151b1e9988bd6",
+"size": 3186
+},
+"src/Labels.py": {
+"sha256": "7352cf88144be3f869bd267afebab947bbb4ab0fae7ddcb26e143648b1935000",
+"size": 11881
+},
+"src/OnnxYolo8Detect.py": {
+"sha256": "d07532b3082e946b3d0a2a0b7bf9d01e6b3f17fd52cabbc0b204b553ef53cbf1",
+"size": 9997
+},
+"src/OpenVinoYolo8Detect.py": {
+"sha256": "3191fa227110785e484d402b821547205f3f85a96291c9e6e3930e56d67d371a",
+"size": 5190
+},
+"src/__init__.py": {
+"sha256": "1dc07a345b3aef311c1b2bdd93a6d5d012ae492aa99769bd184074a22493af08",
+"size": 127
+},
+"src/char/Aalto.py": {
+"sha256": "13fe66d703e9a35224b214a7b36dedf15c43b6f444cf2f9265beaedf6cee2bfc",
+"size": 1268
+},
+"src/char/Aemeath.py": {
+"sha256": "7ee111f9c0026ab9367c3d95f8dde0870904de9896688c1f1e43dd2752543513",
+"size": 4699
+},
+"src/char/Augusta.py": {
+"sha256": "e1854ced9585ecdafdb227ba992af420c68a3245871f01776f6380652867a74f",
+"size": 4767
+},
+"src/char/Baizhi.py": {
+"sha256": "976af24a46368ba2e93cc0dc44714183475b1e8644cb82b22cf7ac4530bb9108",
+"size": 1105
+},
+"src/char/BaseChar.py": {
+"sha256": "4db08b623d6ae1a1d711cd4bfa43c22bb7313aff058bc7b86baf801bcdcc31dd",
+"size": 50328
+},
+"src/char/Brant.py": {
+"sha256": "876e82febb405393ee8637664325115b9c7c3f16a7fd520344db03d6462a9777",
+"size": 5323
+},
+"src/char/Calcharo.py": {
+"sha256": "0d3e8d11ea1ec17fe525b012893f2f843ba14ee49befbff017a940f2cbbd2ab2",
+"size": 2349
+},
+"src/char/Camellya.py": {
+"sha256": "b5dbc9183c58272ddc99bebabd0d9e10ec95ea1fa18e5c9de8cbfb7d9d3c9d46",
+"size": 14219
+},
+"src/char/Cantarella.py": {
+"sha256": "76f36c02f21a82fffb61ef68c04e3fd1c7a41b93b0274af4563d481901d2edd7",
+"size": 3383
+},
+"src/char/Carlotta.py": {
+"sha256": "5ca4767ba4c1da2dedb0ba0bb74ae7d84794238989d88893ac8c90688e0e881e",
+"size": 14650
+},
+"src/char/Cartethyia.py": {
+"sha256": "2e4f521aa0128d8b69d962cf2d85a67cad66a9f05ba871a9a0623bdd09282690",
+"size": 11797
+},
+"src/char/Changli.py": {
+"sha256": "2abe68f3e2dfa0f160e559cd81a12c13e2890904d876d69a6b31f822a32c397f",
+"size": 9279
+},
+"src/char/CharFactory.py": {
+"sha256": "b0f0982d00517bd98d517d56b03846328fc477be42419da251e12f22282e1574",
+"size": 14273
+},
+"src/char/Chisa.py": {
+"sha256": "f999ebc80ee669fcdd378c58985743118cd77d87e4b52b1e7b57a249c14ca2a3",
+"size": 3314
+},
+"src/char/Chixia.py": {
+"sha256": "ffe0b8d1e20a15203331da47e6a77b5b2c46248a7bd32cbb4d5b546ddf60a847",
+"size": 529
+},
+"src/char/Ciaccona.py": {
+"sha256": "6ce42370ed4a44fdeaa5a572f96930cf41f132621811986be114b655d4520c5d",
+"size": 8032
+},
+"src/char/CustomCharLoader.py": {
+"sha256": "1e3ce2133f7bfafa7233e3a666a785e87b611feb92a18f320f30ad8efc50b73b",
+"size": 32172
+},
+"src/char/Danjin.py": {
+"sha256": "fe839ff680a9aa313d99272ad3d03148693bb9f6a21534346833266d62ffaffa",
+"size": 1807
+},
+"src/char/Denia.py": {
+"sha256": "dde142bfea700976ff0db8baa8f0d572015a61922664aef103709a3973b97fc7",
+"size": 2971
+},
+"src/char/Douling.py": {
+"sha256": "ba4fd74bce3c949da02fe2d710e614db3388ac39e0093fb964cac314cd6b4ae8",
+"size": 5940
+},
+"src/char/Encore.py": {
+"sha256": "ee38e5db1956a90311527fa028f50a034efdfee24ff3d1484d481a087b06d658",
+"size": 3609
+},
+"src/char/Galbrena.py": {
+"sha256": "90519bedf34b0acdec6ac88fe03655787c37314655222e5450af2576a53edd87",
+"size": 2313
+},
+"src/char/Hiyuki.py": {
+"sha256": "ce1eab69ce1a250195db43d3e88ea7dc97b74f0499d327518247fb154e15b596",
+"size": 8408
+},
+"src/char/Hsin.py": {
+"sha256": "25fa06aae7862293aa2f015d280435b845689df3a6167fe704330b9d218b2369",
+"size": 12804
+},
+"src/char/Iuno.py": {
+"sha256": "db52a7c11f868b887c3fc10c668d7f48fd34e173adddcbba98ce247e979f79d9",
+"size": 3312
+},
+"src/char/Jianxin.py": {
+"sha256": "9a05c5eea7fefd576f82591a3471311d20372deb7fed9c31555a539e18619620",
+"size": 1558
+},
+"src/char/JingRan.py": {
+"sha256": "6129226b23446500f27e273881ef2d4ab6f150af913860769c65f67d10526255",
+"size": 1427
+},
+"src/char/Jinhsi.py": {
+"sha256": "99f4e468128d9055cf05d122b8b9b2f6518b3a264236e9d562820da4916d36c4",
+"size": 5143
+},
+"src/char/Jiyan.py": {
+"sha256": "734bd111af4c00dbfafb5debb30a7258863e3cc08e4ff083427758eb09b92370",
+"size": 1824
+},
+"src/char/Lily.py": {
+"sha256": "6c8812e85e5c130f0ab77084f584106729321ca9b103bd13a53788b2a45e5dbf",
+"size": 4415
+},
+"src/char/Lingyang.py": {
+"sha256": "bdbb7e2be3ad03d0f47f4b32d7967dbc5804b6c298681a88788faeff47d6d5c8",
+"size": 1562
+},
+"src/char/Linnai.py": {
+"sha256": "cde970f8ff513604d2cdb630da97b351f628e4b2395520323576f5f61b0f3a5d",
+"size": 5236
+},
+"src/char/Lucilla.py": {
+"sha256": "9452158e8d8d9622dbd2282de6be30b2d14fff6041584dd43d34762643a333e2",
+"size": 8183
+},
+"src/char/Lucy.py": {
+"sha256": "fa67fb52723e5199e6b7ac5b348be348981c39141f24201adf8e99f348e829c0",
+"size": 4565
+},
+"src/char/Luhesi.py": {
+"sha256": "da8d1178bfe4883e7a785a546a9825a9a7117e8a543c8b501553c4d30eeacd9e",
+"size": 3798
+},
+"src/char/Lumi.py": {
+"sha256": "e346d9a10295f1e8a8a40ac00465eb69d1ef491a882b27df0324fce72a570559",
+"size": 1249
+},
+"src/char/Lupa.py": {
+"sha256": "df66950099eaf2ca055beb7bbeefaa2805f4903fd9e355f3410d4d63d01976a0",
+"size": 6838
+},
+"src/char/Mornye.py": {
+"sha256": "a86e660ab87c7424366127b0e3163ec8351da796e3c123da50dafafe2b76bd24",
+"size": 4578
+},
+"src/char/Mortefi.py": {
+"sha256": "77e39041a4f9c6b0e65b25fab6793251ed865b79d34e35a5de42a0f2e6075802",
+"size": 1568
+},
+"src/char/Phoebe.py": {
+"sha256": "1447283e4a2ab700d433ea45f45517ee6c2df359f34ed25321d5ac87ae002921",
+"size": 20822
+},
+"src/char/Phrolova.py": {
+"sha256": "700f01dd92c24bd45ac24b74791dbdcbff1c7d6a0a36f46a55d06edd76326b00",
+"size": 4836
+},
+"src/char/Qingxiao.py": {
+"sha256": "df7ed4f0245203f5f670ea57e993a4fc0f86401453aae02c53783ef09533d804",
+"size": 4629
+},
+"src/char/Qiuyuan.py": {
+"sha256": "34079f3f4df9d163b7b3361a9fb7d04d638f16a6b54ff28730124a6f4ce3ae07",
+"size": 2448
+},
+"src/char/Rebecca.py": {
+"sha256": "01614ab74151304e98b2fda2661327ae9470124d3b89c92e8fad181a7437f719",
+"size": 4372
+},
+"src/char/Roccia.py": {
+"sha256": "1f6e2702fa76e4787fa402dbbb99d7753cf97b7d8ce943aa225decbbe69b86db",
+"size": 4204
+},
+"src/char/Rover.py": {
+"sha256": "c4209e62fcce5cee258663b4c3c7f040c9282fd2fc303e8f9482ad8dc3a78f67",
+"size": 11707
+},
+"src/char/Sanhua.py": {
+"sha256": "56bd13f07ef2abf8aa88f9d3bec3bb22aeb1a91bfde821b7d4cb2777f90cb25e",
+"size": 1771
+},
+"src/char/ShoreKeeper.py": {
+"sha256": "42c9bcaedea7f179e36e6163839a3ebc9f4b393a0f826464a424037259274893",
+"size": 3561
+},
+"src/char/Suisui.py": {
+"sha256": "ba66209e4acc6970f7353d6b5ff809d3e3898b1d862db4f2df60ddbce27d97c5",
+"size": 4290
+},
+"src/char/Suoming.py": {
+"sha256": "a1b2397bfca57d4962875ed25eb5394a20579e46e120676386767b38c02a7f3d",
+"size": 2561
+},
+"src/char/Taoqi.py": {
+"sha256": "6a4948bbcca96b9824100371a741d6e1c192c8b542e6b857c8085568ae13edae",
+"size": 1211
+},
+"src/char/TeamVariants.py": {
+"sha256": "0548f71b80553f8ee2549e4a0defba181d48826a96cbc819292826878c2fdb47",
+"size": 11134
+},
+"src/char/Verina.py": {
+"sha256": "6081a34efb47f191f0a208fde0c3b7cb5914dc07707581fddf5f78c9ababa2e2",
+"size": 2963
+},
+"src/char/Xiangliyao.py": {
+"sha256": "80dbb6a3ff1005202faaa03cfda12e02657a2014d4d94fcf35daf80a02e9883e",
+"size": 2523
+},
+"src/char/Xigelika.py": {
+"sha256": "cf98ecf735cdc266655abd1804b75ccf90f6d653be7133a573dd3c717f94d1ee",
+"size": 3048
+},
+"src/char/YangYangSp.py": {
+"sha256": "89b56bea591452baaa1e0111cf34e00f793495a26f43d26c15d6a9b55963704f",
+"size": 2116
+},
+"src/char/Yangyang.py": {
+"sha256": "8e4569bb25c5a2555bc336c89f318dbd4b88c6264742c74775991179b568d1de",
+"size": 699
+},
+"src/char/Yinlin.py": {
+"sha256": "68c809ea10f8e9963df6e07e87990ce2cb8ac9f6993264b905f5242c4d8d2654",
+"size": 1939
+},
+"src/char/Youhu.py": {
+"sha256": "36801808a2d123d6899b207ef1f5eccfc7e28df1d1dd6ad7e6ab1d6c8a1710b1",
+"size": 1498
+},
+"src/char/Yuanwu.py": {
+"sha256": "8913fd0d97647702666c9406c2e6e26e96867991a39f874897ffa31ed842397c",
+"size": 461
+},
+"src/char/Zani.py": {
+"sha256": "4cf5f57c6ac91830d112dce860497a507b448a45ff3df75ee60ec68a40c38dfe",
+"size": 21885
+},
+"src/char/Zhezhi.py": {
+"sha256": "f849e1820432b2923d07f174ad68288356e5cb2e6206a7378300d4689befe6ca",
+"size": 7352
+},
+"src/combat/AxisWatch.py": {
+"sha256": "1b0dbe5dd7872905bfc2fed9eff64cb845359d8f49b46bf40bfa706b19ced01b",
+"size": 5096
+},
+"src/combat/CombatCheck.py": {
+"sha256": "e22483241fdb460791c58d7407256ac2af5557dbaa9ba880fcaa6f79a40f245f",
+"size": 22244
+},
+"src/combat/FKeyStart.py": {
+"sha256": "b792804f91a81dd81474212f516898b04071b35b65407d589c697be9f0df41ff",
+"size": 4760
+},
+"src/game_launcher.py": {
+"sha256": "1cf86f38d2989edf83054c800e987d2e79ac318847fae40808d48a84fa348615",
+"size": 2949
+},
+"src/globals.py": {
+"sha256": "9726514a25fc49b6837026028ef35d5f524f7e2fde0f82fec197d4e8a0b06ffc",
+"size": 1229
+},
+"src/gui/CharacterCodeTab.py": {
+"sha256": "04863dbaf06b5138a2b2b3737c163f30047fef4b7223a662c664b39d6f6eab58",
+"size": 107478
+},
+"src/gui/__init__.py": {
+"sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+"size": 1
+},
+"src/recorder/AxisRecorder.py": {
+"sha256": "ab5c156b5da2d065f24b244b9f3b374849a52b4621d9ade9c21c8f2d834c1966",
+"size": 13043
+},
+"src/recorder/RecorderTab.py": {
+"sha256": "14dfe535e35bb298ae779558111dbe1aa2d2657d126e4deeeca7aa080ef5d6d4",
+"size": 64293
+},
+"src/recorder/__init__.py": {
+"sha256": "76876eaa29856e543c319cd6460f474b98639192545e1d9437ab3d16295d1d20",
+"size": 500
+},
+"src/recorder/feedback.py": {
+"sha256": "79073e766b1d5c2ae16467fe3367e544f53275749c75587780e439b0c515eaca",
+"size": 15445
+},
+"src/recorder/manual.py": {
+"sha256": "90b0641c415da8d85566e404ea5db0216da89fc0a33ee186ba8f873dad046c3f",
+"size": 14686
+},
+"src/recorder/media.py": {
+"sha256": "c5be106476306ea29f068b5a00561898b9fccbbd868d0e2d38fd9112881c06b0",
+"size": 22246
+},
+"src/recorder/rawinput.py": {
+"sha256": "a4c696e49d866932c427a5388e69339007ca99d24911e5855325e8f529fb6623",
+"size": 20219
+},
+"src/recorder/recorder.py": {
+"sha256": "e677ac2601dfed3f004e1e78f8a166aa24cd8770fdb0212a0d086fab15c3050f",
+"size": 56034
+},
+"src/recorder/runs.py": {
+"sha256": "cf8c0a605d06183055e7652c253f6e5fcaae48b884703b944272d9adbaa837a1",
+"size": 27266
+},
+"src/recorder/screenrec.py": {
+"sha256": "1149338b73d0506cf910e2359d8a60f89aea60d881f9ce7b1eac8ac0a97e5fc3",
+"size": 39848
+},
+"src/scene/WWScene.py": {
+"sha256": "01ab2b1ed51b904a43d2feb3acb7c20e38d9b733b0710d5d85557c338bcc2804",
+"size": 1221
+},
+"src/task/AutoCombatTask.py": {
+"sha256": "032dce0d750aca35dea4e9ad6afca3b03f20f938124927b371cfd78f4e27567a",
+"size": 11507
+},
+"src/task/BaseCombatTask.py": {
+"sha256": "dd90dba8ed600fa9dafca8b00305331deccecfcf399190107e8ddc46485b8c74",
+"size": 68213
+},
+"src/task/BaseWWTask.py": {
+"sha256": "2b5f1a66b2dd3a163a0af42380d2ab72fff8759ed6749b5e308bdd98ae8ef2bc",
+"size": 57262
+},
+"src/task/FarmEchoTask.py": {
+"sha256": "3b50d873d4a2ea437f8b6d223f359b78dafd02dc97827c61a81a928ff0a95919",
+"size": 35881
+},
+"src/task/MouseResetTask.py": {
+"sha256": "1494531d85eb69f169e7862f09f8acde47a14914f0e6ed316bbb0ceb311e7765",
+"size": 2515
+},
+"src/task/WWOneTimeTask.py": {
+"sha256": "a253deedcaca13b0dae465d25f41155efdea7aa62cf2d3bd9c7d839bb77b4cb7",
+"size": 606
+},
+"src/task/process_feature.py": {
+"sha256": "b5dd4fcade09b22cc41d459c6e4d2f1ca3f789efc6fcf58f49f55dc85adb9bbc",
+"size": 905
+},
+"src/task/task_icons.py": {
+"sha256": "3871c4184036c0f2c99e92f9f36bffaf728a9ccfd7ca1980817e41265cbb317a",
+"size": 575
+},
+"tests/images/boss_bar_2560x1440_780_30.png": {
+"sha256": "f12bed91a415c746499a718ce02747710477152687057588df3a6bbe4fea9b48",
+"size": 99366
+},
+"tests/test_f_key_start.py": {
+"sha256": "7b65f37d789bbb0a527dd50f61e88ce8bd224faf4be2959b1ff5dabe21bbf165",
+"size": 8632
+},
+"tests/test_farm_echo_combat_end.py": {
+"sha256": "b5f0b9abcc84dd22f48f2bad78eb17c365d3b56f7d4985d3d686e4af6d69f688",
+"size": 6797
+},
+"tests/test_online_update.py": {
+"sha256": "dc07f0ecfd5238d2b2830173a924d4c99e0f368911a7295d8973fd424f1a8e8b",
+"size": 11872
+},
+"tools/char_fuzz.py": {
+"sha256": "7e4de7a43e113fb8a9adf52a88fa0ef3cfb2202798bb1f7fab292fea811f554f",
+"size": 23749
+},
+"tools/icon_original.png": {
+"sha256": "31a3517377381862f9907767bc9842fcd7625434bb7d625f0620850c7bf76413",
+"size": 97771
+},
+"tools/make_icon.py": {
+"sha256": "3bd697b176510817a5311ae41f4491fc56cb4be14cf305fe80e7eed436b38d53",
+"size": 5850
+},
+"启动 coco-ww.bat": {
+"sha256": "699eff1d5641af73d2d76f6991d51e9b20c6d377b6e8f0274ab08d06b93b8bdd",
+"size": 326
+},
+"调试启动(带控制台).bat": {
+"sha256": "6bd7e72dc16a0ddfc116ab0b1837368334dfc18a6955f7efabf1257e9c4a68e7",
+"size": 321
+}
+},
+"format": 1,
+"version": "v1.0.2"
+}
