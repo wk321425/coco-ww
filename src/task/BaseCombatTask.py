@@ -12,7 +12,13 @@ from ok import safe_get
 from src import text_white_color
 from src.char import BaseChar
 from src.char.BaseChar import SwitchPriority, dot_color, CharPerformTimeout  # noqa
-from src.char.CharFactory import apply_team_char_classes, get_char_by_pos
+from src.char.CharFactory import (
+    _find_registered_char,
+    apply_team_char_classes,
+    char_dict,
+    char_names,
+    get_char_by_pos,
+)
 from src.combat.CombatCheck import CombatCheck
 from src.task import con_ring
 from src.task.BaseWWTask import isolate_white_text_to_black, binarize_for_matching
@@ -37,6 +43,15 @@ class CharRevivedException(CharDeadException):
     pass
 
 
+class TeamChangedException(BaseException):
+    """战斗过程中检测到队伍成员已更换(如海墟上下半过图换队)时抛出。
+
+    继承 BaseException 而不是 Exception, 避免被自定义队伍代码中的 except Exception 吞掉,
+    同时保证 finally 松键块与 BaseChar.perform 的 except BaseException 正常释放按键。
+    """
+    pass
+
+
 mismatched_names = {
     "Douling": "Buling",
     "Xigelika": "Sigrika",
@@ -51,6 +66,11 @@ mismatched_names = {
 
 class BaseCombatTask(CombatCheck):
     owns_switch_healer_config = False
+    auto_refresh_team = False
+    TEAM_CHECK_INTERVAL = 1.5
+    TEAM_OLD_KEEP_THRESHOLD = 0.72
+    TEAM_NEW_CONFIRM_THRESHOLD = 0.80
+    TEAM_SINGLE_SWAP_THRESHOLD = 0.85
     """基础战斗任务类，封装了游戏"鸣潮"中角色自动化操作的通用逻辑。"""
     CD_OCR_REFERENCE_ASPECT_RATIO = 16 / 9
     hot_key_verified = False  # 热键是否已验证
@@ -91,6 +111,10 @@ class BaseCombatTask(CombatCheck):
         self.realm_entry_at_heal_point = False
         # (char, 上场时刻, 上限秒) 原生角色单次上场的硬超时, 见 BaseChar.PERFORM_HARD_TIMEOUT
         self.perform_watch = None
+        self._team_check_at = 0.0
+        self._team_change_streak = 0
+        self._team_change_sig = None
+        self._team_check_in_progress = False
 
     def reset_combat_state(self, reason='combat reset'):
         self.reset_to_false(reason)
@@ -368,6 +392,10 @@ class BaseCombatTask(CombatCheck):
         self._abyss_combat_active = False
         self._abyss_timer_checked_at = 0
         self._abyss_timer_value = None
+        self._team_check_at = 0.0
+        self._team_change_streak = 0
+        self._team_change_sig = None
+        self._team_check_in_progress = False
         return super().do_reset_to_false()
 
     def do_check_in_combat(self, target):
@@ -590,6 +618,9 @@ class BaseCombatTask(CombatCheck):
             while self.in_combat():
                 logger.debug(f'combat_once loop {self.chars}')
                 self.get_current_char().perform()
+        except TeamChangedException as e:
+            logger.info(f'combat_once team changed break {e}')
+            self.chars = [None, None, None]
         except CharDeadException as e:
             raise e
         except NotInCombatException as e:
@@ -891,6 +922,7 @@ class BaseCombatTask(CombatCheck):
         while True:
             if not (isinstance(switch_to, ShoreKeeper) and has_intro):
                 self.check_combat()
+            self.check_team_changed()
             now = time.time()
             _, current_index, _ = self.in_team()
             if current_index == current_char.index:
@@ -1056,6 +1088,7 @@ class BaseCombatTask(CombatCheck):
             check_combat (bool, optional): 是否在休眠前检查战斗状态。默认为 True。
         """
         self.check_perform_watch()
+        self.check_team_changed()
         if self.skip_combat_check:
             return
         # self.log_debug(f'sleep_check {self._in_combat}')
@@ -1123,15 +1156,128 @@ class BaseCombatTask(CombatCheck):
             self.perform_watch = None
             raise CharPerformTimeout(f'{char} on field {elapsed:.1f}s > {limit:.0f}s')
 
+    def detect_team_changed(self, force=False):
+        """低频检测战斗中队伍栏角色是否已更换(如海墟上下半过图换队)。"""
+        if getattr(self, '_team_check_in_progress', False):
+            return False
+        if not getattr(self, '_in_combat', False) or getattr(self, 'in_liberation', False):
+            return False
+        try:
+            if self.frame is None:
+                return False
+        except Exception:
+            return False
+        chars = getattr(self, 'chars', None) or ()
+        valid_chars = [c for c in chars if c is not None and getattr(c, 'char_name', None) in char_names]
+        unknown_slots = [c for c in chars if c is not None and getattr(c, 'char_name', None) not in char_names]
+        if len(chars) < 2 or (not valid_chars and not unknown_slots):
+            return False
+        now = time.monotonic()
+        last_check = getattr(self, '_team_check_at', 0.0)
+        if not force and now - last_check < self.TEAM_CHECK_INTERVAL:
+            return False
+        in_team, _, count = self.in_team()
+        if not in_team:
+            return False
+        self._team_check_at = now
+        self._team_check_in_progress = True
+        try:
+            mismatches = []
+            resolved_unknown = []
+            for i in range(min(count, len(chars))):
+                old_char = chars[i]
+                if old_char is None:
+                    continue
+                old_name = getattr(old_char, 'char_name', None)
+                box = self.get_box_by_name(f'box_char_{i + 1}')
+                if old_name not in char_names:
+                    best = self.find_best_match_in_box(box, char_names, threshold=self.TEAM_NEW_CONFIRM_THRESHOLD)
+                    if best is not None:
+                        new_name = char_dict[best.name]['canonical_name']
+                        resolved_unknown.append((i, new_name, float(best.confidence)))
+                    continue
+                if _find_registered_char(self, box, char_dict[old_name], threshold=self.TEAM_OLD_KEEP_THRESHOLD):
+                    continue
+                best = self.find_best_match_in_box(box, char_names, threshold=self.TEAM_NEW_CONFIRM_THRESHOLD)
+                if best is not None:
+                    new_name = char_dict[best.name]['canonical_name']
+                    if new_name != old_name:
+                        mismatches.append((i, old_name, new_name, float(best.confidence)))
+
+            if resolved_unknown:
+                max_conf = max(conf for _, _, conf in resolved_unknown)
+                if max_conf >= self.TEAM_SINGLE_SWAP_THRESHOLD:
+                    self._team_change_streak = 0
+                    self._team_change_sig = None
+                    desc = ', '.join(f'{i + 1}:unknown->{new}({conf:.2f})' for i, new, conf in resolved_unknown)
+                    logger.info(f'detect_team_changed resolved unknown slot: {desc}')
+                    return True
+                sig = tuple(('u', i, new) for i, new, _ in resolved_unknown)
+                if getattr(self, '_team_change_sig', None) == sig:
+                    self._team_change_streak = getattr(self, '_team_change_streak', 0) + 1
+                else:
+                    self._team_change_sig = sig
+                    self._team_change_streak = 1
+                if self._team_change_streak >= 2:
+                    self._team_change_streak = 0
+                    self._team_change_sig = None
+                    desc = ', '.join(f'{i + 1}:unknown->{new}({conf:.2f})' for i, new, conf in resolved_unknown)
+                    logger.info(f'detect_team_changed resolved unknown slot (2x): {desc}')
+                    return True
+                self._team_check_at = now - self.TEAM_CHECK_INTERVAL + 0.25
+                return False
+
+            if not mismatches:
+                self._team_change_streak = 0
+                self._team_change_sig = None
+                return False
+            if len(mismatches) >= 2:
+                self._team_change_streak = 0
+                self._team_change_sig = None
+                desc = ', '.join(f'{i + 1}:{old}->{new}({conf:.2f})' for i, old, new, conf in mismatches)
+                logger.info(f'detect_team_changed confirmed multi-slot swap: {desc}')
+                return True
+            idx, old_name, new_name, conf = mismatches[0]
+            if conf >= self.TEAM_SINGLE_SWAP_THRESHOLD:
+                sig = ((idx, new_name),)
+                if getattr(self, '_team_change_sig', None) == sig:
+                    self._team_change_streak = getattr(self, '_team_change_streak', 0) + 1
+                else:
+                    self._team_change_sig = sig
+                    self._team_change_streak = 1
+                if self._team_change_streak >= 2:
+                    self._team_change_streak = 0
+                    self._team_change_sig = None
+                    logger.info(f'detect_team_changed confirmed single-slot swap: {idx + 1}:{old_name}->{new_name}({conf:.2f})')
+                    return True
+                # 0.25s 后再次复核单格换人
+                self._team_check_at = now - self.TEAM_CHECK_INTERVAL + 0.25
+                return False
+            self._team_change_streak = 0
+            self._team_change_sig = None
+            return False
+        finally:
+            self._team_check_in_progress = False
+
+    def check_team_changed(self, force=False):
+        if not getattr(self, 'auto_refresh_team', False):
+            return False
+        if self.detect_team_changed(force=force):
+            self.release_held_inputs()
+            raise TeamChangedException('team changed')
+        return False
+
     def next_frame(self):
         # in_combat() 里会吞掉所有异常, 判战斗状态的过程中不抛, 交给下一次 sleep_check/check_combat
         if not getattr(self, 'in_sleep_check', False):
             self.check_perform_watch()
+            self.check_team_changed()
         return super().next_frame()
 
     def check_combat(self):
         """检查当前是否处于战斗状态, 如果不是则抛出异常。"""
         self.check_perform_watch()
+        self.check_team_changed()
         if self.skip_combat_check:
             return
         if self._in_combat and not self.in_combat():

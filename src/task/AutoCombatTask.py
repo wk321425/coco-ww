@@ -5,7 +5,12 @@ from src.Labels import Labels
 from src.char.CharFactory import char_names
 from src.combat.FKeyStart import F_EXTRA_LIFETIME, f_key_watcher, float_config
 from src.scene.WWScene import WWScene
-from src.task.BaseCombatTask import BaseCombatTask, NotInCombatException, CharDeadException
+from src.task.BaseCombatTask import (
+    BaseCombatTask,
+    CharDeadException,
+    NotInCombatException,
+    TeamChangedException,
+)
 from src.task.task_icons import task_icon
 from src import timer_precision
 
@@ -19,6 +24,7 @@ F_PROMPT_REREAD_INTERVAL = 0.5
 
 class AutoCombatTask(BaseCombatTask, TriggerTask):
     owns_switch_healer_config = True
+    auto_refresh_team = True
     _reset_combat_on_run = False
     # F 交互提示: 上一帧的位置、上次读字的时刻、最近一次看到「吸收」的时刻
     _f_prompt_box = None
@@ -240,10 +246,19 @@ class AutoCombatTask(BaseCombatTask, TriggerTask):
                 timer_precision.report_async('进战斗')
             ret = True
             try:
+                self.check_team_changed()
                 if not switched_to_healer:
                     self.switch_healer()
                     switched_to_healer = True
-                self.get_current_char().perform()
+                current_char = self.get_current_char()
+                if current_char is None:
+                    break
+                current_char.perform()
+            except TeamChangedException as e:
+                logger.info(f'auto_combat_task_team_changed {int(time.time() - combat_start)} {e}')
+                BaseCombatTask.combat_end(self)
+                self.reset_auto_combat('team changed')
+                return ret
             except CharDeadException:
                 self.log_error(self.tr('Characters dead'), notify=True)
                 break

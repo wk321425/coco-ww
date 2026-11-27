@@ -185,11 +185,11 @@ def _apply_char_config(task, char, info):
     return char
 
 
-def _find_registered_char(task, box, info):
+def _find_registered_char(task, box, info, threshold=0.6):
     template_names = info['template_names']
     if len(template_names) == 1:
-        return task.find_one(template_names[0], box=box, threshold=0.6)
-    return task.find_best_match_in_box(box, template_names, threshold=0.6)
+        return task.find_one(template_names[0], box=box, threshold=threshold)
+    return task.find_best_match_in_box(box, template_names, threshold=threshold)
 
 
 def get_char_by_pos(task, box, index, old_char):
@@ -199,7 +199,7 @@ def get_char_by_pos(task, box, index, old_char):
     char = None
     if old_char and old_char.confidence > 0.92 and old_char.char_name in char_names:
         info = char_dict.get(old_char.char_name)
-        char = _find_registered_char(task, box, info)
+        char = _find_registered_char(task, box, info, threshold=0.85)
         if char:
             cls = info.get('cls')
             if not isinstance(old_char, cls):
@@ -254,7 +254,8 @@ def apply_team_char_classes(task, chars):
             char_type=char.char_type,
             buff_time=char.buff_time,
         )
-        replacement.__dict__.update(char.__dict__)
+        if type(char) is builtin_cls:
+            replacement.__dict__.update(char.__dict__)
         chars[index] = replacement
     return chars
 
