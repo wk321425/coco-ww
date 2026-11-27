@@ -13,15 +13,16 @@ import time
 from PySide6.QtCore import QAbstractTableModel, QModelIndex, QPoint, QPointF, QRect, QRectF, QSize, \
     QSortFilterProxyModel, Qt, QTimer, Signal
 from PySide6.QtGui import QBrush, QColor, QFont, QFontMetrics, QImage, QKeySequence, QPainter, QPen, QShortcut
-from PySide6.QtWidgets import QAbstractItemView, QFrame, QHBoxLayout, QHeaderView, QMenu, QSizePolicy, QSplitter, \
+from PySide6.QtWidgets import QAbstractItemView, QApplication, QFrame, QHBoxLayout, QHeaderView, QMenu, QSizePolicy, QSplitter, \
     QStackedWidget, QTableWidgetItem, QToolTip, QVBoxLayout, QWidget
 
+from .diagnostics import analyze_run, compare_runs, format_diagnostics
 from .feedback import (FEEDBACK_DIR, FRAMES_KEEP, FRAMES_NONE, FRAMES_STANDARD, FeedbackPlan, build_feedback,
                        import_feedback)
 from .media import EXPORT_DIR, LOW_WIDTH, MediaIndex, clear_exports, export_usage
 from .recorder import HOLDER_ATTR, default_out_dir
-from .runs import (HUD_HIDDEN, LOG_LEVELS, READ_KINDS, RunData, Span, describe, detail_lines, headline, import_root,
-                   list_imported_runs, list_runs, source_text, video_clock, video_pending)
+from .runs import (HUD_HIDDEN, LOG_LEVELS, READ_KINDS, RunData, Span, char_label, describe, detail_lines, headline,
+                   import_root, list_imported_runs, list_runs, source_text, video_clock, video_pending)
 from .screenrec import load_video_info, video_info_path
 
 # coco-ww 用宿主自带的控件库(ok.ui.qt.kit): 按钮、下拉框、文字用它的类, 其余原生控件靠
@@ -186,6 +187,8 @@ class TimelineCanvas(QWidget):
             ]
             if run.marks:
                 lanes.append(Lane('marks', '打点', 18, run.marks))
+            if getattr(run, 'huds', None):
+                lanes.append(Lane('hud', '遥测(HUD)', 20, run.huds))
             for row in run.reads:
                 lanes.append(Lane('read', row.label, 14, row.events))
             if run.logs:
@@ -441,6 +444,27 @@ class TimelineCanvas(QWidget):
             self._draw_marks(painter, colors, metrics, lane, event)
         else:
             self._draw_logs(painter, colors, metrics, lane, event)
+
+    def _draw_hud(self, painter, colors, metrics, lane, event):
+        if self.run is not None and not self.run.is_hud_visible_at(event['t']):
+            return
+        x = self.x_at(event['t'])
+        bar_w = max(2.0, min(6.0, 0.25 * self.pps))
+        hp = event.get('hp')
+        if isinstance(hp, (int, float)):
+            frac = max(0.0, min(1.0, float(hp)))
+            if frac > 0:
+                h = max(2.0, (lane.h - 4) * frac)
+                hp_color = QColor('#C94A4A')
+                hp_color.setAlpha(185)
+                painter.fillRect(QRectF(x, lane.y + lane.h - 2 - h, bar_w, h), hp_color)
+        f_val = event.get('f')
+        if isinstance(f_val, (int, float)) and float(f_val) >= 0.15:
+            painter.fillRect(QRectF(x, lane.y + lane.h * 0.45, max(2.0, min(4.0, bar_w)), 3.0), QColor('#36C2CF'))
+        glows = self.run.off_field_glows(event) if self.run is not None else event.get('g')
+        if isinstance(glows, (list, tuple)) and glows and max(glows) >= 0.35:
+            painter.setPen(QPen(QColor('#F0B429'), 2))
+            painter.drawLine(QPointF(x, lane.y + 1), QPointF(x, lane.y + 6))
 
     def _draw_logs(self, painter, colors, metrics, lane, event):
         x = self.x_at(event['t'])
@@ -1775,6 +1799,9 @@ class AxisRecorderTab(QWidget):
         self._refresh_due = REFRESH_TICKS
         self._last_tick = 0.0
         self.last_feedback = None
+        self._diag = None
+        self._compare_cache = None
+        self._compare_text = ''
         self.packed.connect(self._on_packed)
         self.unpacked.connect(self._on_unpacked)
 
@@ -1882,12 +1909,14 @@ class AxisRecorderTab(QWidget):
             self.switch = SegmentedWidget()
             self.switch.addItem('events', '事件', lambda: self._show_page(0))
             self.switch.addItem('laps', '分圈对比', lambda: self._show_page(1))
+            self.switch.addItem('diag', '动作诊断', lambda: self._show_page(2))
+            self.switch.addItem('compare', '两局对比', lambda: self._show_page(3))
             self.switch.setCurrentItem('events')
         else:
             self.switch = ComboBox()
-            self.switch.addItems(['事件', '分圈对比'])
+            self.switch.addItems(['事件', '分圈对比', '动作诊断', '两局对比'])
             self.switch.currentIndexChanged.connect(self._show_page)
-        self.switch.setFixedWidth(200)
+        self.switch.setFixedWidth(240)
         bar.addWidget(self.switch)
         self.filter = SearchLineEdit()
         self.filter.setPlaceholderText('过滤: 输入角色名、按键、模板名、函数名、日志内容…')
@@ -1930,6 +1959,67 @@ class AxisRecorderTab(QWidget):
         self.lap_table.cellClicked.connect(self._on_lap_cell)
         lap_layout.addWidget(self.lap_table, 1)
         self.pages.addWidget(lap_page)
+
+        diag_page = QWidget()
+        diag_layout = QVBoxLayout(diag_page)
+        diag_layout.setContentsMargins(0, 0, 0, 0)
+        self.diag_summary = BodyLabel()
+        self.diag_summary.setWordWrap(True)
+        self.diag_summary.setTextInteractionFlags(Qt.TextSelectableByMouse)
+        diag_layout.addWidget(self.diag_summary)
+        self.diag_table = TableWidget()
+        self.diag_table.setColumnCount(4)
+        self.diag_table.setHorizontalHeaderLabels(['时间(s)', '类别', '角色', '详情'])
+        self.diag_table.setWordWrap(False)
+        self.diag_table.verticalHeader().setVisible(False)
+        self.diag_table.verticalHeader().setDefaultSectionSize(26)
+        self.diag_table.setEditTriggers(QAbstractItemView.NoEditTriggers)
+        self.diag_table.setSelectionBehavior(QAbstractItemView.SelectRows)
+        self.diag_table.setSelectionMode(QAbstractItemView.SingleSelection)
+        diag_header = self.diag_table.horizontalHeader()
+        diag_header.setSectionResizeMode(QHeaderView.Interactive)
+        diag_header.setStretchLastSection(True)
+        self.diag_table.cellClicked.connect(self._on_diag_cell)
+        diag_layout.addWidget(self.diag_table, 1)
+        self.pages.addWidget(diag_page)
+
+        compare_page = QWidget()
+        compare_layout = QVBoxLayout(compare_page)
+        compare_layout.setContentsMargins(0, 0, 0, 0)
+        compare_bar = QHBoxLayout()
+        compare_bar.addWidget(BodyLabel('对比基准(A)'))
+        self.compare_box = ComboBox()
+        self.compare_box.setMinimumWidth(340)
+        self.compare_box.setSizePolicy(QSizePolicy.Expanding, QSizePolicy.Fixed)
+        self.compare_box.currentIndexChanged.connect(self._on_compare_selected)
+        compare_bar.addWidget(self.compare_box, 1)
+        self.compare_refresh = PushButton('刷新对比')
+        self.compare_refresh.clicked.connect(lambda: self._update_compare(force=True))
+        self.compare_copy = PushButton('复制文本')
+        self.compare_copy.clicked.connect(self._copy_compare)
+        for widget in (self.compare_refresh, self.compare_copy):
+            widget.setSizePolicy(QSizePolicy.Fixed, QSizePolicy.Fixed)
+            compare_bar.addWidget(widget)
+        compare_layout.addLayout(compare_bar)
+        self.compare_hint = BodyLabel()
+        self.compare_hint.setWordWrap(True)
+        self.compare_hint.setTextInteractionFlags(Qt.TextSelectableByMouse)
+        compare_layout.addWidget(self.compare_hint)
+        self.compare_table = TableWidget()
+        self.compare_table.setColumnCount(4)
+        self.compare_table.setHorizontalHeaderLabels(['指标', 'A (基准局)', 'B (当前局)', '变化 (B-A)'])
+        self.compare_table.setWordWrap(False)
+        self.compare_table.verticalHeader().setVisible(False)
+        self.compare_table.verticalHeader().setDefaultSectionSize(26)
+        self.compare_table.setEditTriggers(QAbstractItemView.NoEditTriggers)
+        self.compare_table.setSelectionBehavior(QAbstractItemView.SelectRows)
+        self.compare_table.setSelectionMode(QAbstractItemView.SingleSelection)
+        compare_header = self.compare_table.horizontalHeader()
+        compare_header.setSectionResizeMode(QHeaderView.Interactive)
+        compare_header.setStretchLastSection(True)
+        compare_layout.addWidget(self.compare_table, 1)
+        self.pages.addWidget(compare_page)
+
         self.drawer.setVisible(False)
 
         self.vsplit = QSplitter(Qt.Vertical)
@@ -2035,10 +2125,12 @@ class AxisRecorderTab(QWidget):
     def load(self, path):
         self._stop_play()
         error = None
+        self.run = None
         try:
             self.run = RunData(path) if path else None
         except (OSError, ValueError) as e:
             self.run, error = None, e
+        self._diag = analyze_run(self.run) if self.run is not None else None
         self.media = None
         if self.run is not None:
             try:
@@ -2046,6 +2138,7 @@ class AxisRecorderTab(QWidget):
             except Exception:
                 self.media = None
         self._fill_lap_box()
+        self._fill_compare_box()
         self.lap_info = LapInfo(self.run, self.lap_box.currentData()) if self.run is not None else LapInfo()
         self.moments = build_moments(self.run) if self.run is not None else []
         self._moment_times = [m[0] for m in self.moments]
@@ -2061,6 +2154,9 @@ class AxisRecorderTab(QWidget):
         if error is not None:
             self.summary.setText(f'读不了这份记录: {error}')
         self._fill_lap_table()
+        self._fill_diag_page()
+        if self.pages.currentIndex() == 3:
+            self._update_compare()
         self._update_pack_button()
         self.t = 0.0
         if self.run is not None:
@@ -2111,7 +2207,257 @@ class AxisRecorderTab(QWidget):
             self.summary.setToolTip('')
             return
         self.summary.setText(headline(self.run, self.lap_box.currentData()))
-        self.summary.setToolTip('\n'.join(detail_lines(self.run)))
+        lines = list(detail_lines(self.run))
+        if self._diag is not None:
+            diag_lines = format_diagnostics(self.run, self._diag)
+            if diag_lines:
+                lines.append('')
+                lines.extend(diag_lines)
+        self.summary.setToolTip('\n'.join(lines))
+
+    def _fill_diag_page(self):
+        table = self.diag_table
+        table.setRowCount(0)
+        if self.run is None or self._diag is None:
+            self.diag_summary.setText('还没有记录。')
+            return
+        diag = self._diag
+        lines = format_diagnostics(self.run, diag)
+        warn_head = f"日志告警: 警告 {diag['warns']} 条 / 报错 {diag['errors']} 条"
+        if lines:
+            self.diag_summary.setText(warn_head + '\n' + '\n'.join(lines))
+        else:
+            self.diag_summary.setText(warn_head + '\n本局未检出明显吞键、慢切人或异常。')
+
+        items = []
+        seen_sw = set()
+        slow_switches = list(diag['switches']['slowest'])
+        slow_switches.extend(s for s in diag['switches']['items'] if s['dur'] >= 0.7)
+        slow_switches.sort(key=lambda s: s['dur'], reverse=True)
+        for s in slow_switches:
+            if s['t'] in seen_sw:
+                continue
+            seen_sw.add(s['t'])
+            items.append((
+                s['t'],
+                '慢切人',
+                f"{self.run.char_name(s['from'])}->{self.run.char_name(s['to'])}",
+                f"切人耗时 {s['dur']:.2f}s (连按 {s['presses']} 次)",
+                QColor(SLOW_COLOR) if s['dur'] >= 0.9 else None,
+            ))
+            if len(seen_sw) >= 6:
+                break
+        for s in diag['swallowed_skills']:
+            items.append((
+                s['t'],
+                '疑吞技能',
+                self.run.char_name(s['slot']),
+                f"{s['key']} 疑被吞 ({s['why']})",
+                QColor(SLOW_COLOR),
+            ))
+        for u in diag['unconsumed_holds']:
+            items.append((
+                u['t'],
+                '疑吞重击',
+                self.run.char_name(u['slot']),
+                f"长按 {u['dur']:.2f}s 疑似未耗条 ({u['why']})",
+                QColor('#E04848'),
+            ))
+        for e in self.run.logs:
+            lvl = e.get('l') or 0
+            if lvl >= 30:
+                items.append((
+                    e['t'],
+                    '报错' if lvl >= 40 else '警告',
+                    self.run.field_label_at(e['t']),
+                    str(e.get('m', '')),
+                    QColor('#E04848') if lvl >= 40 else QColor(SLOW_COLOR),
+                ))
+
+        items.sort(key=lambda row: row[0])
+        table.setRowCount(len(items))
+        for r, (t, kind, role, detail, color) in enumerate(items):
+            t_item = QTableWidgetItem(f'{t:.3f}')
+            t_item.setTextAlignment(Qt.AlignCenter)
+            t_item.setData(Qt.UserRole, t)
+            k_item = QTableWidgetItem(kind)
+            k_item.setTextAlignment(Qt.AlignCenter)
+            r_item = QTableWidgetItem(role)
+            d_item = QTableWidgetItem(detail)
+            d_item.setToolTip(detail)
+            if color is not None:
+                k_item.setForeground(QBrush(color))
+                font = k_item.font()
+                font.setBold(True)
+                k_item.setFont(font)
+            table.setItem(r, 0, t_item)
+            table.setItem(r, 1, k_item)
+            table.setItem(r, 2, r_item)
+            table.setItem(r, 3, d_item)
+        for col, width in enumerate((80, 90, 150, 540)):
+            table.setColumnWidth(col, width)
+
+    def _on_diag_cell(self, row, _column):
+        item = self.diag_table.item(row, 0)
+        t = item.data(Qt.UserRole) if item is not None else None
+        if t is not None:
+            self.canvas.center_on(t)
+            self._set_time(t, 'row')
+
+    def _fill_compare_box(self):
+        prev_path = self.compare_box.currentData() if hasattr(self, 'compare_box') else None
+        self.compare_box.blockSignals(True)
+        self.compare_box.clear()
+        cur_path = self.run.path if self.run is not None else None
+        cur_team = list(self.run.header.get('team') or ()) if self.run is not None else []
+        cur_team_names = [char_label(c) if isinstance(c, dict) else None for c in cur_team]
+        candidates = [s for s in self.summaries if s.path != cur_path]
+        for s in candidates:
+            stamp = s.name[:15]
+            when = f'{stamp[4:6]}-{stamp[6:8]} {stamp[9:11]}:{stamp[11:13]}:{stamp[13:15]}'
+            _add_item(self.compare_box, f"{when}  {' / '.join(s.team)}  {s.duration:.1f}s  {s.reason}", s.path)
+        if candidates:
+            idx = next((i for i, s in enumerate(candidates) if s.path == prev_path), -1)
+            if idx < 0 and cur_team_names:
+                cur_set = {x for x in cur_team_names if x}
+                idx = next((i for i, s in enumerate(candidates) if cur_set and set(s.team) == cur_set), -1)
+            self.compare_box.setCurrentIndex(max(0, idx))
+        self.compare_box.blockSignals(False)
+
+    def _load_compare_run(self, path, force=False):
+        if not path or not os.path.isfile(path):
+            return None
+        mtime = os.path.getmtime(path)
+        if not force and self._compare_cache and self._compare_cache[:2] == (path, mtime):
+            return self._compare_cache[2]
+        rd = RunData(path)
+        self._compare_cache = (path, mtime, rd)
+        return rd
+
+    def _update_compare(self, force=False):
+        table = self.compare_table
+        table.setRowCount(0)
+        self._compare_text = ''
+        if self.run is None:
+            self.compare_hint.setText('当前没有打开任何记录。')
+            return
+        base_path = self.compare_box.currentData()
+        if not base_path:
+            self.compare_hint.setText('只有 1 局记录, 无法对比。再打一局或点「刷新」后即可对比。')
+            return
+        try:
+            run_a = self._load_compare_run(base_path, force=force)
+        except Exception as e:
+            self.compare_hint.setText(f'读取基准局失败: {e}')
+            return
+        if run_a is None:
+            self.compare_hint.setText('选中的基准局文件不存在。')
+            return
+        run_b = self.run
+        slot_b = self.lap_box.currentData()
+        slot_a = None
+        if slot_b is not None:
+            target_name = run_b.char_name(slot_b)
+            slot_a = next((i for i in sorted(run_a.names) if run_a.char_name(i) == target_name), None)
+        if slot_a is None:
+            slot_a = run_a.default_lap_slot()
+        if slot_b is None:
+            slot_b = run_b.default_lap_slot()
+
+        import statistics as _stats
+        diag_a = analyze_run(run_a)
+        diag_b = self._diag or analyze_run(run_b)
+        laps_a = run_a.laps(slot_a) if slot_a is not None else []
+        laps_b = run_b.laps(slot_b) if slot_b is not None else []
+        durs_a = [d for _, d in laps_a]
+        durs_b = [d for _, d in laps_b]
+
+        ver_a = run_a.header.get('team_ver') or '-'
+        ver_b = run_b.header.get('team_ver') or '-'
+        self.compare_hint.setText(
+            f"A(基准): {run_a.header.get('team_dir') or 'unknown'} v{ver_a} · {run_a.duration:.2f}s · {run_a.reason}\n"
+            f"B(当前): {run_b.header.get('team_dir') or 'unknown'} v{ver_b} · {run_b.duration:.2f}s · {run_b.reason}"
+        )
+        self._compare_text = '\n'.join(compare_runs(run_a, run_b, lap_slot_a=slot_a, lap_slot_b=slot_b))
+
+        rows = [
+            ('总时长(s)', run_a.duration, run_b.duration, 'time', None),
+            ('完整圈数', len(laps_a), len(laps_b), 'int', None),
+            ('平均圈速(s)', (sum(durs_a) / len(durs_a)) if durs_a else None,
+             (sum(durs_b) / len(durs_b)) if durs_b else None, 'time', True),
+            ('中位圈速(s)', _stats.median(durs_a) if durs_a else None,
+             _stats.median(durs_b) if durs_b else None, 'time', True),
+            ('切人总耗时(s)', diag_a['switches']['total_s'], diag_b['switches']['total_s'], 'time', True),
+            ('切人次数', diag_a['switches']['count'], diag_b['switches']['count'], 'int', None),
+            ('自动F耗时(s)', diag_a['f_break']['total_s'], diag_b['f_break']['total_s'], 'time', True),
+            ('疑吞技能(次)', len(diag_a['swallowed_skills']), len(diag_b['swallowed_skills']), 'int', True),
+            ('疑吞重击(次)', len(diag_a['unconsumed_holds']), len(diag_b['unconsumed_holds']), 'int', True),
+            ('WARN/ERROR', diag_a['warns'] + diag_a['errors'], diag_b['warns'] + diag_b['errors'], 'int', True),
+        ]
+        if diag_a['boss_hp'] and diag_b['boss_hp']:
+            rows.append(('掉血速率(%/s)', diag_a['boss_hp']['drop_per_s'], diag_b['boss_hp']['drop_per_s'], 'time', False))
+
+        stats_a = {s['name']: s for s in run_a.char_stats().values()}
+        stats_b = {s['name']: s for s in run_b.char_stats().values()}
+        char_rows = []
+        for cname in list(dict.fromkeys([*stats_a, *stats_b])):
+            sa = stats_a.get(cname) or {'field': 0.0, 'entries': 0}
+            sb = stats_b.get(cname) or {'field': 0.0, 'entries': 0}
+            va = f"{sa['field']:.1f}s / {sa['entries']}次"
+            vb = f"{sb['field']:.1f}s / {sb['entries']}次"
+            diff = sb['field'] - sa['field']
+            char_rows.append((f'上场 · {cname}', va, vb, f'{diff:+.1f}s ({sb["entries"] - sa["entries"]:+d}次)', None))
+
+        table.setRowCount(len(rows) + len(char_rows))
+        for r, (label, va, vb, fmt, lower_better) in enumerate(rows):
+            table.setItem(r, 0, QTableWidgetItem(label))
+            if va is None or vb is None:
+                sa_txt = '-' if va is None else (f'{va:.2f}' if fmt == 'time' else str(va))
+                sb_txt = '-' if vb is None else (f'{vb:.2f}' if fmt == 'time' else str(vb))
+                table.setItem(r, 1, _lap_item(sa_txt))
+                table.setItem(r, 2, _lap_item(sb_txt))
+                table.setItem(r, 3, _lap_item('-'))
+                continue
+            diff = vb - va
+            if fmt == 'time':
+                sa_txt, sb_txt, df_txt = f'{va:.2f}', f'{vb:.2f}', f'{diff:+.2f}'
+            else:
+                sa_txt, sb_txt, df_txt = str(va), str(vb), f'{diff:+d}'
+            table.setItem(r, 1, _lap_item(sa_txt))
+            table.setItem(r, 2, _lap_item(sb_txt))
+            diff_item = _lap_item(df_txt)
+            if lower_better is not None and abs(diff) > 1e-6:
+                better = diff < 0 if lower_better else diff > 0
+                diff_item.setForeground(QBrush(QColor('#3DB37A' if better else SLOW_COLOR)))
+                font = diff_item.font()
+                font.setBold(True)
+                diff_item.setFont(font)
+            table.setItem(r, 3, diff_item)
+
+        offset = len(rows)
+        for idx, (label, va, vb, df_txt, _) in enumerate(char_rows):
+            r = offset + idx
+            table.setItem(r, 0, QTableWidgetItem(label))
+            table.setItem(r, 1, _lap_item(va))
+            table.setItem(r, 2, _lap_item(vb))
+            table.setItem(r, 3, _lap_item(df_txt))
+        for col, width in enumerate((150, 140, 140, 160)):
+            table.setColumnWidth(col, width)
+
+    def _on_compare_selected(self, _index):
+        if self.pages.currentIndex() == 3:
+            self._update_compare()
+
+    def _copy_compare(self):
+        if not self._compare_text:
+            self._update_compare()
+        if not self._compare_text:
+            self._toast('info', '没有可复制的对比内容', '请先选择两局记录')
+            return
+        cb = QApplication.clipboard()
+        if cb is not None:
+            cb.setText(self._compare_text)
+        self._toast('success', '已复制对比文本', '可直接粘贴到聊天或文档中')
 
     def _fill_lap_table(self):
         table = self.lap_table
@@ -2173,6 +2519,8 @@ class AxisRecorderTab(QWidget):
     def _show_page(self, index):
         self.pages.setCurrentIndex(index)
         self.filter.setVisible(index == 0)
+        if index == 3:
+            self._update_compare()
 
     def _on_run_selected(self, index):
         if 0 <= index < len(self.summaries):
@@ -2185,6 +2533,8 @@ class AxisRecorderTab(QWidget):
         self.lap_strip.set_run(self.run, self.lap_info)
         self._update_summary()
         self._fill_lap_table()
+        if self.pages.currentIndex() == 3:
+            self._update_compare()
         if self.run is not None:
             self.frame_panel.set_overlay(self._overlay_at(self.t))
 

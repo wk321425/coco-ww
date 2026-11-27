@@ -244,6 +244,7 @@ class RunData:
         self.reads = self._read_rows()
         self.logs = [e for e in self.events if e.get('e') == 'log']
         self.marks = [e for e in self.events if e.get('e') == 'mark']
+        self.huds = [e for e in self.events if e.get('e') == 'hud']
 
     @property
     def reason(self):
@@ -263,6 +264,20 @@ class RunData:
     def slot_at(self, t):
         i = self._span_index(t)
         return None if i is None else self.field[i].value
+
+    def is_hud_visible_at(self, t):
+        """t 时刻战斗队伍 HUD 是否在场 (未进入过场/结算/弹窗)。"""
+        return self.slot_at(t) != HUD_HIDDEN
+
+    def off_field_glows(self, event):
+        """提取非在场(后台队友)槽位的头像白环光圈占比列表。"""
+        glows = event.get('g') or ()
+        if not glows or not self.is_hud_visible_at(event['t']):
+            return []
+        active = self.slot_at(event['t'])
+        if active is None:
+            active = self.owner_at(event['t'])
+        return [float(v) for i, v in enumerate(glows) if i != active]
 
     def span_at(self, t):
         """t 时刻那一段在场(Span); 第一次认 HUD 之前是 None。"""
@@ -516,7 +531,7 @@ class RunData:
         return sum(s.t1 - s.seen for s in self.field if slot is None or s.value == slot)
 
 
-EVENT_KINDS = {'in': '按键', 'field': '在场', 'perf': '出招', 'read': '读屏', 'log': '日志', 'mark': '打点'}
+EVENT_KINDS = {'in': '按键', 'field': '在场', 'perf': '出招', 'read': '读屏', 'log': '日志', 'mark': '打点', 'hud': '遥测'}
 READ_KINDS = {'find': '找图', 'feat': '找图', 'color': '颜色', 'cd': '冷却', 'con': '协奏'}
 ACTIONS = {'key': '按', 'kd': '按下', 'ku': '松开', 'click': '点', 'md': '按下', 'mu': '松开', 'wheel': '滚'}
 LOG_LEVELS = {10: 'DEBUG', 20: 'INFO', 30: 'WARN', 40: 'ERROR', 50: 'FATAL'}
@@ -591,6 +606,21 @@ def describe(run, event):
         return '日志', f"[{LOG_LEVELS.get(event.get('l'), event.get('l'))}] {event.get('m', '')}"
     if kind == 'mark':
         return '打点', f"{event.get('name')} = {_num(event.get('v'))}"
+    if kind == 'hud':
+        parts = []
+        if event.get('hp') is not None:
+            parts.append(f"Boss血量 {event['hp'] * 100:.1f}%")
+        if event.get('f') is not None:
+            parts.append(f"回路={event['f']:.2f}")
+        if event.get('g'):
+            active = run.slot_at(event['t'])
+            parts.append('光圈=[' + ','.join(
+                ('*' if i == active else '') + f'{v:.2f}'
+                for i, v in enumerate(event['g'])
+            ) + ']')
+        if event.get('sk'):
+            parts.append('技能=[' + ','.join(f'{v:.2f}' for v in event['sk']) + ']')
+        return '遥测', '  '.join(parts)
     return kind or '?', json.dumps(event, ensure_ascii=False)
 
 

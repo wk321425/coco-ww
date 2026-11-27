@@ -12,7 +12,7 @@ from .recorder import default_out_dir, list_run_files
 from .runs import HUD_HIDDEN, RunData
 
 KEEP = frozenset(('field', 'perf', 'in', 'log', 'mark'))
-SKIP_PREFIX = b'{"e":"read"'
+SKIP_PREFIXES = (b'{"e":"read"', b'{"e":"hud"')
 READ_CHUNK = 4 << 20
 
 
@@ -55,7 +55,7 @@ class RunTail:
         changed = False
         for line in lines:
             line = line.strip()
-            if not line or line.startswith(SKIP_PREFIX):
+            if not line or line.startswith(SKIP_PREFIXES):
                 continue
             try:
                 event = json.loads(line)

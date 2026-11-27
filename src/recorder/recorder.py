@@ -65,7 +65,7 @@ TASK_DISABLED_REASON = '战斗任务被关掉了(手动关闭或出错被停用,
 TASK_PAUSED_END = 1.0
 TASK_PAUSED_REASON = 'coco-ww 停止了(执行器暂停)'
 
-_START, _END, _INPUT, _SENDINPUT, _FIELD, _PERF, _READ, _LOG, _MARK, _RAW = range(10)
+_START, _END, _INPUT, _SENDINPUT, _FIELD, _PERF, _READ, _LOG, _MARK, _RAW, _HUD = range(11)
 
 MANUAL_TASK_NAME = '手打记录'
 _STOP = object()
@@ -422,7 +422,7 @@ class Recorder:
         except Exception as e:
             logger.error('跑轴记录: 挂不上取帧, 这一版不存画面', e)
             return
-        self.media = MediaWriter(self._label)
+        self.media = MediaWriter(self._label, on_hud=self.put_hud)
         self.media.start()
         self.hotkey = HotkeyThread(lambda: self._option('HOTKEY_KEY', 'F8'), self.export_recent)
         self.hotkey.start()
@@ -762,6 +762,10 @@ class Recorder:
 
     def put_mark(self, run, t, name, value):
         self.queue.put((_MARK, run, t, name, value, None, None))
+
+    def put_hud(self, run, t, snap):
+        if run is not None and snap:
+            self.queue.put((_HUD, run, t, snap))
 
     def _note_field(self, run, result):
         # 状态没变只记「最后一次看到」的时刻: 两次变化之间轴可能很久没看 HUD, 页面上要分得出来
@@ -1112,6 +1116,10 @@ class Recorder:
                 event['box'] = _box_json(box)
             self._add_origin(event, where)
             self._write(run_file, event)
+        elif code == _HUD:
+            _, _, t, snap = item
+            if snap:
+                self._write(run_file, {'e': 'hud', 't': _rel(run, t), **snap})
 
     def _open(self, files, run, header):
         os.makedirs(self.out_dir, exist_ok=True)

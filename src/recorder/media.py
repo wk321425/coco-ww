@@ -244,8 +244,10 @@ class FrameSink:
 class MediaWriter:
     """后台线程: 缩帧、编码、追加写 .media 和 .media.idx。队列满了丢最旧的, 不让热路径等。"""
 
-    def __init__(self, label):
+    def __init__(self, label, on_hud=None):
         self.label = label
+        self.on_hud = on_hud
+        self._last_hud = {}
         self.queue = collections.deque(maxlen=QUEUE_LEN)
         self.wake = threading.Event()
         self.sinks = []
@@ -323,6 +325,7 @@ class MediaWriter:
     def _close(self, sink):
         if sink in self.sinks:
             self.sinks.remove(sink)
+        self._last_hud.pop(id(sink.run), None)
         sink.closed = True
         for handle in (sink.handle, sink.index):
             if handle is not None:
@@ -352,6 +355,17 @@ class MediaWriter:
             if ok:
                 sink.frame_count += 1
                 self._append(sink, buf, {'f': 1, 't': rel, 'w': int(small.shape[1]), 'h': int(small.shape[0])})
+            if self.on_hud is not None:
+                try:
+                    from . import telemetry
+                    snap = telemetry.extract_hud_snapshot(item[3])
+                    if snap is not None:
+                        rid = id(sink.run)
+                        if telemetry.hud_changed(self._last_hud.get(rid), snap):
+                            self._last_hud[rid] = snap
+                            self.on_hud(sink.run, t, snap)
+                except Exception:
+                    pass
         elif kind == 'c':
             _, _, _, read_kind, name, where, box, crop, value, found = item
             ok, buf = cv2.imencode('.png', crop)
